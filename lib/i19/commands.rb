@@ -1,4 +1,4 @@
-require "i19/commands/updater"
+require "i19/commands/update"
 
 module I19
   module Commands
@@ -7,8 +7,8 @@ module I19
     }.freeze
 
     def self.update(options = {})
-      path = options[:path] || config(:path)
-      Commands::Updater.call(path)
+      path = options.fetch(:path, nil) || config(:path)
+      Commands::Update.call(path)
     end
 
     private

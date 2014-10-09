@@ -7,7 +7,7 @@ module I19
     desc "update", "Scans your app folder for I18n.t calls and updates your yaml file accordingly"
     method_option :path, :aliases => "-p", :desc => "Specify the path to scan for I18n.t calls"
     def update
-      I19::Commands.update(options[:path])
+      I19::Commands.update(path: options[:path])
     end
   end
 end

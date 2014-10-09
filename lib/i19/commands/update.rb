@@ -1,5 +1,5 @@
 module I19::Commands
-  class Updater
+  class Update
     def self.call(*args)
       self.new(*args).call
     end
