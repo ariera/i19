@@ -17,8 +17,9 @@ module I19::Scanners
         next unless valid_key?(key, strict)
         key = key + ':' if key.end_with?('.')
         location = src_location(path, text, src_pos)
+        default_arg = match_to_default_arg(match)
         unless exclude_line?(location[:line])
-          keys << [key, data: location]
+          keys << [key, data: location, default: default_arg]
         end
       end
       keys
@@ -42,6 +43,10 @@ module I19::Scanners
       key = strip_literal(match[0])
       key = absolutize_key(key, path) if path && key.start_with?('.')
       key
+    end
+
+    def match_to_default_arg(match)
+      match[2]
     end
 
     def pattern

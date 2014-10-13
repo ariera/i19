@@ -11,6 +11,7 @@ module I19::Scanners
       # capture the first argument and scope argument if present
       /#{super}
       (?: \s*,\s* #{scope_arg_re} )? (?# capture scope in second argument )
+      (?: \s*,\s* #{default_arg_re} )? (?# capture default in third argument )
       /x
     end
 
@@ -53,6 +54,14 @@ module I19::Scanners
       /(?:
          :#{scope_arg_name}\s*=>\s* | (?# :scope => :home )
          #{scope_arg_name}:\s*        (?#    scope: :home )
+        ) (#{array_or_one_literal_re})/x
+    end
+    # scope: literal or code expression or an array of these
+    def default_arg_re
+      default_arg_name = 'default'
+      /(?:
+         :#{default_arg_name}\s*=>\s* | (?# :scope => :home )
+         #{default_arg_name}:\s*        (?#    scope: :home )
         ) (#{array_or_one_literal_re})/x
     end
 

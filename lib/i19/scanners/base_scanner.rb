@@ -43,8 +43,9 @@ module I19::Scanners
         scan_file(path, opts)
       }.reduce(:+) || []
       keys.group_by(&:first).map { |key, key_loc|
-        [key, data: {source_occurrences: key_loc.map { |(_k, attr)| attr[:data] }}]
-      }
+        Key.new(key: key, defaults: key_loc.map{ |_k, attr| attr[:default]}, source_occurrences: key_loc.map { |(_k, attr)| attr[:data] })
+        # [key, data: {source_occurrences: key_loc.map { |(_k, attr)| attr[:data] }}]
+      }.sort_by(&:key)
     end
 
     def read_file(path)
