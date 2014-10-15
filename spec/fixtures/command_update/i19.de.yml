@@ -1,0 +1,2948 @@
+---
+de:
+  EUR_100_once: 0 €&nbsp;<small>inkl. MwSt.</small>
+  EUR_75_payback: 75 €&nbsp;<small>Rückzahlung<br>bei Nichtgefallen</small>
+  abort: Abbrechen
+  accept_policies_html: Ich akzeptiere die <a class="blue" target="_blank" href="%{tos_link}">AGBs</a>
+    und <a class="blue" target="_blank" href="%{privacy_path}">Datenschutzrichtlinien</a>
+  account_confirmed: Bestätigt
+  account_confirmed_long: Account bestätigt
+  account_deleted_no_change_html: Ihr Account ist deaktiviert, Sie können bestimmte
+    Änderungen nicht vornehmen. Bei Fragen kontaktieren Sie unser Support-Team
+  account_not_unlocked: Ihr Account konnte nicht entsperrt werden!
+  account_notifications: Wichtige Nachrichten
+  account_unlocked_by_admin_email: |
+    Sehr geehrter Kunde,
+
+    Ihr Account wurde nun aktiviert!
+
+    Bitte stellen Sie sicher, dass Ihre eigene Kampagnen pausiert sind.
+
+    Das Tagesbudget beträgt %{daily_budget} €, das Sie jederzeit ändern können. Wir haben Sie registriert mit der URL %{website_url}.
+
+    Die Kampagnen unseres Roboters werden nun bei Google aktiviert. Sie erhalten jetzt die Rechnung über das Startpaket i.H.v. € 100,- zzgl, MwSt., also gesamt € 119,-, die Ihnen jetzt abgebucht werden.
+
+    Wie Sie wissen können Sie 2 Monate von der "Geld-zurück-Garantie" Gebrauch machen. Um Ihnen zu beweisen, dass wir von unserem Roboter absolut überzeugt sind, erstatten wir Ihnen unsere komplette (!) Provision für die ersten zwei Monate zurück, wenn wir Sie nicht restlos überzeugen konnten (einfache Erklärung per E-Mail genügt).
+    Sollten Sie uns pro Tag mehr als € 10,- anvertraut haben, erstatten wir Ihnen darüber hinaus sogar weitere € 100,- aus unserer Tasche (zusätzlich zu der zurückerstatteten Provision!), um unser Leistungsversprechen zu unterstreichen! D.h. wir machen effektiv einen Verlust von € 100, wenn wir Sie nicht zufrieden stellen konnten!
+
+    Sollte etwas nicht zu Ihrer Zufriedenheit laufen, nehmen wir Ihre Kritik dankbar an und beheben etwaige Probleme sofort! Kontaktieren Sie uns hierzu bitte einfach telefonisch oder per E-Mail.
+  account_was_deleted: 'Ihr Account ist deaktiviert, bitte kontaktieren Sie unser
+    Support Team unter: <a href="mailto:%{email}?subject=Account reaktivieren">%{email}</a>'
+  account_will_be_unlocked_soon: Vielen Dank für die Freigabe. Ihr Account wird in
+    Kürze von unserem Support-Team aktiviert.
+  activate: Aktivieren
+  activate_new_algo: Neuen Algo aktivieren
+  activation_saved_setup_campaign: Wir haben Ihre Aktivierung vermerkt und setzen
+    Ihre Kampagnen auf.
+  activation_saved_will_contact_you: Wir haben Ihre Aktivierung vermerkt und kontaktieren
+    Sie in Bälde.
+  active: aktiv
+  active_can_only_change_if_unlocked_by_admin: AdWords Status kann erst geändert werden,
+    sobald der Account von einem Service Mitarbeiter freigeschaltet wurde.
+  active_eq: AdWords Status entspricht
+  active_question: Aktiv?
+  active_short: Akt.
+  active_users: Aktive User
+  activemodel:
+    attributes:
+      adwords_campaign_setting:
+        expected_conversion_rate: Erwartete Conversion Rate
+      apply_ad_line_form:
+        sample_ad_line_list_id: Standard Anzeigen Liste
+        type: Verwendungstyp
+      campaign_setup:
+        new_pages: Neue URLs
+        new_urls: Neue URLs
+        pages: URLs
+      crawl_request_form:
+        scraper: Crawler
+        url: URL
+      excluding_keywords_form:
+        added_keywords: Keywords
+      google_budget:
+        daily_budget: Tagesbudget
+      page_form:
+        converted_keywords: Eigene Keywords
+        description: Meta Description
+        meta_kws: Meta Keywords
+        scraper: Crawler
+        title: Titel
+        url: URL
+      sample_ad_line_list:
+        content: Bausteine 1 / Zeile. Max 35 Zeichen.
+      user:
+        expected_conversion_rate: Erwartete Conversion Rate
+        first_name: Vorname
+        gender: Geschlecht
+        industry: Branche
+        is_industry: Ist Branche
+        is_webshop: Ist Webshop
+        last_name: Nachname
+        phone_number: Telefonnummer
+        website_url: URL
+    errors:
+      format: "%{attribute} %{message}"
+      messages:
+        accepted: muss akzeptiert werden
+        blank: muss ausgefüllt werden
+        confirmation: stimmt nicht mit der Bestätigung überein
+        empty: muss ausgefüllt werden
+        equal_to: muss genau %{count} sein
+        even: muss gerade sein
+        exclusion: ist nicht verfügbar
+        greater_than: muss größer als %{count} sein
+        greater_than_or_equal_to: muss größer oder gleich %{count} sein
+        inclusion: ist kein gültiger Wert
+        invalid: ist nicht gültig
+        less_than: muss kleiner als %{count} sein
+        less_than_or_equal_to: muss kleiner oder gleich %{count} sein
+        not_a_number: ist keine Zahl
+        not_an_integer: muss ganzzahlig sein
+        odd: muss ungerade sein
+        record_invalid: 'Gültigkeitsprüfung ist fehlgeschlagen: %{errors}'
+        size_too_big: is too big (should be at most %{file_size})
+        size_too_small: is too small (should be at least %{file_size})
+        taken: ist bereits vergeben
+        too_long: ist zu lang (mehr als %{count} Zeichen)
+        too_short: ist zu kurz (weniger als %{count} Zeichen)
+        wrong_length: hat die falsche Länge (muss genau %{count} Zeichen haben)
+        wrong_size: is the wrong size (should be %{file_size})
+      template:
+        body: 'Bitte überprüfen Sie die folgenden Felder:'
+        header:
+          one: 'Konnte %{model} nicht speichern: ein Fehler.'
+          other: 'Konnte %{model} nicht speichern: %{count} Fehler.'
+  activerecord:
+    attributes:
+      ad_text_block:
+        content: Anzeigenbaustein
+      adwords_campaign:
+        check_triple_keywords: Triple Keywords erstellen
+        daily_budget: Tagesbudget
+        ignore_blacklist: Blacklist ignorieren
+        label: Name
+        use_comma: Komma als Trennzeichen
+        use_competitors: Konkurrenz verwenden
+        use_description: Verwende Meta Description
+        use_everywhere: Keyword in allen Anzeigengruppen verwenden
+        use_google_index: Google Index verwenden
+        use_h1: H1 verwenden
+        use_html: HTML Text verwenden
+        use_keywords: Verwende Meta Keywords
+        use_meta_title: Meta-Title verwenden
+        use_most_relevant: Keyword nur in relevantester Anzeigengruppe
+        use_new_algo: Neuen Algo verwenden
+        use_page_topic: Page-topic verwenden
+        use_polipus: Seite crawlen
+        use_relevant: Keyword nur auf X Top-Seiten bewerben
+        use_semrush: Semrush verwenden
+        use_semrush_ads: Semrush Anzeigen verwenden
+        use_shopping: API Keywords verwenden
+        use_sitemap: Sitemap verwenden
+        use_title: Verwende Titel
+        use_whitespace: Freizeichen als Trennzeichen
+        visible: Sichtbar
+      afterbuy:
+        account_name: Afterbuy Account Name
+        shop_id: Afterbuy Shop ID
+      campaign_pause:
+        end_date: Enddatum
+        start_date: Anfangsdatum
+      product:
+        age_group: Altersgruppe
+        color: Farbe
+        discount_absolute: Rabatt absolut
+        gender: Geschlecht
+        google_category: Google Kategorie
+        parent_id: Vater ID
+        producer: Produzent
+        size: Größe
+        size_system: Größensystem
+        size_type: Größeneinheit
+        unit_pricing_base_measure: Basis Messeinheit
+        unit_pricing_measure: Messeinheit
+      retargeting_setup:
+        daily_budget: Tagesbudget
+      shopping_setup:
+        daily_budget: Tagesbudget
+      user:
+        address: Straße
+        city: Stadt
+        company_name: Unternehmensname
+        company_type: Unternehmensform
+        country: Land
+        daily_budget: Tagesbudget in €
+        description: Beschreibung
+        email: Email
+        expected_conversion_rate: Erwartete Conversion Rate
+        first_name: Vorname
+        gender: Geschlecht
+        last_name: Nachname
+        password: Passwort
+        password_confirmation: Passwort-Bestätigung
+        password_digest: Passwort-Bestätigung
+        phone_number: Telefonnummer
+        vat_number: Umsatzsteuer ID
+        zipcode: PLZ
+      user_change_password:
+        new_password: Neues Passwort
+        new_password_confirmation: Passwort-Bestätigung
+        old_password: Altes Passwort
+    errors:
+      format: "%{attribute} %{message}"
+      messages:
+        accepted: muss akzeptiert werden
+        blank: muss ausgefüllt werden
+        confirmation: stimmt nicht mit der Bestätigung überein
+        empty: muss ausgefüllt werden
+        equal_to: muss genau %{count} sein
+        even: muss gerade sein
+        exclusion: ist nicht verfügbar
+        greater_than: muss größer als %{count} sein
+        greater_than_or_equal_to: muss größer oder gleich %{count} sein
+        inclusion: ist kein gültiger Wert
+        invalid: ist nicht gültig
+        less_than: muss kleiner als %{count} sein
+        less_than_or_equal_to: muss kleiner oder gleich %{count} sein
+        not_a_number: ist keine Zahl
+        not_an_integer: muss ganzzahlig sein
+        odd: muss ungerade sein
+        record_invalid: 'Gültigkeitsprüfung ist fehlgeschlagen: %{errors}'
+        size_too_big: is too big (should be at most %{file_size})
+        size_too_small: is too small (should be at least %{file_size})
+        taken: ist bereits vergeben
+        too_long: ist zu lang (mehr als %{count} Zeichen)
+        too_short: ist zu kurz (weniger als %{count} Zeichen)
+        wrong_length: hat die falsche Länge (muss genau %{count} Zeichen haben)
+        wrong_size: is the wrong size (should be %{file_size})
+      template:
+        body: 'Bitte überprüfen Sie die folgenden Felder:'
+        header:
+          one: 'Konnte %{model} nicht speichern: ein Fehler.'
+          other: 'Konnte %{model} nicht speichern: %{count} Fehler.'
+    models:
+      adwords_campaign: Adwords Kampagne
+      custom_invoice: Andere Rechnungen
+      page: Anzeigengruppe
+      transaction: Transaktion
+      user: User
+  actual_budget: Budget
+  actual_budget_explanation: Das ausgegebene Budget des Users am Vortag.
+  ad: Anzeige
+  ad_block_doesnt_contain_valid_headline: enthält keine gültige Headline.
+  ad_block_doesnt_contain_valid_line1: enthält keine gültige Zeile 1.
+  ad_block_doesnt_contain_valid_line2: enthält keine gültige Zeile 2.
+  ad_count: Anzeigen
+  ad_ex_break_settings: Umbruch
+  ad_ex_char_settings: Satzzeichen
+  ad_ex_length_settings: Eintrag im source Code zu lang
+  ad_ex_line_settings: Zeilen Einstellungen
+  ad_ex_settings: Folgende Quelle wird verwendet
+  ad_generator_1: Anzeigen Generator v.1
+  ad_generator_2: Anzeigen Generator v.2
+  ad_generators: Anzeigen Generatoren
+  ad_settings: Anzeigen Einstellungen
+  ad_settings_box_title: Anzeigentexte von Website übernehmen
+  ad_strategy_adwords: Google Adwords
+  ad_strategy_branding: Eigenname/Branding
+  ad_strategy_competition: Konkurrenz
+  ad_strategy_expert: Top Level Strategy
+  ad_strategy_facebook: Facebook Ads
+  ad_strategy_retargeting: Retargeting
+  ad_strategy_shopping: Google Shopping
+  ad_strategy_youtube: Youtube
+  ad_text_block_really_remove: Textbaustein wirklich entfernen?
+  ad_texts: Anzeigentexte
+  add_ad_text: Anzeigenbaustein hinzufügen
+  add_addition_ad_text: Keywordabhängige Textbausteine hinzufügen
+  add_competitor: Konkurrenten hinzufügen
+  add_competitor_help_html: Darf nur die Top Level Domain sein. Also z.B. <code>amazon.de</code>
+  add_google_keyword: Google Keyword hinzufügen
+  add_keyword_to_following_pages: Keyword auf folgenden Seiten hinzufügen
+  add_keywords: "(+) Keyword(s) hinzufügen »"
+  add_keywords_placeholder: Keywords mit , getrennt eingeben. z.B. Foo, Bar
+  add_transaction: Transaktion hinzufügen
+  added_keyword: Hinzugefügtes Keyword
+  added_keyword_could_not_be_deleted: Keyword konnte nicht gelöscht werden. Es kann
+    bis zu 40 Sekunden dauern, bis Änderungen in der Liste erscheinen.
+  added_keyword_successfully_created: Keyword erfolgreich hinzugefügt. Es kann bis
+    zu 40 Sekunden dauern, bis Änderungen in der Liste erscheinen.
+  added_keyword_successfully_deleted: Keyword erfolgreich gelöscht. Es kann bis zu
+    40 Sekunden dauern, bis Änderungen in der Liste erscheinen.
+  added_keywords: Hinzugefügte Keywords
+  added_keywords_index_explanation: Hier sehen Sie eine Liste manuell hinzugefügter
+    Keywords des Roboters. Die Änderungen werden alle 24h mit unseren Werbepartnern
+    synchronisiert.
+  added_keywords_you_have_none: Sie haben noch keine hinzugefügten Keywords.
+  address: Adresse
+  adjust_estimation: Schätzung ändern »
+  admin_action_lock: User gesperrt
+  admin_action_optimized: Optimierungsfunktion gestartet
+  admin_action_restart_extraction: Extraktion neu gestartet
+  admin_action_reupload_ads: Anzeigen neu hochgeladen
+  admin_action_reupload_dirty: Geänderte Anzeigen hochgeladen. Seiten
+  admin_action_unlock: User entsperrt
+  ads: Verschiedene Anzeigen
+  ads_coupons_actions: Werbe- und Gutscheinaktionen
+  ads_coupons_actions_text: Spezielle Promotions können zudem direkte Umsatzsteigerungen
+    auslösen.
+  ads_preview: Anzeigenvorschau
+  ads_preview_description: 'Hier sehen sie die Anzeigen dieser Anzeigengruppe, die
+    mit den aktuellen Einstellungen zu Google hochgeladen werden:'
+  advertise_and_increase_turnover_html: " werben<br>und Umsatz steigern!"
+  advertise_fully_automatically_on_html: Vollautomatisiert und optimiert werben auf
+  advertise_now: 'Jetzt auch auf '
+  advertise_now_on: Jetzt auch auf
+  advertising_strategies: Werbeformen
+  advertising_strategy: Werbestrategie
+  adwords_active: AdWords aktiv
+  adwords_budget_short: AdW
+  adwords_campaign: AdWords Kampagne
+  adwords_id_short: AdW ID
+  adwords_inactive: AdWords inaktiv
+  adwords_name: AdWords Name
+  adwords_settings: AdWords Einstellungen
+  adwords_signup_finished: Adwords Anmeldung erfolgreich
+  adwords_user: AdWords User
+  ag: AG
+  aggressive_strategy: Aggressiv
+  algo_addition_exact_0: Like match
+  algo_addition_exact_1: Exact match
+  algo_addition_form_information: Geben Sie mindestens ein Keyword sowie jeweils mindestens
+    eine Headline, eine Zeile 1 und eine Zeile 2 ein
+  algo_addition_global_info_html: Diese keywordabhängigen Textbausteine wurden von
+    easymarketing erstellt. Sie können nur <b>alle</b> Textbausteine entfernen, einzelne
+    Bausteine können Sie nicht löschen
+  algo_addition_total_0: Mindestens eines
+  algo_addition_total_1: Alle matchen
+  algo_additions: Anzeigenerweiterungen
+  algo_additions_box_title: Keywordabhängige Textbausteine
+  algo_google_keywords_explanation: Diese Keywords werden dem User zugeordnet, wenn
+    diese Algo Addition matched.
+  algo_keyword_with_the_same_name_exists: There is an algo keyword with the same name.
+  algo_keywords_explanation: Dies sind die Keywords, auf deren Basis der Crawler die
+    Branchenzuordnung vornimmt und die Anzeigentexte wählt.
+  algos: Algos
+  all: Alle
+  all_keywords: Alle Keywords
+  all_optimizations: Alle Optimierungen
+  all_pages: Alle Anzeigengruppen
+  all_shopsystems: Alle Shopsysteme
+  all_shopsystems_teaser: easymarketing bietet für alle relevanten Shopsysteme Anbindungen
+    oder Extensions. Einfach Extension downloaden und installieren!
+  all_users: Alle User
+  american_express: American Express
+  amount: Betrag
+  analyse_shop: Shop analysieren!
+  analysis: Analyse
+  analysis_loading_message: Die vollständige Analyse ist sehr aufwändig, da viele
+    Schnittstellen abgefragt werden und sehr viele Berechnungen stattfinden. Dies
+    kann einige Augenblicke dauern... Bitte gedulden Sie sich.
+  analysis_loading_message_short: Die vollständige Analyse ist sehr aufwändig, da
+    viele Schnittstellen abgefragt werden. Dies kann einige Augenblicke dauern. Bitte
+    gedulden Sie sich.
+  and_increase_your_turnover_html: werben<br>und Umsatz zusätzlich steigern!
+  and_is_now: und ist jetzt %{status}.
+  api: API
+  api_endpoints: API Endpunkte
+  api_settings: API Einstellungen
+  api_setup_test_was_error: API Setup Test fehlgeschlagen. Genaue Fehler entnehmen
+    Sie bitte dem Fehlerbericht von unten.
+  api_setup_test_was_success: API Setup Test war erfolgreich.
+  api_successfully_verified: API erfolgreich verifiziert.
+  api_test_can_take_a_while: Der API Test kann einige Minuten dauern, da alle Endpunkte
+    Ihres Shops getestet werden.
+  apply: "Übernehmen"
+  apply_ad_type_line_one: Zeile 1
+  apply_ad_type_line_two: Zeile 2
+  apply_changes: "Änderungen Übernehmen"
+  apply_for_page: Anzeigentext nur für diese Anzeigengruppe nehmen
+  apply_for_user: Anzeigentext für alle Anzeigengruppen der Kampagne nehmen
+  are_you_sure: Sind Sie sicher?
+  are_you_sure_already_asked_times: Sicher? Der User wurde bereits %{asked_times}x
+    mal gefragt.
+  are_you_sure_destroy_page: Sind Sie sicher? Dies löscht Ihre Anzeigengruppe aus
+    AdWords.
+  are_you_sure_no_new_algo: Sicher? Der User wird mit dem alten Algorithmus gecrawled.
+  are_you_sure_recreate_pdf: Möchten Sie das PDF wirklich zurücksetzen und auf Basis
+    neuer Werte erstellen? Falls ein neues PDF Design vorliegt, wird das alte Design
+    mit dem neuen Design ersetzt.
+  ask_to_confirm: Freigabe erbitten
+  assignee_short: Asg
+  asterik_one_text: "*1) easymarketing besorgt Ihnen hoch-affine Besucher, die auf
+    Ihren Webshop geleitet werden und nach exakt solchen Produkten suchen, die Sie
+    anbieten. Je nach Qualität Ihres Webshops werden ca. 1,5% bis 3,2% dieser Besucher
+    zu echten, zahlenden Neukunden. Sie erhalten von uns eine exakte Schätzung wie
+    viele der Besucher zu echten Neukunden werden."
+  asterik_three_text: "*3) Google berechnet nicht jeden Tag exakt das Tagesbudget.
+    Es werden max. bis zu 20% mehr berechnet, die in den Folgetagen in dem Monat aber
+    wieder mit bis zu 20% weniger ausgelichen werden. Alles was über die 120% geht
+    wird von Google nicht berechnet."
+  asterik_two_text: "*2) Durch stetige Optimierungen und eine sehr hohe Anzahl verschiedener
+    Anzeigentexte und Keywords generiert easymarketing die maximale Anzahl an Neukunden
+    für Sie bei gegebenem Budget. Wir finden für Sie heraus, welche Keywords und Anzeigentexte
+    zu besonders vielen Kaufabschlüssen bei festem Tagesbudget führen und besonders
+    effektiv sind. Auf diese Weise generieren wir für Sie in der Regel bei festem,
+    vorgegebenem Tagesbudget 100% mehr Neukunden, als würde man die Kampagnen und
+    Anzeigentexte selbst manuell aufsetzen oder von einer Agentur aufsetzen lassen.
+    \     "
+  at_least_one_type_of_ads_to_use_needed: Sie können nicht beide Anzeigentypen deaktivieren.
+    Mindestens ein Typ (Roboter oder eigene Anzeigen) muss aktiviert sein.
+  author: Autor
+  automatic_ads_at: 'Vollautomatisiert und optimiert werben auf:'
+  availability: Verfügbarkeit
+  average_daily_budget: Durchschnittliches Tagesbudget
+  average_daily_budget_shopping: Durchschnittliches Tagesbudget Shopping
+  average_rank: "Ø Rang"
+  back_to_admin: Zurück zum Admin
+  bank_account: Bankverbindung
+  base_data_settings: Stammdaten Einstellungen
+  basic_data: Stammdaten
+  best_categories: Beste Kategorien
+  best_hour: 'Die effektivste Tageszeit:'
+  best_keyword: 'Das effektivste Keyword:'
+  best_keywords: Bedeutendste Suchbegriffe
+  best_performing_ads: Ihre erfolgreichsten Anzeigen
+  best_products: Beste Produkte
+  best_products_api_endpoint: Beste Produkte API Endpunkt
+  best_selling_products_response: Resultate meistverkaufte Produkte Endpunkt
+  best_weekday: 'Der effektivste Tag zu werben:'
+  better_conversion_rate: verbesserte Conversion-Rates
+  billing: Abrechnung
+  billing_report_email: |
+    Hi Admin,
+
+    Anbei der Abrechnungs Report aller User.
+  billing_report_generated: Abrechnungs Report generiert
+  billing_report_scheduled_will_be_mailed: Der Report wird generiert und dann per
+    Email zugestellt.
+  billing_settings: Abrechnungs Einstellungen
+  billing_settings_changed: |
+    Sehr geehrter Kunde,
+
+    Ihre Bankdaten wurden in Ihrem Account im Händler-Bereich geändert.
+
+    Wenn Sie diese Änderung nicht vorgenommen haben, oder der Meinung sind das eine unbefugte Person zugegriffen hat, gehen Sie bitte auf %{password_reset_link} um Ihr Kennwort unverzüglich zurückzusetzen.
+
+    In Falle eines Missbrauches setzten Sie sich bitte sofort mit uns in Verbindung.
+  billing_settings_invalid_please_check: Die Abrechnungs Einstellungen sind ungültig.
+    Bitte überprüfen Sie diese zunächst.
+  billing_vat_info_html: "<b>HINWEIS:</b> <F10>easymarketing stellt die Provisionen
+    bei Kunden mit Sitz in Deutschland zzgl. der gesetzl. MwSt in Rechnung. Google
+    weist die Rechnungen OHNE MwSt. aus, sofern der Kunde über eine UST-Id in Deutschland
+    verfügt."
+  blacklist_keywords: Keyword Blackliste
+  brand: Marke
+  budget_adwords: Budget (AdW)
+  budget_adwords_short: Budg
+  budget_invested: Budget investiert
+  budget_maximum_help: Dieser Betrag entspricht dem theoretischen Maximum, wenn Sie
+    keiner Budgetrestriktion unterlägen und ohne Rücksicht unendlich viel Geld ausgeben
+    könnten.
+  budget_maximum_html: Betrag, den man<br/>max. ausgeben <br/>kann
+  budget_maximum_long: Betrag, den man maximal ausgeben kann
+  budget_ratio_for_products: Budget Allokation für Shopping
+  budget_relevancy: Budget Relevanz
+  budget_shopping: Budget (Sh)
+  budget_short: Budg.
+  budget_yesterday: Budget gestern
+  bulk_edit_activate: Aktivieren
+  bulk_edit_all_products: Alle Produkte
+  bulk_edit_deactivate: Deaktivieren
+  bulk_edit_do_not_change: Nicht ändern
+  bulk_edit_specific_ids: Alle Produkte dieser Seite
+  business_model_known_from: 'Geschäftsmodell bekannt aus:'
+  buy: Keyword mit Zusatz "Kaufen" verwenden
+  buy_online: Keyword mit Zusatz "Online kaufen" verwenden
+  buy_online_suffix: online kaufen
+  buy_suffix: kaufen
+  calculation: Berechnung
+  campaign_activities: Werbezeiten
+  campaign_activities_not_saved: Es ist ein Fehler beim Speichern der Werbezeiten
+    aufgetreten.
+  campaign_activities_saved: Werbezeiten erfolgreich gespeichert.
+  campaign_chart: Kampagnen-Aufteilung
+  campaign_id: Kampagnen ID
+  campaign_name: Kampagnen Name
+  campaign_overview: Kampagnen Übersicht
+  campaign_pause_created: Pausierung angelegt.
+  campaign_pause_deleted: Pausierung gelöscht.
+  campaign_pause_not_deleted: Es ist ein Fehler aufgetreten. Bitte kontaktieren Sie
+    den Support.
+  campaign_pauses: Pausierungen
+  campaign_stats: Campaign Statistics
+  campaign_status_was: Kampagnen Status war %{status}
+  campaigns: Kampagnen
+  can_not_can_add_to_more_than_fifteen_pages: Kann nicht zu mehr als 15 Seiten hinzugefügt
+    werden.
+  can_not_use_custom_keyword_twice: Das Keyword kann nur einmal erstellt werden. Zusätzlich
+    kann das Keyword nur gelöscht, oder hinzugefügt werden. Entfernen Sie gegebenenfalls
+    zuerst das Keyword unter "Gelöschte keywords", oder unter "Hinzugefügte Keywords".
+  can_only_change_daily_budget_if_adwords_registration_complete: Das Tagesbudget kann
+    erst geändert werden, wenn die initiale AdWords Registrierung abgeschlossen ist.
+  cancel: Abbrechen
+  cant_convert_text_to_urls: Text kann nicht in URLs konvertiert werden.
+  categories: Kategorien
+  categories_api_endpoint: Kategorien API Endpunkt
+  categories_response: Resultate Kategorien Endpunkt
+  category_root_id: ID der Root-Kategorie
+  certified_security: Zertifizierte Qualität
+  change: "Ändern"
+  change_ad_group: Andere Anzeigengruppe wählen
+  change_adwords_account: AdWords Account ändern
+  change_budget: Budget ändern
+  change_budget_for: 'Budget ändern für: %{campaign}'
+  change_filter: Filter ändern
+  change_keywords_phrase: Es besteht bald nach Registrierung die Möglichkeit einzelne
+    Anzeigen und/oder Keywords zu entfernen.
+  change_password: Passwort ändern
+  change_state: Status ändern
+  change_website_url_warning: Diese Funktion löscht die Extraktion und alle gespeicherten
+    Keywords des Users. Sie sollte vorsichtig verwendet werden. Der AdWords Account
+    Name muss zusätzlich manuell angepasst werden.
+  changes_billing_settings: "Änderungen in den Abrechnungs Einstellungen"
+  cheap_products: Günstige Produkte
+  check_api_setup: API Setup testen
+  check_if_conversion_tracker_installed_message_html: Wenn Sie den Conversion-Tracker
+    bereits installiert haben, so Klicken Sie bitte den untigen Button. Auf den Performance
+    Seiten werden dann ab morgen tatsächliche Conversions angezeigt. Als Konsequenz
+    wird die oben genannte erwartete Conversion Rate nicht mehr verwendet.
+  check_relevance_with_zubehoer: Relevanzanpassung mit "Zubehör"
+  check_your_potential: Ermitteln Sie das Erfolgspotential Ihrer Website!
+  city: Stadt
+  click_volume: Klickvolumen
+  clicks: Klicks
+  clock: Uhr
+  close: Schliessen
+  comment: Kommentar
+  comments: Kommentare
+  company_done_optimizations_gteq: Anzahl Optimierungen
+  company_name: Unternehmensname
+  company_name_short: Firma
+  company_priority_eq: Priorität entspricht
+  company_type: Unternehmenstyp
+  company_type_short: jur. Person
+  comparison_of_entered_endpoints: Vergleich eingegebener Endpunkte
+  competition: Konkurrenz
+  competitor_added_fail: Konkurrent konnte nicht hinzugefügt werden.
+  competitor_added_success: Konkurrent erfolgreich hinzugefügt.
+  competitor_removed_fail: Konkurrent konnte nicht gelöscht werden.
+  competitor_removed_success: Konkurrent erfolgreich entfernt.
+  competitors: Konkurrenten
+  complaints_faq: Einwendungen gegen die Rechnung müssen spätestens 5 Werktage nach
+    Zugang der Rechnung schriftlich bei easymarketing AG angezeigt werden. Die Unterlassung
+    rechtzeitiger Einwendungen gilt als Genehmigung. Der Betrag wird Ihnen in den
+    nac̈hsten Tagen von Ihrem hinterlegten Bankkonto abgebucht. Sollte sich die Bankverbindung
+    geändert haben, bitten wir Sie, uns Ihre neue Bankverbindung mitzuteilen, indem
+    Sie auf der Website www.easymarketig.de im eingeloggten Zustand Ihre Einstellungen
+    unter „Mein Konto“ ändern.
+  complaints_faq_non_german: Einwendungen gegen die Rechnung müssen spätestens 5
+    Werktage nach Zugang der Rechnung schriftlich bei easymarketing AG angezeigt werden.
+    Die Unterlassung rechtzeitiger Einwendungen gilt als Genehmigung.
+  complaints_faq_refund: Einwendungen gegen die Rechnung müssen spätestens 5 Werktage
+    nach Zugang der Rechnung schriftlich bei easymarketing AG angezeigt werden. Die
+    Unterlassung rechtzeitiger Einwendungen gilt als Genehmigung. Der Betrag wird
+    Ihnen in den nächsten Tagen Ihrem hinterlegten Bankkonto gutgeschrieben. Sollte
+    sich die Bankverbindung geändert haben, bitten wir Sie, uns Ihre neue Bankverbindung
+    mitzuteilen, indem Sie auf der Website www.easymarketig.de im eingeloggten Zustand
+    Ihre Einstellungen unter „Mein Konto“ ändern.
+  condition: Status
+  configure_tracking_pixel_message_html: Weitere Details finden Sie hier %{url}.
+  confirm_account_manually: Account manuell bestätigen
+  confirm_account_manually_help: Falls der User noch nicht bestätigt wurde, kann diese
+    Funktion genutzt werden um den User erneut zu bestätigen.
+  confirm_enough_funds: Hiermit bestätige ich, dass ich bevollmächtigt bin, über das
+    Konto zu verfügen und dass das Konto über ausreichend Deckung verfügt. Ich werde
+    keine Rücklastschrift initiieren.
+  confirm_google_shopping_terms: Ich stimme zu, dass Google easymarketing bei meiner
+    URL-Verifikation als weiteren "Inhaber" einträgt, damit easymarketing meine Daten
+    für Google Shopping über die Schnittstelle pflegen und auslesen kann. Ich kann
+    diese Zustimmung natürlich jederzeit widerrufen. easymarketing wird meine Daten
+    unter keinen Umständen zu anderen Zwecken als meiner Kampagnen-Steuerung verwenden,
+    weitergeben oder bei sich speichern.
+  confirm_no_own_campaigns: Ja, ich habe für die angemeldete Domain keine Kampagne
+    bei Google AKTIV laufen bzw. etwaige andere Kampagnen pausiert und kann somit
+    easymarketing AG beauftragen, für mich bei Google Werbung zu schalten.
+  contact: Kontakt
+  contact_inquiry_was_successfully_sent: Vielen Dank! Ihre Nachricht wurde erfolgreich
+    an uns gesendet.
+  contacted: Kontaktiert
+  content: Inhalt
+  continue_advertising: Weiterhin bewerben
+  continue_to_login: Weiter zum Login
+  controls: Aktionen
+  conversion_settings: Conversion Einstellungen
+  conversion_tracker_created: Ihr Conversion Tracker
+  conversions: Käufe
+  conversions_geo_data_chart: Geographische Performance
+  conversions_too_low: zu geringe Conversion
+  conversions_tooltip_explanation_html: Die Anzahl der Käufe, die easymarketing Ihnen
+    vermittelt hat. Diese Zahl basiert auf dem Conversion Tracker. Haben Sie den Conversion
+    Tracker nicht installiert, werden die Werte von easymarketing anhand der AdWords-Performance
+    geschätzt.
+  convert: Konvertieren
+  convert_kto_blz: Kto./BLZ konvertieren
+  corrected_net: Korrigiertes Netto
+  cost: Kosten
+  cost_per_click: Kosten pro Klick
+  cost_per_conversion: Kosten / Bestellung
+  cost_per_order: Kosten pro Bestellung
+  costs: Kosten
+  costs_after_coupon: Kosten nach Abzug von Gutschein
+  costs_can_vary_explanation_html: Google kann nicht immer das exakte Tagesbudget
+    ausgeben, deshalb können die Ausgaben bis zu 20% über oder unter dem gewählten
+    Wert liegen, je nach anfallendem Such-Traffic. Am Ende des Monats wird jedoch
+    insgesamt das durchschnittliche Tagesbudget bei den Gesamtkosten nicht überschritten.
+    Die monatliche Maximalgrenze ist demnach stets das mit 30,4 multiplizierte einzelne
+    Tagesbudget.
+  costs_chart: Kosten
+  costs_for_margin: Kosten
+  costs_too_high: unverhältnismäßig viele Klicks
+  could_not_activate_user: User konnte nicht aktiviert werden.
+  could_not_change_campaign_state: Status konnte nicht geändert werden.
+  could_not_confirm_account: Account konnte nicht bestätigt werden.
+  could_not_confirm_your_email: Wir konnten die Email leider nicht bestätigen. Bitte
+    nehmen Sie Kontakt mit uns auf.
+  could_not_continue_advertising_keyword: Konnte Keyword nicht weiterhin bewerben
+  could_not_convert_iban: IBAN/BIC konnten nicht konvertiert werden.
+  could_not_delete: Konnte nicht erfolgreich löschen.
+  could_not_delete_custom_keywords: Es ist ein Fehler beim Löschen der Keywords aufgetreten.
+  could_not_delete_invoice: Rechnung konnte nicht gelöscht werden.
+  could_not_email_invoice: Konnte Rechnung nicht verschicken.
+  could_not_enable: Aktivierung fehlgeschlagen
+  could_not_generate_html_file: Konnte HTML Datei nicht generieren
+  could_not_lock_company: User konnte nicht gesperrt werden.
+  could_not_parse_user_website_url: Konnte User Website URL nicht parsen.
+  could_not_save_with_errors: 'Speichern nicht erfolgreich. Fehler: %{errors}'
+  could_not_set_called: Konnte nicht als angerufen markieren.
+  could_not_toggle: Einstellungen konnten nicht geändert werden.
+  could_not_trash_user: Konnte User nicht löschen.
+  could_not_unlock_company: User konnte nicht freigeschaltet werden.
+  could_not_update_billing_settings: Abrechnungs Einstellungen konnten nicht gespeichert
+    werden.
+  country: Land
+  country_de_: Brandenburg
+  country_de_be: Berlin
+  country_de_bw: Baden-Württemberg
+  country_de_by: Bayern
+  country_de_hb: Bremen
+  country_de_he: Hessen
+  country_de_hh: Hamburg
+  country_de_mv: Mecklenburg-Vorpommern
+  country_de_ni: Niedersachsen
+  country_de_nw: Nordrhein-Westfalen
+  country_de_rp: Rheinland-Pfalz
+  country_de_sh: Schleswig-Holstein
+  country_de_sl: Saarland
+  country_de_sn: Sachsen
+  country_de_st: Sachsen-Anhalt
+  country_de_th: Thüringen
+  coupon_value: Gutschrift Gutschein
+  cpc: CPC
+  cpc_too_high: zu hoher CPC
+  cpo: CPO
+  cpo_chart: CPO (Kosten je Bestellung)
+  crawl: Crawlen
+  crawled_keywords: Keywords
+  crawled_pages: Gecrawlte Seiten
+  crawling_check: Seite testweise crawlen
+  create: Erstellen
+  create_campaign:
+    efforts:
+      create_your_ads: Erstellen der Anzeigen
+      create_your_google_account: Anlegen Ihres Google-Accounts
+      free_credits_by_google: Guthaben bei Google:&nbsp;<span>100 €</span>
+      setup_your_campaign: Aufsetzen Ihrer Kampagnen
+    headline: Kampagnen Erstellung
+    teaser: Unser System setzt Ihre Kampagnen auf, setzt die CPC's und erstellt die
+      Anzeigen.
+  create_campaign_pause: Pausierung anlegen
+  created_at: Erstellungsdatum
+  created_at_short: Datum
+  created_by_robot: Roboter
+  created_by_user: User
+  credit_card_cvv: Prüfnummer
+  credit_card_info: Ihre Kreditkartendaten werden umgehend bei Google bzw. Facebook
+    hinterlegt und NICHT bei easymarketing in irgendeiner Form gespeichert!
+  credit_card_number: Kreditkartennummer
+  credit_card_owner: Name des Karteninhabers
+  ctr: CTR
+  ctr_too_low: zu geringe CTR
+  custom_conversion_placeholder: z.B. 12,5
+  custom_invoices: Andere Rechnungen
+  custom_keyword_type_0: Entfernt das Keyword
+  custom_keyword_type_1: Fügt das Keyword hinzu
+  custom_keywords: Benutzerdefinierte Keywords
+  custom_keywords_short: Custom Keywords
+  custom_kw_short: Cust KW
+  customer_explanation_html: foo, bar
+  customer_number: Kundennummer
+  customer_removed_elv_mandate: Lastschrift Mandat wurde entzogen
+  daily_budget: Tagesbudget
+  daily_budget_in_euro: Tagesbudget in €
+  daily_report: Tagesreport
+  daily_reports: Report für die einzelnen Tagen
+  dashboard: Dashboard
+  data_all_time: Hier werden alle verfügbaren Daten berücksichtigt
+  data_based_on_conversion_tracker: Das Conversion Tracking basiert auf dem installierten
+    Conversion Tracker. Hierbei gilt es zu beachten, dass i.d. Regel viele Conversions
+    gar nicht gezählt werden. Sie werden als Third-Party-Cookies von vielen Ad-Blockern
+    im Browser einfach nicht übertragen. Ein genaueres Tracking können Sie mit Hilfe
+    eines Google Analytics Kontos vollziehen.
+  data_from_last_x_days: Hier werden die letzten %{days} Tage berücksichtigt
+  data_show_warning: Es können nur Daten älter 3 Tage angezeigt werden.
+  date:
+    abbr_day_names:
+    - So
+    - Mo
+    - Di
+    - Mi
+    - Do
+    - Fr
+    - Sa
+    abbr_month_names:
+    -
+    - Jan
+    - Feb
+    - Mär
+    - Apr
+    - Mai
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Okt
+    - Nov
+    - Dez
+    day_names:
+    - Sonntag
+    - Montag
+    - Dienstag
+    - Mittwoch
+    - Donnerstag
+    - Freitag
+    - Samstag
+    formats:
+      default: "%d.%m.%Y"
+      long: "%e. %B %Y"
+      month_and_year: "%B %Y"
+      short: "%d.%m.%Y"
+    month_names:
+    -
+    - Januar
+    - Februar
+    - März
+    - April
+    - Mai
+    - Juni
+    - Juli
+    - August
+    - September
+    - Oktober
+    - November
+    - Dezember
+    order:
+    - :day
+    - :month
+    - :year
+  date_range: Zeitraum
+  daterange_label: 'Zeitraum für neue Pausierung:'
+  daterange_placeholder: Klicken und Zeitspanne wählen
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: etwa eine Stunde
+        other: etwa %{count} Stunden
+      about_x_months:
+        one: etwa ein Monat
+        other: etwa %{count} Monate
+      about_x_years:
+        one: etwa ein Jahr
+        other: etwa %{count} Jahre
+      almost_x_years:
+        one: fast ein Jahr
+        other: fast %{count} Jahre
+      half_a_minute: eine halbe Minute
+      less_than_x_minutes:
+        one: weniger als eine Minute
+        other: weniger als %{count} Minuten
+      less_than_x_seconds:
+        one: weniger als eine Sekunde
+        other: weniger als %{count} Sekunden
+      over_x_years:
+        one: mehr als ein Jahr
+        other: mehr als %{count} Jahre
+      x_days:
+        one: ein Tag
+        other: "%{count} Tage"
+      x_minutes:
+        one: eine Minute
+        other: "%{count} Minuten"
+      x_months:
+        one: ein Monat
+        other: "%{count} Monate"
+      x_seconds:
+        one: eine Sekunde
+        other: "%{count} Sekunden"
+    prompts:
+      day: Tag
+      hour: Stunden
+      minute: Minuten
+      month: Monat
+      second: Sekunden
+      year: Jahr
+  day: Tag
+  deactivate_new_algo: Neuen Algo deaktivieren
+  default_invoice_top_text: |-
+    Sehr geehrte Damen und Herren,
+    hiermit erhalten Sie die Rechnung für unsere Leistungen. Wir hoffen,
+    dass Sie mit unserer Leistung zufrieden waren und bedanken uns für Ihr Vertrauen.
+  delete: Löschen
+  delete_algo_addition_page: Nur für diese Anzeigengruppe löschen
+  delete_algo_addition_user: Für alle Anzeigengruppen löschen
+  delete_everywhere: "Überall löschen"
+  delete_global_ad_text: Textbaustein aus allen Anzeigengruppen enternen
+  delete_globally: Global löschen
+  delete_here: Hier löschen
+  delete_keywords: Keywords löschen
+  delete_page_ad_text: Textbaustein löschen
+  delete_page_ad_text_blacklist: Textbaustein nur aus aktueller Anzeigengruppe entfernen
+  delete_production_data_feed: Live Datenfeed löschen
+  delete_selected_keywords: Ausgewählte Keywords löschen
+  delete_test_data_feed: Test Datenfeed löschen
+  deleted_shopping_feed: Shopping erfolgreich gelöscht.
+  deleted_shopping_feed_error: Shopping Feed konnte nicht gelöscht werden.
+  description: Beschreibung
+  description_ad_texts_user: Diese Einstellungen gelten für alle Anzeigengruppen,
+    für die noch nie die spezifischen Einstellungen aufgerufen wurden.
+  destroy: Löschen
+  details_short: Det.
+  difference: Differenz
+  difference_short: Diff.
+  different_ad_texts: 'So viele Anzeigen-Texte wurden erstellt:'
+  direct_margin_percentage: Direkte Marge
+  dirty_pages: Dirty Pages
+  dirty_pages_short_html: Dirty<br>Pgs
+  discarded: Verworfene
+  done_optimizations_short: Opt.
+  download_month_report: Monatsreport als PDF herunterladen
+  download_pdf: PDF Download
+  earn_new_customers: Neukunden gewinnen!
+  easymarketing_address: easymarketing AG * Adelgundenstr. 5b * 80538 München
+  easymarketing_billing: easymarketing Bezahlung
+  easymarketing_invoice: easymarketing Rechnung
+  easymarketing_invoice_online: Neue easymarketing Rechnung
+  easymarketing_margin: EM Marge
+  easymarketing_password_changed: Ihr easymarketing Passwort wurde geändert
+  easymarketing_rank: Relevanz-Punkte
+  easymarketing_rank_explanation: Die "Relevanz" gibt an, wie wichtig das angezeigte
+    Keyword auf der jeweiligen (Unter-)Seite bzw. Ziel-URL ist. Wenn Sie auf den Wert
+    klicken, sehen Sie auf welcher (Unter-)Site dieses Keyword die höchste Relevanz
+    hat.
+  easymarketing_rank_html: Relevanz-<br/>Punkte
+  easymarketing_transfer_use_elv: Ich bevollmächtige easymarketing AG die Provisionen
+    vom angegebenen Konto einzuziehen. Die Einzugsermächtigung kann jederzeit schriftlich
+    widerrufen werden.
+  easymarketing_transfer_use_wire: Ich möchte die Provisionen für easymarketing monatlich
+    per Rechnung bezahlen.
+  ebay_ads: eBay Anzeigen
+  ebay_ads_not_ready_yet: Die eBay Anzeigen werden in Kürze verfügbar sein.
+  economical_strategy: "Ökonomisch"
+  edit: Bearbeiten
+  edit_adwords_campaign: Kampagne bearbeiten
+  edit_campaigns: Kampagnen bearbeiten
+  edit_invoice: Rechnung bearbeiten
+  edit_short: Edit
+  edit_user: User bearbeiten
+  effort: Leistung
+  einzelunternehmer: Einzelunternehmer
+  ek: eK
+  elv_easymarketing_allowed: Ihr easymarketing Mandat ist bei uns am %{date} eingegangen
+    - vielen Dank!
+  elv_google_allowed: Ihr Google Mandat ist bei uns am %{date} eingegangen - vielen
+    Dank!
+  elv_info_html: Bitte unterschreiben Sie uns folgendes <a href="%{url}" target="_blank">SEPA-Mandat</a>
+    und schicken es uns per Mail an info@easymarketing.de oder per Fax an 089-20333264
+  email: Email
+  email_does_not_match_account: Die Email gehört zu keinem Account.
+  email_or_password_wrong: Email oder Passwort falsch.
+  email_user: User mailen
+  enable: Bestätigen
+  enable_account: Account freischalten
+  enabled: Aktiviert
+  enter_data_and_analyse_potential_of_website: Daten eingeben und unverbindlich das
+    Erfolgspotential Ihrer Website analysieren
+  enter_textblock_here: 'Geben Sie hier den neuen Textbaustein ein:'
+  entities_no_results: 'Entitites: Keine Resultate'
+  error_creating_user_algo_addition: Es ist ein Fehler aufgetreten. Keywordabhängige
+    Textbausteine nicht gespeichert.
+  error_deleting_algo_addition: Es ist ein Fehler aufgetreten. Möglicherweise wurde
+    nicht genug Daten eingegeben.
+  error_updating_adsetting: Es ist ein Fehler aufgetreteten. Anzeigeneinstellungen
+    nicht gespeichert!
+  error_updating_algo_addition: Es ist ein Fehler aufgetreten. Keywordabhängige Textbausteine
+    nicht gespeicht.
+  error_updating_settings: Es ist ein Fehler aufgetreten.
+  error_updating_templates: Es ist ein Fehler aufgetreteten. Templates nicht gespeichert
+  error_while_asking_to_confirm: Fehler beim Erbitten der Freigabe. Es wurde keine
+    E-Mail versendet!
+  error_while_creating_example_ad_text_blokcs: Es ist ein Fehler aufgetreten. Es wurde
+    keine Beispiel-Anzeigenbausteine erstellt.
+  errors: Fehler
+  errors_by_endpoint: Fehler je Endpunkt
+  estimated_performance: Ihr Potential
+  ev: e.V.
+  event_active_changed: Aktiv geändert
+  event_budget_changed: Budget geändert
+  exact_match: Text matching
+  example_ad_creation: Konkretes Beispiel - Anzeigenerstellung
+  example_value: Beispielwert
+  expected_conversion: Erwartete Conversion
+  explanation: Erklärung(?)
+  export_csv: Exportieren als CSV-Datei
+  export_facebook: Facebook Shop
+  export_google_shopping: Google Shopping
+  export_invoices: Rechnungen exportieren
+  export_retargeting: Retargeting
+  extracted_from: Extrahiert über
+  extracted_pages: Extrahierte Seiten
+  extracted_pages_short: Seiten
+  extracted_products: Produkte
+  extraction_already_exists: Extraktion existiert bereits.
+  extraction_date: Extraktions Datum
+  extraction_state: Extraktions Status
+  extraction_status_explanation: 'Failed: Extraction failed. Check if a Sitemap can
+    be found.<br />Processing: Extraction still running.<br />Processed: All pages
+    were crawled, extraction is successful.'
+  extractions: Extraktionen
+  extractions_overview: User Registrierungen
+  extractions_overview_explanation: Alle User Registrierungen die noch in Bearbeitung
+    oder gescheitert sind.
+  extractions_page: Extractions
+  facebook: Facebook
+  facebook_ads: Facebook Anzeigen
+  facebook_ads_campaign_label: Facebook Werbung
+  facebook_ads_campaign_requested: Facebook Werbung gewünscht
+  facebook_ads_not_ready_yet: Die Facebook Anzeigen werden in Kürze aktivierbar sein.
+  facebook_headline: " Facebook "
+  facebook_page_creation: Facebook-Seite erstellen und pflegen
+  facebook_page_creation_text: Wir setzen Facebook-Seiten vollständig auf und pflegen
+    diese oder bereits bestehende mithilfe des Roboters stetig, sodass ihre Seite
+    immer aktuell und attraktiv ist.
+  facebook_shop: Facebook Shop
+  facebook_shop_campaign_requested: Facebook Shop gewünscht
+  facebook_shop_not_ready_yet: Der Facebook Shop wird in Kürze verfügbar sein.
+  facebook_shop_setup_api_verified: API einrichten
+  facebook_shop_setup_facebook_active: Statistiken erfassen
+  facebook_shop_setup_products_extracted: Daten auslesen
+  facebook_shop_setup_registered_facebook: Shop einrichten
+  facebook_shop_setup_verified_by_user: Produkte überprüfen
+  fans_visitors_and: Fans, Besucher und
+  faq: FAQ
+  faq_html: |
+    <h4>Ist die Inanspruchnahme der easymarketing Leistung an eine Vertragslaufzeit gebunden?</h4> <p>Nein, der Kunde bindet sich an keine Vertragslaufzeit, er kann die Kampagne jederzeit stoppen. Er hat zudem auch keine monatlichen Grundgebühren oder Set-up-Kosten.</p>
+    <h4>Wie stellen sich die Werte des Tachos zusammen? Auf welchen Statistiken berufen sich die Zahlen?</h4> <p>Hinter den Tacho-Werten und Ziffern sind Formeln  wahrheitsgemäßer Zahlen aus  Recherchen, Statistiken und Ergebnissen aus dem Google Adwords Keywordtool hinterlegt.</p>
+    <h4>Was passiert, wenn ich schon ein Konto bei Google Adwords habe?</h4> <p>Sie müssen lediglich die Kampagnen in Ihrem bisherigen Konto pausieren. Sie erhalten übrigens trotzdem die Gutschrift in Höhe von 100 €, auch wenn Sie bereits eine Gutschrift/Bonus von Google erhalten haben. Etwaige Retargeting-Kampagnen u.ä. können Sie mit Ihrem bisherigen Konto einfach weiterlaufen lassen.</p>
+    <h4>Wie ist die Geld-Zurück-Garantie zu verstehen?</h4> <p>Nach Registrierung werden Ihnen 100€ zzgl. Mwst. abgebucht, so dass Sie ein Startguthaben von 100€ haben. Wenn Sie nach Verbrauch dessen nicht zufrieden sind, dann können Sie 75€ zurückfordern und die Kampagnen stoppen.</p>
+    <h4>Kann ich mein Tagesbudget ändern?</h4> <p>Ja, in Ihrem Konto mit Ihrem Login unter easymarketing.de.</p>
+    <h4>Wie erhalte ich die sich verändernden Statistiken meiner Kampagnen?</h4> <p>Diese werden in Ihrem Konto unter easymarketing.de angezeigt.</p>
+    <h4>Wie läuft die Abrechnung?</h4> <p>Wir buchen bei Ihnen Ihr gewähltes Tagesbudget zzgl. Mwst und 15% Marge täglich ab. Am Ende des Monats erhalten Sie eine Rechnung über alle angefallenen Kosten, die als pdf in Ihrem Konto unter easymarketing.de hochgeladen und Ihnen auch zusätzlich per E-Mail zugeschickt wird.</p>
+    <h4>Wie kann ich Keywords und Anzeigen eliminieren?</h4> <p>In Ihrem Konto unter easymarketing.de</p>
+    <h4>Wie kann ich sicher sein, dass die richtigen Keywords geschaltet werden?</h4> <p>Unser Roboter besitzt die entsprechende Intelligenz, dass er auf die für Sie besten Keywords Werbung schaltet, so dass Sie mit Ihrem Budget und Ihrer Konkurrenz entsprechend optimal beworben werden.</p>
+    <h4>Wie viel Zeit und Geld spare ich mir?</h4> <p>Sie sparen sich Initial ca. 3000 Std. durch die Automatisierung von easymarketing. Wir schalten für eine URL bis zu 15.000 Anzeigen.</p>
+    <h4>Was bedeutet ökonomisch und aggressiv?</h4> <p><code>ökonomisch</code> bedeutet, dass wir optimal geringe Klickpreise auf Google bieten und teurere Keywords nicht beworben werden. So beschaffen wir Ihnen Neukunden am günstigsten.</p> <p><code>aggressiv</code> bedeutet, dass alle relevanten Keywords beworben und höhere Klickpreise geboten werden. Sie verschaffen wir Ihnen maximal viele Neukunden!</p> <h4>Wofür brauche ich eine Sitemap?</h4> <div class="faq-content">
+      <p>Sie brauchen eine Sitemap, um easymarketing nutzen zu können. Unser Roboter ließst Links Ihrer Sitemap aus, um zu gucken für welche Seiten Werbung geschaltet werden sollen. Haben Sie noch keine Sitemap, sollten Sie diese erstellen. Mit der Sitemap wird Ihre Seite auch automatisch besser in Suchmaschinen indexiert.</p>
+      <p>Überprüfen Sie bitte folgendes:</p>
+      <ul class="faq-list">
+        <li>Öffnen sie den Link: <code>http://meinedomain.com/sitemap.xml</code></li>
+        <li>Öffnet sich der Link? Wenn ja, haben sie wahrscheinlich eine Sitemap. Das Dokument muss in einem XML Format sein. Es sollte also keine normale Internetseite zurückgegeben werden.</li>
+        <li>Falls Sie einen anderen Link verwenden zu Ihrer Sitemap, tragen Sie diesen in Ihrer robots.txt Datei ein.</li>
+        <li>Die Robots.txt Datei ist unter <code>http://meinedomain.com/robots.txt</code> zu finden.</li>
+        <li>FÜgen Sie eine neue Zeile in die Datei: <code>Sitemap: http://meinedomain.com/meine_andere_sitemap.xml</code></li>
+        <li>Überprüfen Sie, dass sie den Link in Ihrem Browser öffnen können.</li>
+        <li>Suchmaschinen und easymarketing können jetzt Ihre Sitemap benutzen.</li>
+      </ul>
+    </div>
+    <h4>Welches Format braucht meine Sitemap?</h4> <div class="faq-content">
+      <p>Die Sitemap darf nur Links Ihrer Domain enthalten. Einige Shopsysteme fügen URLs anderer Domains in die Sitemap ein. Stellen Sie sicher, dass dies nicht der Fall ist. Öffnen Sie dazu Ihre Sitemap und gehen sie alle unter Sitemaps durch. Falls Ihre domain foo.com heißt, dürfen keine Links einer anderen Domain enthalten sein wie z.b. bar.com</p>
+    <pre>        <code>
+        // Richtig
+        Meine domain: foo.com
+        Link in Sitemap: foo.com/seite1.html
+
+        // Falsch
+        Meine domain: foo.com
+        Link in Sitemap: bar.com/seite1.html
+      </code>
+    </pre> </div>
+    <h4>Wofür brauche ich das Conversion bzw. Tracking Pixel?</h4> <div class="faq-content">
+      <p>Über das Conversion Pixel kann unserer Roboter Ihre Werbung weiter optimieren. Keywords die bei Ihnen viele Verkäufe erzeugen, werden dann bevorzugt beworben. Dies bedeutet noch bessere Werbeergebnisse für Sie.</p>
+    </div>
+    <h4>Wie baue ich das Conversion Pixel ein?</h4> <div class="faq-content">
+      <p>Fügen Sie den von uns zugeschickten Code auf Ihrer Danke Seite ein. Also die Seite auf die der Kunde geleitet wird, sobald ein Verkauf stattgefunden hat.</p>
+      <p>Fügen Sie den Code am Besten vor dem schliessenden body tag ein.</p>
+      <pre>          <code>
+          conversion tracker code...
+          &lt;/body&gt;
+        </code>
+      </pre>
+    </div>
+    <h4>Wie optimiere ich meine Seite für den easymarketing Roboter?</h4> <div class="faq-content">
+      <p>Der easymarketing Roboter liest automatisch Keywords über Ihre Seite aus. Diese Keywords werden aus den sogenannten <code>meta keywords</code> extrahiert. Diese sollten in dem richtigen format sein für optimale Resultate</p>
+      <pre>          <code>
+          // Gut
+          &lt;meta name="keywords" content="easymarketing,marketing,online-advertising"&gt;
+          // Schlecht
+          &lt;meta name="keywords" content="easymarketing marketing online-advertising"&gt;
+          // Schlecht
+          &lt;meta name="keywords" content="easymarketing
+          marketing
+          online
+          advertising"&gt;
+        </code>
+      </pre>
+      <p>Die keywords sollten weiter auch genaustens die entsprechende Seite beschreiben. Es empfiehlt sich den Namen des Produktes anzugeben, bzw. das Produkt in allen Kombinationen mit allen Attributen getrennt durch Komma. Der Roboter liest diese Begriffe aus und kann so bessere Keywords in AdWords verwenden. Beispiel:</p>
+      <pre>          <code>
+          // Kategorie des Produktes, Titel des Produktes. Dazu automatisiert die Attribute ergänzen.
+          // Kategoriename: a4 kotflügel
+          // Produktname: audi a4 kotflügel
+          // Attribute: schwarz, weiß, blau
+          // Darauß würde sich ergeben:
+          &lt;meta name="keywords" content="a4 kotflügel, audi a4 2006 kotflügel, audi a4 2006 kotflügel schwarz, audi a4 2006 kotflügel weiß, auto a4 2006 kotflügel blau" /&gt;
+        </code>
+      </pre>
+    </div>
+    <h4>Wie kann ich easymarketing Conversions in meinem Shop tracken?</h4> <div class="faq-content">
+      <p>Richten Sie dazu Analytics in Ihrem Onlineshop ein. Danach müssen Sie ein neues Ziel einrichten.</p>
+      <ol>
+        <li>Klicken Sie auf <code>Admin</code> in Ihrem Analytics Konto.</li>
+        <li>Klicken Sie nun auf <code>Ziele</code></li>
+        <li>Richten Sie ein neues Ziel ein mit einer Ziel URL. Der Link sollte Ihrer Danke-Seite entsprechen. Also die Seite, auf die User geleitet werden, nachdem der Einkauf erfolgreich abgeschlossen wurde.</li>
+        <li>Jetzt tracken Sie Einkäufe in Ihrem Shop.</li>
+        <li>Sie sollten in den folgenden Tagen überprüfen, ob tatsächlich Conversions getracked werden.</li>
+      </ol>
+      <p>Als nächstes müssen Sie die Analytics Daten Filtern nach einem GET-Parameter. easymarketing übergibt an alle URLs den Parameter <code>?ref=easymarketing</code></p>
+      <ol>
+        <li>Erstellen Sie dazu einen neuen Report in Analytics.</li>
+        <li>Wählen Sie als Metric Abschlüsse für Ihr Ziel aus.</li>
+        <li>Als Dimension wählen Sie Quelle.</li>
+        <li>Erstellen Sie einen Filter mit der Ziel URL, die <code>ref=easymarketing</code> enthält.</li>
+        <li>Der Report sollte nun anzeigen, wieviele Conversions Sie über easymarketing generiert haben.</li>
+      </ol>
+    </div>
+    <h4>Wie aktiviere ich Google Shopping?</h4>
+      <div class="faq-content">
+      <p>Aktivieren Sie in Ihrem Account die Option Google Shopping. Danach geben Sie bitte Ihre API-Einstellungen ein. Über die API-Einstellungen extrahieren wir Produkte aus Ihrem System.</p>
+      <p>Unter dem Punkt <code>API Einstellungen</code> können Sie nun Ihr
+        Shopsytem Plugin integrieren. Genauere Anweisungen entnehmen Sie Bitte Ihrem
+        Modul.</p>
+      <p>Wählen Sie danach Ihre gewünschte <code>Budget Allokation für
+        Shopping</code> aus. <code>X%</code> Ihres Tagesbudgets wird dann auf
+        Google Shopping verteilt.</p>
+    </div>
+  fast_delivery: Schnelle Lieferung
+  feature_soon_available: Funktion bald verfügbar.
+  fees_per_visitor: Preis je Besucher
+  final_partner_margin_direct: Direkt Anteilig
+  final_partner_margin_indirect: Indirekt Anteilig
+  final_partner_margin_total: Insgesamt
+  finish_shopping_setup: Shopping Anmeldung abschliessen
+  finished_shopping_setups: Zu bearbeitende Anmeldungen
+  first_name: Vorname
+  forgot_password: Passwort vergessen?
+  form_gender_female: Frau
+  form_gender_male: Herr
+  form_is_invalid: Formular ist ungültig
+  format: Format
+  found: Gefunden
+  frequency_html: Häufig&shy;keit
+  frequent_crawler_errors: Häufige Crawler Fehler
+  frequent_crawler_errors_faq_html: "<li>Unter Quell-Einstellungen wird nicht die
+    Option `Komma als Trennzeichen` verwenden gewählt. Dadurch werden wenig Keywords
+    gefunden. Die Keywords stehen in den Meta-Tags der Seite z.B.. Dort sind diese
+    in der Regel mit Kommata getrennt.</li><li>Der Sitemap Scraper ist deaktiviert,
+    obwohl es eine Sitemap gibt. Die Sitemap ist eine Liste an Unter-Seiten. Der Shop
+    veröffentlicht diese Sitemap um Besser von Google indiziert zu werden. Unser Roboter
+    crawled diese Sitemap auch. Ist die Option deaktiviert, obwohl es eine Sitemap
+    gibt, werden häufig wenig Seiten gefunden.</li><li>Polipus ist unser Crawler.
+    Der sollte nur verwendet werden, wenn es keine Sitemap gibt. Die Qualität des
+    Sitemap Scrapers ist höher als die von Polipus.</li><li>Es wurde registriert mit
+    www., aber alle links auf der website verwenden ohne www. -> URL muss geaendert
+    werden. Dazu kann man einfach auf der Seite etwas klicken, häufig sieht man dann,
+    dass sich die URL ändert zu www, oder ohne www. Muss man im Einzelfall gucken.</li><li>Die
+    seite ist kein Shop, sondern nur Portfolio oder Landing page. Der Crawler kann
+    da nichts rausholen. Das muss man je Seite entscheiden. -> Seite muss manuell
+    eingerichtet werden.</li><li>Seite sperrt uns mit timeout oder anderem. Einfach
+    einen Crawl-Delay einstellen.</li>"
+  from: 'Von:'
+  full_performance: Vollständige Performance-Ansicht
+  gbr: GbR
+  gender_and_affix: Anrede und Zusatz
+  generate_ads: Anzeigen generieren
+  generated_ads: Vom Roboter generierte Anzeigen
+  generated_invoices: Generierte Rechnungen
+  generic_errors: Generische Fehler
+  generic_errors_require_fixing_before_endpoints_will_be_tested: Die generischen Fehler
+    müssen zunächst behoben werden, bevor unser Crawler versucht einzelne Endpunkte
+    zu kontaktieren. In der Regel sind benötigte Felder einfach nicht ausgefüllt.
+  geo_data_chart_help_text: Je "dunkler" das Bundesland ist, desto attraktiver, da
+    die Kosten je Neukunde geringer sind. Note 1 = am günstigsten. Beachten Sie, dass
+    nicht alle Käufe den Ländern zugeordnet werden können.
+  get_keyword_ideas: Keyword Vorschläge einholen
+  get_started: Jetzt starten
+  global_campaign_settings: Globale Kampagnen-Einstellungen
+  gmbh: GmbH
+  gmbhcokg: GmbH & CoKG
+  go: go
+  go_to_analysis: Weiter zur Analyse
+  google_adwords: Google Adwords
+  google_adwords_performance: Google AdWords Performance
+  google_and_facebook_campaigns: Kampagnen auf Google und Facebook
+  google_billing: Google Bezahlung
+  google_headline: " Google "
+  google_invoice_online: Google Rechnung hinterlegt
+  google_keywords: Google Keywords
+  google_shop: Google Shopping
+  google_shopping_enabled: Google Shopping aktivieren
+  google_shopping_explanation_hint: Aktivieren Sie diese Option um Google Shopping
+    zu nutzen. Nach dem Speichern können Sie weitere Einstellungen vornehmen.
+  google_shopping_performance: Google Shopping Performance
+  google_transfer_settings: Google Bezahlweise
+  google_transfer_use_credit_card: Ich möchte meine Kreditkarte für Abbuchungen bei
+    Google hinterlegen.
+  google_transfer_use_google_elv: Ich bevollmächtige Google die verbrauchten Werbeausgaben
+    auf Google (AdWords, Shopping, Remarketing) vom angegebenen Konto einzuziehen.
+    Die Einzugsermächtigung kann jederzeit schriftlich widerrufen werden.
+  got_a_question: Haben Sie eine Frage?
+  greetings_easymarketing_team_html: Mit freundlichen Grüßen,<br />Ihr easymarketing-Team
+  gross: Brutto
+  group_by: Gruppieren
+  gtin: GTIN
+  guessed_asterisk: "* geschätzt"
+  guessed_brackets: "(geschätzt)"
+  guessed_customer_estimation_explanation_html: "* Die Daten sind geschätzt auf Basis
+    Ihrer Conversion Rate von %{conversion}. %{edit_link}. Sie wird für alle zukünftige
+    Tage wirksam."
+  headlines: "Überschriften"
+  helpers:
+    select:
+      prompt: Bitte wählen
+    submit:
+      create: "%{model} erstellen"
+      submit: "%{model} speichern"
+      update: "%{model} aktualisieren"
+  here: hier
+  hide: zuklappen
+  hide_details: Details ausblenden
+  high_ctr: hohe CTR-Werte und
+  high_quality: Hohe Qualität
+  higher_daily_budget_html: 'Ein höheres Tagesbudget können Sie auf Anfrage erhalten.<br
+    />Bitte kontaktieren Sie uns dazu unter: <span class=''inline-phone''>+49 89 -
+    809911 - 000</span>'
+  highest_keyword_rank: Höchster Rang
+  highest_keyword_rank_html: Höchster<br />Rang
+  home_chart_placeholder: Website-URL hier eingeben
+  home_money_back: und "Geld-zurück"-Garantie
+  home_slogan_html: Der Umsatzturbo<br>mit Sofortwirkung
+  hotline_costs: aus dem dt. Festnetz zum Ortstarif
+  hour_data_chart: Tageszeiten-Performance
+  hours_ans_costs: Von 10:00 - 18:00 Uhr zum Ortstarif
+  how_it_works: So funktioniert's
+  how_it_works_teaser: Sehen Sie hier wie easymarketing vollautomatisiert Ihre Online-Werbung
+    organisiert und hierbei die maximale Performance erzielt...
+  hrb_number: HRB-Nummer
+  i_allow_easymarketing_debit: Ich bevollmächtige easymarketing AG offene Beträge
+    vom angegebenen Konto einzuziehen. Die Einzugsermächtigung kann jederzeit schriftlich
+    widerrufen werden.
+  iban_must_be_correct_format: Die IBAN muss im richtigen Format sein. Sie darf keine
+    Sonderzeichen und Leerzeichen enthalten.
+  iban_successfully_converted_please_check_html: IBAN und gegebenenfalls BIC wurden
+    erfolgreich konvertiert. Bitte überprüfen Sie diese und <a class="blue" href="#">speichern
+    dann ».</a>
+  id: ID
+  image: Bild
+  image_must_be_size: Das Bild muss %{width}px breit und %{height}px hoch sein
+  impression_count: Anzahl Impressionen
+  impressions: Einblendungen
+  impressions_too_high: zu viele Suchanfragen
+  imprint: Impressum
+  imprint_text: |2-
+     easymarketing AG<br> Adelgundenstraße 5b<br> 80538 München<br>
+    <p>Kontakt per Mail: info@easymarketing.de<br> Kontakt per Fax: +49 (0) 89 / 20333264<br> Kontakt per Tel: +49 (0) 40 / 73082290</p>
+    <p>Vorstand: Christian Hampp<br> Aufsichtsratsvorsitzender: Dr. Ulf Renzenbrink</p> <br>
+    Amtsgericht Hamburg | HRB 127234 | St-Nr.2248/717/03022| USt-IdNr. DE 288753744
+  in_euro: In €
+  in_euro_and_incl_margin_html: In €, inkl. Provision
+  in_euro_incl_vat_html: In € inkl. MwSt.
+  in_percent: In %
+  inactive: inaktiv
+  increase_conversion_rate_by_html: 'Steigern Sie Ihre Verkaufsquote<br>durch '
+  increase_conversion_teaser: Die meisten Kunden, die auf eine Webseite kommen, kaufen
+    nicht sofort, sondern vergleichen erst einmal verschiedene Angebote oder nehmen
+    sich vor, "erst etwas später" zu bestellen. Daher ist es wichtig, den potentiellen
+    Käufer, der über gezielte Kampagnen auf Ihre Webseite gelotst worden sind, die
+    gesuchten Produkte immer wieder anzuzeigen. Die Ergebnisse auf die Verkaufsquote
+    hierdurch sind bei all unseren Kunden beeindruckend.
+  increase_conversion_via_retargeting: Was macht Retargeting so effektiv?
+  increase_orders_via_html: 'Verkaufsquote steigern<br>durch '
+  indirect_margin_percentage: Indirekte Marge
+  influence: Beeinflussung
+  influences_all_subpages: Alle Unterseiten
+  info: info
+  install_tracking_pixel_docu_message_html: Informationen zur Installation des Conversion-Trackers
+    finden Sie hier %{url}.
+  install_tracking_pixel_message: Bitte installieren Sie unser Tracking Pixel, damit
+    der Roboter die Kampagnen effektiv optimieren kann.
+  installation_instructions: Installationsanleitung
+  integration: Integration
+  invoice: Rechnung
+  invoice_correction_number: Rechnungskorrekturnummer
+  invoice_date: Datum
+  invoice_export_destroyed: Export erfolgreich gelöscht.
+  invoice_export_download_not_available: Export noch nicht verfügbar.
+  invoice_export_not_destroyed: Export konnte nicht gelöscht werden.
+  invoice_export_successfully_created: Rechnungs Export erfolgreich. PDFs werden jetzt
+    generiert...
+  invoice_exports: Rechnungs Exporte
+  invoice_intro_text_html: Sehr geehrte Damen und Herren,<br />hiermit erhalten Sie
+    die Rechnung für unsere Leistungen. Wir hoffen, dass Sie mit unserer Leistung<br/>zufrieden
+    waren und bedanken uns für Ihr Vertrauen.
+  invoice_money_back: Geldzurückgarantie
+  invoice_money_back_default_top_text: |-
+    Sehr geehrte Damen und Herren,
+    hiermit erhalten Sie wie bereits besprochen, die Geldzurückgarantie.
+  invoice_normal_invoice: Normale Rechnung
+  invoice_number: Rechnungsnummer
+  invoice_platform: Plattform
+  invoice_questions_contact_us_html: Wenn Sie Fragen zu unserer Rechnung haben oder
+    weitere Informationen brauchen, können Sie uns gerne unter <strong>+49 40-73082290</strong>
+    telefonisch erreichen.
+  invoice_refund_top_text: |-
+    Sehr geehrte Damen und Herren,
+    hiermit erhalten Sie wie bereits besprochen, die Gutschrift für Ihre Rechnung mit der Nummer %{number}.
+    Wir bedanken uns für Ihr Vertrauen.
+  invoice_reschedule_payment_warning: Sind sie sicher? Die Rechnung aus dem derzeitigen
+    Rechnungs Export entfernt. Sie wird dann mit dem nächsten Sofortbank Export automatisch
+    erneut abgebucht.
+  invoice_service: Leistung
+  invoice_title_help: |
+    Beispiele:
+
+    Annahmen: Kd-Nr = 123; Jahr =2014; Monat = Januar;
+    Rechnungsnummer: 123/201401-0 (startpaket)
+    Rechnungsnummer: 123/201401-1 (teil-abrechnung 16. des monats)
+    Rechnungsnummer: 123/201401-2 (teil-abrechnung 31/Ende des monats)
+  invoice_total: Rechnungsbetrag
+  invoice_was_successfully_updated: Rechnung erfolgreich aktualisiert
+  invoices: Rechnungen
+  invoices_late: Rechnungen im Verzug
+  is_generating: Am Generieren?
+  keyword: Suchbegriff
+  keyword_algo_log: Keyword Algorithmus Logs
+  keyword_builder: Keywordbauer
+  keyword_check: Keywords bei AdWords testen
+  keyword_competition_level_1: Niedrig
+  keyword_competition_level_2: Mittel
+  keyword_competition_level_3: Hoch
+  keyword_count_short: KWs
+  keyword_filter: Keyword Filter
+  keyword_irrelevant: eher irrelevant
+  keyword_irrelevant_ui: eher irrelev.
+  keyword_is_invalid_or_blacklisted: Keyword ist ungültig oder in der Roboter Blackliste.
+  keyword_label: Suchbegriff (Keyword)
+  keyword_less_relevant: weniger relevant
+  keyword_less_relevant_ui: weniger relev.
+  keyword_most_relevant: sehr relevant
+  keyword_most_relevant_ui: sehr relevant
+  keyword_opimizations: Keyword Optimierungen
+  keyword_performance_chart: Keyword-Performance
+  keyword_relevancy_not_calculated: nicht berechnet
+  keyword_relevant: relevant
+  keyword_relevant_ui: relevant
+  keyword_settings: Keyword Einstellungen
+  keyword_settings_error_while_persisting: Es ist ein Fehler aufgetreteten. Bitte
+    kontaktieren Sie den Support.
+  keyword_settings_succesfully_persisted: Die Keywordeinstellungen werden nun angewandt.
+    Es kann einige Minuten dauern, bis sich die Keyword-Liste aktualisiert hat. Die
+    Änderungen können unter Umständen mehrere tausend Anzeigengruppen betreffen. Da
+    der Upload mehrere Stunden dauern kann, werden die Änderungen erst bis zum nächsten
+    Werktag geschaltet.
+  keyword_settings_success_message: Die Änderungen können unter Umständen mehrere
+    tausend Anzeigengruppen betreffen. Da der Upload mehrere Stunden dauern kann,
+    werden die Änderungen erst bis zum nächsten Werktag geschaltet.
+  keyword_strategy_explanation: Je nach Strategie werden unterschiedliche Keywords
+    verwendet. Bei ökonomisch wird versucht, die günstigsten Keywords zu bewerben.
+    Bei aggressiv werden alle Keywords verwendet.
+  keyword_suffixes: Keyword Zusätze
+  keyword_suffixes_explanation: Keyword Zusätze
+  keyword_suffixes_explanation_html: Fügt jedem der Keywords automatisch einen Zusatz
+    zu. Wäre Ihr Keyword z.B. <code>tennisschuh</code>, würde unser Roboter das Keyword
+    zu <code>tennisschuh kaufen</code> konvertieren.
+  keywords: Keywords
+  keywords_label: 'Keywords: '
+  keywords_string_label: 'Kommaseparierte Keywords:'
+  keywords_updating_message: Die Keyword-Rankings werden gerade aktualisiert. Bitte
+    laden Sie die Seite in einigen Augenblicken neu.
+  kgaa: KGa
+  kmu_partner_headline: Jetzt sogar KMU-Premium-Partner
+  kmu_partner_text_html: Seit 1.7.2014 ist easymarketing als einer von nur 16 Google-Dienstleistern
+    in Deutschland offizieller KMU Premium Partner von Google. Ausschlaggebend für
+    den Sonderstatus waren nach einer intensiven Prüfung durch Google die besonderen
+    Mehrwerte und überzeugenden Ergebnisse für unsere Kunden durch den <span class="orange">absolut
+    einzigartigen Roboter</span>.
+  kpi: KPI
+  kpi_long: Key performance indicators
+  last_change: Letzte Änderung
+  last_clicks: Klicks
+  last_log: Letztes Log
+  last_log_short_html: Letztes<br/>Log
+  last_name: Nachname
+  last_optimization: Letzte Optim.
+  last_optimization_short: OptDat.
+  last_optimizations: Letzte Optimierungen
+  latest_comment: Neuster Kommentar
+  lead_conversions: Leads
+  leads: Leads
+  leads_conversions_chart: Leads / Käufe
+  leads_tooltip_explanation_html: Als Leads zählen wir die Anzahl der Benutzer, die
+    den Warenkorb aufgerufen haben, oder über das Kontaktformular mit Ihnen in Verbindung
+    getreten sind. Diese Zahl basiert auf dem Lead Tracker.<br>Jeder Benutzer zählt
+    hierbei nur 1-Mal, auch wenn er mehrere Aktionen durchführt hat.
+  learn_more: Mehr erfahren
+  legend: Legende
+  letzter_monat: Letzter Monat
+  limit_view: Ansicht
+  line_ones: Zeilen eins
+  line_twos: Zeilen zwei
+  listing_invoices: Rechnungsliste
+  listing_partner_revenues: Umsätze der Partner
+  listing_transactions: Liste der Transaktionen
+  listing_users: Registrierte User
+  loading_dots: Lade...
+  local_type: Lokaler Dienstleister
+  lock_user: User sperren
+  login: Login
+  login_as_user: In Account einloggen
+  login_success: Login erfolgreich.
+  logout: Log out
+  logout_success: Erfolgreich abgemeldet.
+  lost_impressions: Verloren
+  lost_impressions_charts: Verlorene Einblendungen
+  lost_impressions_info_text: Diese Charts zeigen Ihnen an, wie viele Einblendungen
+    Sie aufgrund unzureichenden Budgets oder wegen zu geringer Klickpreise verloren
+    bzw. ausgeschöpft haben und noch nützen könnten.
+  lost_impressions_trend_chart: Verlauf verlorener Einblendungen
+  mail_footer: |
+    Mit freundlichen Grüßen
+    Ihr easymarketing-Team
+
+    -------------------------------------
+    Onboarding-Team
+    mail to: kontakt@easymarketing.de
+    phone: 040 / 73082290
+    www.easymarketing.de
+
+    easymarketing AG
+    Adelgundenstraße 5b
+    80538 München
+
+    HRB: 127234, Amtsgericht Hamburg
+    Vorstand: Christian Hampp
+    Vorsitzender des Aufsichtsrates: Dr. Ulf Renzenbrink
+    USt-Id: DE288753744
+  mail_footer_support: |
+    Mit freundlichen Grüßen
+    Ihr easymarketing-Team
+
+    -------------------------------------
+    Support-Team
+    mail to: kontakt@easymarketing.de
+    phone: 040 / 73082290
+    www.easymarketing.de
+
+    easymarketing AG
+    Adelgundenstraße 5b
+    80538 München
+
+    HRB: 127234, Amtsgericht Hamburg
+    Vorstand: Christian Hampp
+    Vorsitzender des Aufsichtsrates: Dr. Ulf Renzenbrink
+    USt-Id: DE288753744
+  mail_or_call_us: Schicken Sie uns eine E-Mail oder rufen Sie uns an. Wir werden
+    Sie baldmöglichst kontaktieren.
+  maintain_campaign_activities: Werbezeiten festlegen
+  maintain_campaign_pauses: Kampagne pausieren
+  manage: Verwalten
+  managing_director: Vorstand
+  many_products: Viele Produkte
+  margin: Marge
+  market_leader: Marktführer
+  marketing_activities: Marketing Aktivitäten
+  master_card: MasterCard
+  maximum_chars: maximal %{number} Zeichen
+  maximum_clicks_help: So viele Klicks könnten Sie maximal generieren, wenn Sie unbegrenzt
+    werben würden ohne Budget-Einschränkung
+  maximum_clicks_html: Höchstmögl.<br/>Anz. Klicks
+  maximum_clicks_long: Höchstmögliche Anzahl Klicks
+  maximum_competence: Maximale Kompetenz
+  maximum_performance_via_full_automatically_marketing: Maximale Performance durch
+    vollautomatisches Marketing
+  may_not_include_http: Darf nicht http:// enthalten
+  message_with_errors: "%{message} Fehler: %{errors}"
+  module: Modul
+  monday_till_friday: Montags - Freitags
+  money_back_guarantee: Geld-zurück-Garantie
+  money_back_guarantee_text: Um Ihnen zu beweisen, dass wir von unserem Roboter absolut
+    überzeugt sind, erstatten wir Ihnen unsere komplette (!) Provision für die ersten
+    zwei Monate zurück (einfache Erklärung per E-Mail genügt), wenn wir Sie nicht
+    restlos überzeugen konnten und Sie uns Ihre Kampagnen 2 Monate lang anvertraut
+    haben.<br><br>Sollten Sie uns über mindestens 2 Monate (bzw. 60 Kalendertage)
+    pro Tag mehr als € 10,- anvertraut haben, erstatten wir Ihnen darüber hinaus sogar
+    weitere € 100,- aus unserer Tasche (zusätzlich zu der zurückerstatteten Provision!),
+    um unser Leistungsversprechen zu unterstreichen! D.h. wir machen effektiv einen
+    Verlust von € 100, wenn wir Sie nicht zufrieden stellen konnten!
+  money_transfer_: "- noch nicht gewählt -"
+  money_transfer_settings: easymarketing Bezahlweise
+  money_transfer_use_elv: Bezahlung per Bankeinzug
+  money_transfer_use_wire: Bezahlung per Rechnung
+  monitoring_by_google: Regelmäßige Überwachung bei Google
+  month: Monat
+  month_begin: Monatsbegin
+  month_end: Monatsende
+  month_report: Monatsreport
+  month_report_adgroups: 10.) Wichtigste Anzeigengruppen
+  month_report_best_ads: 11.) Erfolgreichste Anzeigen
+  month_report_costs_chart: 1.) Kosten
+  month_report_cpo_chart: 3.) CPO
+  month_report_hour_data_chart: 6.) Tageszeiten-Performance
+  month_report_keywords: 5.) Wichtigste Keywords
+  month_report_kpi_stats: 4.) Wichtigste Kennziffern
+  month_report_leads_conversions_chart: 2.) Leads / Conversions
+  month_report_lost_impressions_charts: 8.) Verlorene Einblendungen
+  month_report_lost_impressions_trend_chart: 9.) Verlauf verlorener Einblendungen
+  month_report_mail: |
+    Sehr geehrter Kunde,
+
+    wir haben einen neuen Monatsreport für Sie erstellt. Diesen können Sie unter folgendem Link einsehen:
+
+    %{month_report_url}
+
+    Die Monatsreporte stehen Ihnen außerdem im Händlerbereich unter "Mein Konto" zur Verfügung.
+  month_report_view_conversions_chart: 12.) Indirekte Käufe
+  month_report_view_conversions_trend_chart: 13.) Verlauf indirekter Käufe
+  month_report_weekday_data_chart: 7.) Wochentag-Performance
+  month_reports: Monatsreporte
+  more_advertising_strategies: Weitere Werbestrategien
+  more_info_by_google: Mehr Informationen von Google
+  more_keywords: Mehr Keywords laden
+  most_clicked_keywords: Wichtigste Keywords
+  most_important_keywords: Wichtigste Keywords
+  most_important_kpi: Wichtigste Kennziffern
+  most_important_pages: Wichtigste Anzeigengruppen (vom letzten aktiven Tag)
+  mpn: MPN
+  must_accept_tos_data_policy: AGB und Datenschutzrichtlinien müssen akzeptiert werden.
+  must_be_accepted: Muss akzeptiert werden
+  must_be_proper_format: Must be proper format.
+  must_be_the_same_url_as_the_user: Muss die gleiche Domain sein wie der User.
+  must_be_valid_url: Muss eine gültige URL sein
+  must_confirm_no_own_campaigns: Sie müssen bestätigen, dass sie keine eigenen Kampagnen
+    bei Google aktiv haben.
+  must_contain_at_least_one_type_of_ads_to_use: Sie müssen mindestens einen Anzeigentyp
+    auswählen (Roboter-Anzeigen oder eigene Anzeigen)
+  must_exist_in_database: muss in der easymarketing Datenbank vorhanden sein
+  must_have_a_valid_url_in_our_db: Die URL muss in der Datenbank vorhanden sein.
+  must_have_both_iban_and_bic: Es müssen IBAN und BIC ausgefüllt werden oder keine
+    von beiden (¬(iban ⊕ bic).)
+  must_use_elv_xor_use_wire: Bitte bestätigen Sie die easymarketing Einzugsermächtigung.
+    Alternativ können Sie die Provision per Rechnung bezahlen. Bitte beachten Sie,
+    dass Sie nicht beide Optionen wählen können.
+  must_use_google_elv_xor_use_credit_card: Bitte bestätigen Sie die Google Einzugsermächtigung.
+    Alternativ können Sie für die verbrauchten Werbeausgaben auch Ihre Kreditkartendaten
+    hinterlegen. Bitte beachten Sie, dass Sie nicht beide Optionen wählen können.
+  my_data: Meine Daten
+  name: Name
+  net: Netto
+  new_added_keyword: Neues Keyword
+  new_adwords_campaign: Neue Kampagne
+  new_algo_addition: Neue Anzeigenerweiterung
+  new_campaign: Neue Kampagne
+  new_contact_query: Neue Kontaktanfrage
+  new_custom_keyword: Neues benutzerdefiniertes Keyword
+  new_customers: Käufer
+  new_customers_old: Neukunden
+  new_customers_without_risks: Ohne Risiko Neukunden gewinnen
+  new_customers_without_risks_teaser: Unser zertifiziertes Verfahren erspart Ihnen
+    viel Zeit, Nerven und Kosten, und generiert für Sie den höchsten Neu-Umsatz pro
+    investierten Werbe-Euro! Testen Sie uns jetzt unverbindlich und beobachten Sie
+    wie unser Roboter Ihr Startguthaben in Marketing investiert und die Ergebnisse
+    von Tag zu Tag verbessert!
+  new_invoice: Neue Rechnung
+  new_keyword: Keyword hinzufügen
+  new_month_report: Neuer Monatsreport für den %{month} %{year}
+  new_news_entry: Neuen News-Eintrag anlegen
+  new_products_api_endpoint: Neue Produkte API Endpunkt
+  new_products_response: Resultate neue Produkte Endpunkt
+  new_registration_check_how_it_works: Create a new check by specifying the url.
+  new_removed_keyword: Keyword löschen
+  new_transaction: Neue Transaktion
+  new_vendors: Neue Händler
+  new_visitors: Neubesucher
+  newest_comments: Neuste Kommentare
+  news: Newsfeed
+  news_admin: News
+  next: vor
+  'no': Nein
+  no_adgroup_html: Keine<br />Anzeigen<br/>ID
+  no_ads: Es wurden keine Anzeigen generiert.
+  no_ads_to_show: Keine Anzeigen anzeigbar
+  no_campaign_pauses: Sie haben noch keine Pausierungen angelegt.
+  no_category_found: Keine Kategorie gefunden
+  no_competitors_found: Keine Konkurrenten gefunden.
+  no_custom_kw: Die Keywords können aus technischen Gründen momentan nicht hinzugefügt
+    oder gelöscht werden, da die Kampagnen gerade bei Google erstellt werden. Bleibt
+    dieses Problem bestehen, kontaktieren Sie bitte unseren Support.
+  no_custom_kw_preview: Dies stellt zunächst lediglich eine erste Vorschau dar. Keywords
+    können aus technischen Gründen noch nicht hinzugefügt oder gelöscht werden. Dies
+    ist erst möglich, wenn die Kampagnen bei Google erstellt worden sind.
+  no_data_for_conversions_geo_data_chart: Keine Daten verfügbar.
+  no_data_for_costs_chart: Keine Daten verfügbar
+  no_data_for_cpo_chart: Keine Daten verfügbar.
+  no_data_for_days_available: Keine Daten für den Zeitraum verfügbar.
+  no_data_for_hour_data_chart: Keine Daten verfügbar
+  no_data_for_keyword_performance_chart: Zu wenige Keywords verfügbar
+  no_data_for_leads_conversions_chart: Keine Daten verfügbar.
+  no_data_for_lost_impressions_charts: Keine Daten verfügbar
+  no_data_for_lost_impressions_trend_chart: Keine Daten verfügbar
+  no_data_for_view_conversions_chart: Keine Daten verfügbar
+  no_data_for_view_conversions_trend_chart: Keine Daten verfügbar
+  no_data_for_weekday_data_chart: Keine Daten verfügbar
+  no_delivery_fees: Keine Versandkosten
+  no_generic_errors: Keine generischen Fehler.
+  no_keywords_message: Sie haben in dieser Ansicht keine Keywords. Entweder werden
+    Sie derzeit noch gecrawled, oder Sie müssen andere Filter Einstellungen verwenden.
+  no_keywords_to_show: Keine Suchbegriffe verfügbar
+  no_keywords_yet: Bislang keine Keywords
+  no_month_reports_available: Keine Monatsreports verfügbar.
+  no_optimizations_yet: Keine Optimierungen
+  no_pages_message: Sie haben derzeit noch keine extrahierten Seiten.
+  no_pages_yet: Gestern keine geklickten Anzeigengruppen
+  no_result_message: Es wurden keine passenden Seiten gefunden.
+  not_a_valid_domain: Keine gültige Domain
+  not_active: nicht aktiviert
+  not_all_pages_have_adgroup_id: Nicht alle Anzeigen Gruppen haben eine Anzeigengruppen
+    ID.
+  not_authorized: Nicht autorisiert.
+  not_binding: Unverbindlich
+  not_found: Nicht gefunden
+  not_in_front: 'Not: %{phrase}'
+  not_lost_impressions: Eingeblendet
+  not_saved: Speichern war nicht erfolgreich.
+  not_saved_with_errors: 'Speichern war nicht erfolgreich. Fehler: %{errors}'
+  not_setup: nicht eingerichtet
+  now_pick_your_daily_budget: Wählen Sie jetzt Ihr tägliches Budget
+  number:
+    currency:
+      format:
+        delimiter: "."
+        format: "%n %u"
+        precision: 2
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "€"
+    format:
+      delimiter: "."
+      precision: 2
+      separator: ","
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion:
+            one: Milliarde
+            other: Milliarden
+          million: Millionen
+          quadrillion:
+            one: Billiarde
+            other: Billiarden
+          thousand: Tausend
+          trillion: Billionen
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 1
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
+  number_with_multiplier_word: "%{number} mal"
+  of_total: von
+  of_your_visitors_turn_customers: Ihrer Besucher werden zu Kunden.
+  ohg: OHG
+  old_password_incorrect: ist nicht korrekt
+  only_active_keywords: Nur aktive Keywords
+  opening_hours_html: Wir sind montags - freitags <br /> von 10 - 18 Uhr für Sie da
+  optimal_budget_value: Empfohlener Wert
+  optimazion_failed: Optimierung konnte nicht durchgeführt werden.
+  optimazion_successfully: Optimierung erfolgreich
+  optimisation_settings: Optimierungs Einstellungen
+  optimizations: Optimierungen
+  optimize: Optimieren
+  optimize_ads:
+    efforts:
+      additional_new_customers: Zusätzliche Neukunden:&nbsp;<span>100%</span>
+      generating_new_customers: Generierung von Neukunden
+      optimizing_your_campaign: Optimierung Ihrer Kampagnen
+      performance_monitoring: Kontinuierliche Erfolgskontrolle
+    headline: Anzeigen Optimierung
+    teaser: Unser System optimiert stetig die Anzeigen und verbessert so die Ergebnisse.
+  optimized_keywords: Wegoptimierte Keywords
+  optimized_keywords_into_message: Diese Keywords werden vom Roboter im Zuge der Optimierung
+    aussortiert. Sie haben jedoch die Möglichkeit diese Keywords weiterhin zu bewerben.
+  or: 'Oder:'
+  order: Keyword mit Zusatz "Bestellen" verwenden
+  order_online: Keyword mit Zusatz "Online bestellen" verwenden
+  order_online_suffix: online bestellen
+  order_suffix: bestellen
+  other_shopping_setups: Andere Anmeldungen
+  other_type: Sonstige
+  our_hotline: Unsere Hotline
+  our_opening_hours: Unsere Öffnungszeiten
+  our_services_for_your_success_html: Unsere Leistungen für Ihren Erfolg<br>auf Facebook
+  overview: "Übersicht"
+  own_ads: Eigene Anzeigen
+  own_ads_preview_box_title: Ihre eigenen Anzeigen
+  page: Seite
+  page_count: Seiten
+  page_count_crawler_setting_html: Crawl<br/>Pgs
+  page_detail_useful_tip_one: Hier sehen Sie die Liste der Keywords, die wir für die
+    betreffende Ziel-Website eruiert haben. Sie können Keywords löschen oder hinzufügen.
+  page_detail_useful_tip_one_headline: Keywords
+  page_detail_useful_tip_three: Wir setzen für jede Unterseite eine so genannte "Anzeigengruppe"
+    auf. Zu einer "Anzeigengruppe" gehören die betreffenden Keywords, mehrere Anzeigentexte
+    sowie EINE Ziel-Website bzw. eine Unterseite (z.B. für ein bestimmtes Produkt)
+    von Ihnen.
+  page_detail_useful_tip_three_headline: Anzeigengruppe
+  page_detail_useful_tip_two: Sie können unter dem Link "Anzeigentexte" sehen, mit
+    welchen Texten wir für diese Seite werben.
+  page_detail_useful_tip_two_headline: Anzeigentexte
+  page_details: Anzeigengruppe "%{title}"
+  page_title: Titel
+  page_uploader: Seiten hochlader
+  page_uploader_explanation_html: |-
+    <ul><li>Erstellt neue Seiten für den angegebenen user.</li><li>URLs müssen jeweils mit Enter getrennt sein und untereinander eingefügt werden.</li></ul><pre><code>foo.com/bar keyword1;keyword2;keyword3</code>
+    <code>foo.com/foo keyword5;keyword6;keyword7</code></pre>
+  pages: Seiten
+  pages_will_be_extracted_reupload_ads_after: Seiten werden extrahiert. Danach müssen
+    die Anzeigen erneut generiert werden.
+  params: Parameter
+  parser_no_timeout: Parser ohne Timeout
+  parser_successful: Parser erfolgreich
+  parser_timeout: Parser hatte Timeout
+  parser_unsuccessful: Parser nicht erfolgreich
+  partners: Partner
+  password_changed: Passwort wurde erfolgreich geändert!
+  password_changed_email: |
+    Sehr geehrter Kunde,
+
+    soeben wurde Ihr easymarketing Passwort geändert. Wenn Sie diese Änderung nicht vorgenommen haben, oder der Meinung sind das eine unbefugte Person zugegriffen hat, gehen Sie bitte auf %{password_reset_link} um Ihr Kennwort unverzüglich zurückzusetzen.
+  password_not_changed: Es ist ein Fehler aufgetreten. Bitte kontaktieren Sie den
+    Support.
+  password_reset_email: |2
+
+    Sehr geehrter Kunde,
+
+    um Ihr Passwort zurückzusetzen, öffnen Sie bitte den folgenden Link:
+
+    %{url}
+
+    Falls Sie kein neues Passwort angefordert haben, ignorieren Sie bitte diese Email.
+  password_reset_expired: Der Passwort-Link ist abgelaufen. Bitte neuen anfordern.
+  password_was_reset: Passwort wurde erfolgreich geändert.
+  pause: Pausieren
+  payment_via_direct_debit: Bezahlung per Bankeinzug
+  payment_via_invoice: Bezahlung per Rechnung
+  pays_in_rates: Zahlt in Raten
+  pdf: PDF
+  per_1k_impressions: Pro 1000 Impressionen
+  per_month_expectancy: pro Monat rechnen!
+  per_page: Pro Seite
+  per_visitor: Pro Besucher
+  percent_15_on_budget: '%{percentage} %&nbsp;<small class="two-lines">auf Ihr<br><span
+    class="asterik-three">Werbebudget</span></small>'
+  performance: Performance
+  phone_number: Tel.
+  pick_keyword: Keyword auswählen
+  place_attr_count_html: "%{place}. Platz: <span>%{count} %{attr}</span>"
+  place_with_number_clicks_html: "%{place}. Platz: <span>%{clicks} Klicks</span>"
+  please_complete_shopping_setup_or_deactivate: Sie haben Kampagnen aktiviert, die
+    noch nicht vollständig eingerichtet worden sind. Bitte vervollständigen Sie die
+    Einrichtung <a href="%{url}">hier.</a>
+  please_complete_your_profile: Bitte vervollständigen Sie Ihre <a href="%{url}">Benutzerdaten
+    hier.</a>
+  please_complete_your_profile_no_link: Bitte vervollständigen Sie Ihre Benutzerdaten.
+  please_confirm_email: Bitte bestätigen Sie Ihre Email.
+  please_confirm_your_account: Bitte bestätigen Sie Ihren Account
+  please_correct_errors: 'Bitte beheben Sie folgende Fehler:'
+  please_enable_account_html: Sie können sofort loslegen, wenn Sie uns <a class="blue"
+    data-remote="true" href="%{enable_form_link}">hier bestätigen</a>.
+  please_enable_competitors_scraper: Konkurrenten werden nur angezeigt, wenn Konkurrenz
+    scrapen aktiviert ist.
+  please_enter_bank_account_html: Bitte geben Sie nun <a class="blue" href="%{user_link}">ihre
+    Bankdaten hier</a> ein.
+  please_fill_all_fields: Bitte fülle alle Felder aus
+  please_install_conversion_tracker_html: Bitte downloaden und installieren Sie <a
+    class="blue" href="%{path}">Ihren Conversion Tracker hier</a>. Dadurch kann easymarketing
+    besser Ihre Kampagnen für Sie optimieren.
+  please_log_in: Ihr Account ist bereits aktiviert. Bitte loggen Sie sich ein.
+  please_pick_page_for_keyword: Bitte wählen Sie eine Seite aus für das Keyword.
+  please_select_at_least_one_day: Bitte wählen Sie mindestens einen Tag aus, an dem
+    Sie Werbung schalten möchten.
+  please_start_verification_process_then_more_instructions: Wir konnten den Verifizierungsprozess
+    für Ihre Internet-Seite nicht starten. Bitte kontaktieren Sie einen Support-Mitarbeiter,
+    falls sie Shopping nutzen möchten.
+  plentymarkets_setup_failed: 'Ihr Plentymarkets Shop konnte nicht verbunden werden.
+    Fehlermelung: %{message}, Fehlercode: %{code}'
+  plentymarkets_setup_finished: Ihr Plentymarkets Shop wurde erfolgreich mit unserem
+    System verbunden. Ihr Shop-Token wurde automatisch gespeichert.
+  possible_clicks: Mögliche Klicks
+  potential: Potential-Analyse
+  potential_customers: Mögliche Kunden
+  potential_new_customers: Mögliche Neukunden
+  presentation: Präsentation
+  previous: zurück
+  price: Preis
+  pricing: Preise
+  pricing_and_efforts: Unsere Leistungen und Preise
+  pricing_benefits:
+    benefits:
+      money_back_guarantee: Geld-zurück-Garantie <small><a href="#money-back-guarantee"
+        class="btn-link">mehr erfahren »</a></small>
+      no_contract_duration: Keine Mindestvertragslaufzeit
+      no_hidden_costs: Keine versteckten Kosten
+      no_monthly_fees: Keine monatlichen Grundgebühren
+      no_setup_costs: Keine Einrichtungsgebühr
+    headline: Ihre easymarketing-Vorteile
+  pricing_headline: Leistungen, Preise & Geld-zurück-Garantie
+  priority_short: P
+  privacy: Datenschutzerklärung
+  privacy_teaser: Der Schutz und die Sicherheit von persönlichen Daten hat bei der
+    easymarketing AG (im Folgenden „wir“ bzw. „uns“) eine hohe Priorität. Daher halten
+    wir uns strikt an die Regeln des deutschen Bundesdatenschutzgesetzes (BDSG) und
+    des Telemediengesetzes (TMG). Nachfolgend werden Sie darüber unterrichtet, welche
+    Daten während Ihres Besuchs auf easymarketing.de erfasst und wie diese Daten genutzt
+    werden.
+  processed_extractions: Abgeschlossene Extraktionen
+  product_by_id_api_endpoint: Produkt für ID API Endpunkt
+  product_searches_for_month: 'So viele Nutzer haben nach Ihren Produkten gesucht:'
+  product_settings_all: Alle
+  product_settings_no: Nicht anzeigen
+  product_settings_yes: Anzeigen
+  products_api_endpoint: Produkte API Endpunkt
+  products_could_not_be_verified: Produkte können nicht verifiziert werden.
+  products_response: Resultate Produkte Endpunkt
+  products_successfully_verified: Produkte wurden erfolgreich verifiziert.
+  profile: Profil
+  provision: Provision
+  rank: Rang
+  ransack:
+    predicates:
+      cont: enthält
+      eq: entspricht
+  real_budget_value: IST-Wert
+  reason: Grund
+  recreate_extraction: Seiten erneut extrahieren
+  recreate_extraction_help: Der Roboter versucht erneut Seiten von dem User zu extrahieren.
+    Dieser Prozess lädt auch automatisch die Anzeigen erneut zu AdWords hoch.
+  recreate_pdf: PDF zurücksetzen
+  referred_users_by_partner: Direkt geworbene User je Partner
+  refreshing_dots: Aktualisiere...
+  region: Bundesland
+  register: Registrieren
+  register_now: Jetzt anmelden
+  register_without_risks: Jetzt unverbindlich anmelden
+  registration: Registrierung
+  registration_date: Erstellt
+  registration_info_text_html: Unser Roboter analysiert im Laufe der nächsten 48 Stunden
+    Ihren Webseite. Erst dann entscheiden Sie, ob Sie unser Kunde werden wollen.
+  relevance: Relevanz
+  relevancy_points_html: Relevanz<br/>Punkte
+  reloading_logs_automatically: Logs des Servers werden aktualisiert...
+  remaining: Verbleibende
+  remove_ad_text_block_body_generated: Der Textbaustein "%{text}" wurde von unserem
+    Anzeigengenerator aus Ihrer Seite generiert. Sie können ihn nur löschen, indem
+    Sie die Einstellungen dazu anpassen.
+  remove_ad_text_block_body_page: Wollen Sie den Textbaustein "%{text} " wirklich
+    von dieser Anzeigengruppe löschen?
+  remove_ad_text_block_body_user: Der Textbaustein "%{text}" ist global, d.h. er wurde
+    für alle Anzeigengruppen erstellt. Wollen Sie den Textbaustein nur von dieser
+    oder von allen Anzeigengruppen löschen?
+  remove_ad_text_block_body_user_global: Wollen Sie den Textbaustein "%{text}" wirklich
+    von allen Anzeigengruppen löschen?
+  remove_robot_text_blocks: Automatisch generierte Vorschläge löschen
+  removed_keyword: Gelöschtes Keyword
+  removed_keyword_could_not_be_deleted: Keyword konnte nicht gelöscht werden. Es kann
+    bis zu 40 Sekunden dauern, bis Änderungen in der Liste erscheinen.
+  removed_keyword_successfully_created: Keyword erfolgreich als gelöscht markiert.
+    Es kann bis zu 40 Sekunden dauern, bis Änderungen in der Liste erscheinen.
+  removed_keyword_successfully_deleted: Keyword erfolgreich entfernt. Es kann bis
+    zu 40 Sekunden dauern, bis Änderungen in der Liste erscheinen.
+  removed_keywords: Gelöschte Keywords
+  removed_keywords_index_explanation: Hier sehen Sie eine Liste aller gelöschten Keywords
+    des Roboters. Die Änderungen werden alle 24h mit unseren Werbepartnern synchronisiert.
+  removed_keywords_you_have_none: Sie haben noch noch keine gelöschten Keywords.
+  required: gewünscht
+  required_values: Benötigte Werte
+  reset_password: Passwort zurücksetzen
+  response_data: Response Daten
+  restart_extraction_error: Crawlen konnte nicht erneut gestartet werden. Eventuell
+    noch am Crawlen oder kein Assignee eingetragen? Falls der Fehler besteht, bitte
+    ein Ticket öffnen.
+  restart_extraction_success: Crawlen wurde erfolgreich in die Warteschlage eingefügt.
+  restore: Wiederherstellen
+  retargeting: Retargeting
+  retargeting_ads: Retargeting Anzeigen
+  retargeting_ads_not_ready_yet: Die Retargeting Kampagnen werden in Kürze verfügbar
+    sein.
+  retargeting_campaign_label: Retargeting
+  retargeting_campaign_requested: Retargeting gewünscht
+  retargeting_chart_info_html: Deutliche Steigerung Ihrer<br>Verkaufsquote durch<br><span
+    class="orange">RETARGETING</span>
+  retargeting_setup_admin_verified_module: Shopmodul überprüfen
+  retargeting_setup_adscale_running: Retargeting läuft
+  retargeting_setup_adscale_setup: Retargeting account anlegen
+  retargeting_setup_api_verified: API einrichten
+  retargeting_setup_logo_uploaded: Logo hochladen
+  retargeting_setup_products_extracted: Daten auslesen
+  retargeting_setup_verified_by_user: Produkte überprüfen
+  retargeting_text_1: Kunde sucht nach Ihren Produkten und sieht gezielt ihre Werbung
+  retargeting_text_2: Kunde landet auf Ihrem Webshop
+  retargeting_text_3: "...und sieht überall Ihre Produkte wieder!"
+  retargeting_text_4: Kunde wird nachverfolgt, wenn er weiter surft...
+  retargeting_text_5: Kunde kommt zu Ihnen zurück und bestellt
+  retargeting_text_6_html: Deutliche Steigerung Ihrer</br>Verkaufsquote durch</br><span
+    class="highlight">Retargeting</span>
+  retargeting_with_exclamation_mark: Retargeting!
+  reupload_ads: Alle Anzeigen erneut hochladen
+  reupload_ads_error: Anzeigen konnten nicht neu hochgeladen werden. Ist die Extraktion
+    eventuell im falschen Status?
+  reupload_ads_help_html: Dies ersetzt die Anzeigen Gruppen des Users auf AdWords
+    mit neuen. Um Anzeigen-Gruppen nicht zu löschen, muss <code>manuell</code> im
+    Namen der jeweiligen Anzeigengruppen enthalten sein. Diese werden dann nicht gelöscht.
+  reupload_ads_success: Anzeigen wurden erfolgreich in die Hochlade Warteschlange
+    eingefügt.
+  reupload_dirty: Geänderte Anzeigen hochladen
+  reupload_dirty_html: Dies lädt alle geänderten Seiten der Anzeigengruppen des Users
+    auf AdWords hoch.
+  revenue: Umsatz
+  revenue_starter_package: Umsatz Starter Paket
+  revenues: Umsätze
+  robot_campaign_ui_label: Google AdWords (BOT)
+  robot_keywords: Roboter-Keywords
+  satisfied_customers: Zufriedene Kunden
+  save: Speichern
+  save_and_test: Speichern/Testen
+  save_campaign_activities: Werbezeiten speichern
+  save_competitor: Konkurrenten speichern
+  save_keyword_settings: Keyword Einstellungen speichern
+  save_page: Einstellungen nur hier verwenden
+  save_settings: Einstellungen speichern
+  save_user_and_page: Einstellungen hier und global verwenden
+  saved: Gespeichert.
+  scraping_settings: Scraper Einstellungen
+  search: Suchen
+  search_by_url: Nach URL suchen
+  search_volume: Suchvolumen
+  search_volume_short: Suchvol.
+  searchvolume: Suchvolumen
+  select_valid_gender: ist nicht gültig!
+  send_automatically_via_mail: Monatsreporte automatisch per E-Mail zusenden
+  send_easymarketing_sepa_pdf_to_user: Mandat für Ihr Konto bei easymarketing
+  send_generated_invoices_email: |
+    Hi Admin,
+
+    der Rechnungs Export kann nun im Admin Bereich eingesehen werden.
+  send_google_invoice_to_user_text: |
+    Sehr geehrter Kunde,
+
+    hiermit möchten wir Sie informieren, dass wir eine Rechnung von Google für sie bereitgestellt haben. Hierbei handelt es sich um die Monatsabrechnung von Google für die von Ihnen hinterlegte Kreditkarte bzw. Kontoverbindung.
+
+    Sie können die Rechnung jederzeit abrufen unter:
+
+    Meine Daten => Rechnungen => Andere Rechnungen, im unteren Bereich der Seite.
+
+    Wir hoffen, dass Sie mit unserem Service und Support zufrieden sind. Unser Support-Team steht Ihnen gerne für Anregungen und Rückfragen zur Verfügung.
+  send_google_sepa_pdf_to_user: Mandat für Ihr Konto bei Google
+  send_invoice_to_user_text: |
+    Sehr geehrter Kunde,
+
+    hiermit informieren wir Sie, dass eine neue Rechnung in unserem Admin-Bereich hinterlegt worden ist. Diese ist ab sofort für Sie abrufbar.
+
+    Bitte beachten Sie, dass der ausgewiesene Rechnungsbetrag von Ihrem Bankkonto eingezogen wird, sofern Sie dem Lastschriftverfahren zu gestimmt haben.
+
+    Falls uns Ihre Zustimmung nicht vorliegt, bitten wir Sie uns den Rechnungsbetrag innerhalb der aufgeführten Frist anzuweisen.
+
+    Wir hoffen, dass Sie mit unserem Service und Support zufrieden sind. Unser Support-Team steht Ihnen gerne für Anregungen und Rückfragen zur Verfügung.
+  send_message: Nachricht senden
+  send_sepa_pdf: |
+    Sehr geehrter Kunde,
+
+    wir möchten Sie bitten, angehängtes Mandat auszufüllen, zu unterschreiben und
+      - per Mail als Scan an info@easymarketing.de oder
+      - per Fax an 089/20333264 oder
+      - per Post an easymarketing AG, Adelgundenstraße 5b, 80538 München zu senden.
+
+    Die Kampagnen werden dann umgehend gestartet. Wir freuen uns auf eine erfolgreiche Zusammenarbeit!
+  sent_password_reset_instructions: Wir haben Ihnen soeben eine Email mit Anweisungen
+    geschickt.
+  service_period: Leistungszeitraum
+  set_called_success: Als angerufen markiert.
+  set_contacted: Kontaktiert setzen
+  settings: Einstellungen
+  settings_saved: Einstellungen gespeichert.
+  setup_shopping_now: Jetzt Shopping einrichten
+  shared_budgets: Kombinierte Budgets
+  shop: Shop
+  shop_system: 'Shopsystem:'
+  shoppage_scraper_check: Seite testweise crawlen
+  shopping_active: Shopping aktiv
+  shopping_and_adwords: "(Shopping + AdWords)"
+  shopping_budget: Shopping Budget
+  shopping_campaign_requested: Shopping gewünscht
+  shopping_campaign_ui_label: Google Shopping
+  shopping_feed_instructions_html: "<p>Über diese Optionen können Feeds im Google
+    Merchant Center erstellt werden. Zunächst müssen die Daten im Google Merchant
+    Center im Test Feed überprüft werden. Wenn die Daten OK sind, kann der live Feed
+    erstellt werden. Wird der Feed fehlerhaft zu Google Shopping hochgeladen, kann
+    der Account des Users gesperrt werden.</p><p><strong>Dazu sind folgende Schritte
+    notwendig:</strong></p><ol><li>Feed downloaden und als Test Feed in AdWords Shopping
+    erstellen.</li><li>Falls Feed OK ist, live Feed anlegen.</li><li>Einen Tag später
+    gucken, ob der Feed soweit OK ist.</li><li>Fertig.</li></ol>"
+  shopping_feed_scheduled_for_upload: Shopping Feed wurde zum Hochladen in die Warteschlange
+    eingereiht.
+  shopping_feed_scheduled_for_upload_error: Shopping Feed konnte nicht erstellt werden.
+  shopping_inactive: Shopping inaktiv
+  shopping_settings: Shopping Einstellungen
+  shopping_setup_api_verified: API einrichten
+  shopping_setup_campaign_running: Kampagne aktiv
+  shopping_setup_products_extracted: Daten auslesen
+  shopping_setup_registered_in_merchant_center: Daten im Merchant Center anlegen
+  shopping_setup_verified_by_user: Produkte überprüfen
+  shopping_setup_webmaster_verified: Site verification
+  shopsystem: Shopsystem
+  show: Anzeigen
+  show_added_keywords: Hinzugefügte Keywords anzeigen
+  show_ads_preview: " Vorschau der Anzeigen generieren"
+  show_all_info: Alle Infos anzeigen
+  show_conversion_tracker: Tracking Pixel anzeigen
+  show_deleted: Gelöschte anzeigen
+  show_details: Details einblenden
+  show_optimized_keywords: Wegoptimierte Keywords anzeigen
+  show_performance: Performance anzeigen
+  show_removed_keywords: Gelöschte Keywords anzeigen
+  show_short: Anzgn.
+  signup_and_start: Jetzt anmelden & starten
+  signup_trusted_shops: Anmeldung zum Trusted Shops Käuferschutz
+  simple_form:
+    error_notification:
+      default_message: 'Please review the problems below:'
+    hints:
+      adwords_campaign:
+        cpc_threshold: Hat das Keyword eine zu hohe CPC wird es ausgefiltert. Wird
+          dieses Feld verwendet, wird ein dieser Wert als Obergrenze verwendet.
+        crawl_blacklisted_pages: Verbotene Inhalte wie z.B. Impressum, Versandkosten
+          etc. werden dann gecrawled.
+        crawl_delay: Bei 0 wird der Crawl-Delay ignoriert. z.B. 0.1 = 1/10 Sekunden
+        impression_threshold: Hat das Keyword zu viele Suchanfragen wird es ausgefiltert.
+          Alternativ kann hier ein Wert spezifiziert werden, alle Keywords mit mehr
+          als X Suchanfragen werden dann ausgefiltert.
+        keywords_absolute: Einstellung wird ignoriert, nur gültig wenn Keywords auf
+          Top Seiten beworben werden.
+      billing:
+        bill_marge_only: Die AdWords Kosten werden nicht in Rechnung gestellt. Lediglich
+          die easymarketing Provision.
+      billing_export:
+        billing_description: Info für Admin welchen Leistungszeitraum der Export betrifft.
+        comment: Kommentar - warum wurde der Export erstellt? Info für Admin.
+      company:
+        api_setup_test_single_product_id: Wird beim API Setup Test verwendet
+        shop_category_root_id: Die ID der höchsten Kategorie in dem Shopsystem.
+        shop_token: Der Token der easymarketing autorisiert Daten abzufragen.
+      competitor:
+        top_level_domain: z.B. <code>amazon.de</code>. Darf nur die Top Level Domain
+          sein.
+      defaults:
+        top_custom_text: Erscheint in der Rechnung unter dem Unternehmensnamen
+      invoice:
+        description: Steht in dem Feld <code>Leistungszeitraum</code> auf der Rechnung
+        margin_surcharge: Die Marge die auf den Rechnungspreis addiert wird.
+        refund: Dieses Feld auswählen, falls es sich um eine Storno Rechnung handelt.
+          Der Betrag wird dann nicht abgebucht.
+        title: 'Steht oben Links als Titel der Rechnung. Standard: Rechnung'
+        top_text: 'Steht unter dem Titel, Standard: Sehr geehrte Damen und Herren,...'
+        vat_amount: Der Mehrwertsteuer Satz der Rechnung.
+        visible: Ist die Rechnung nicht sichtbar, wird sie dem Endkunden nicht angezeigt.
+      keyword_combination_list:
+        combination: Die Wörter hier können dann in der User UI mit den Keywords der
+          Anzeigengruppen kombiniert werden.
+      partner:
+        indirect_margin: Wenn das Shopsystem übereinstimmt, unabhängig ob der Kunde
+          direkt geworben worden ist, wird diese Marge vergütet.
+        support_email: Email für Rückfragen, könnte z.B. die Email des Modulherstellers
+          sein. Wird nur registrierten Nutzern angezeigt.
+      product:
+        custom_google_category: 'Die genaue Google Kategorie des Produktes. Sie können
+          die möglichen Kategorien hier nachschlagen: <a class=''blue'' href=''http://www.google.com/basepages/producttype/taxonomy.de-DE.txt
+          entnehmen''>http://www.google.com/basepages/producttype/taxonomy.de-DE.txt</a>.'
+      transactions:
+        clicks: Erscheint auf der Rechnung in der Spalte "Klicks"
+        description: Erscheint auf der Rechnung des Händlers und auf dem Kontoauszug.
+        impressions: Erscheint auf der Rechnung in der Spalte "Impressionen"
+        margin_surcharge: z.B. 0.15 würde dem Kunden den Kosten Betrag * 1.15 in Rechnung
+          stellen. Wenn genau der Betrag der Kosten auf der Rechnung erscheinen soll,
+          hier 0 eingeben.
+        refund: Dieses Feld auswählen, falls es sich um eine Storno Transaktion handelt.
+          Der Betrag wird dann nicht abgebucht.
+        total: Der netto Betrag der abgebucht werden soll. Alle Beträge werden mit
+          der Marge und der MwSt multipliziert.
+        tx_id: Hier kann man z.B. Manuell-123 eingeben. Ist das Feld leer, wird die
+          Transaktion später abgebucht. Der Inhalt ist egal. Möchte man das die Transaktion
+          abgebucht wird, dieses Feld einfach leer lassen.
+        vat_amount: Der zu verwendende MwSt. Satz in Dezimal. Für Deutschland z.B.
+          0.19
+      user:
+        activation_code: Ist der Code leer, ist der User aktiviert. Um den User also
+          zu aktivieren, dieses Feld leeren. Gegebenenfalls muss noch eine Starter-Rechnung
+          erstellt werden.
+        adwords_id: 'Ist in AdWords in dem Format 961-365-2820, muss hier folgendes
+          Format haben, ohne die Minus-Zeichen: 9613652820'
+        campaign_id: 'Steht in der URL beim Bearbeiten einer Kampagne. Erkennt man
+          wie folgt:'
+        margin_surcharge: Die individuelle easymarketing Marge die je Abbuchung berechnet
+          wird.
+        query_string_ad_link: 'Needs to be in the format: foo=bar&bar=param2'
+        vat_amount: Der Umsatzsteuer Satz der je Transaktion berechnet wird.
+    labels:
+      ad_text_block:
+        content: Anzeigentext
+        text_type: Typ
+      adwords_campaign:
+        advertising_strategy: Werbestrategie
+        adwords_id: Adwords ID des Kunden
+        campaign_id: Kampagnen ID
+        cpc_fallback: Fallback CPC in € (falls kein CPC in unserer DB)
+        cpc_modifier: CPC aus unserer DB wird um Modifikator in % geändert
+        cpc_threshold: CPC Ausfiltern
+        crawl_blacklisted_pages: Auch verbotene Inhalte crawlen
+        crawl_delay: Crawl Delay in Sek.
+        daily_budget: Tagesbudget
+        impression_threshold: Impressionen Ausfiltern
+        keywords_absolute: Keyword auf X Seiten bewerben
+        keywords_per_source_count: Maximale Rohkeywords je Quelle je Seite
+        kw_algo_comp_threshold: Competition-Real Grenze
+        label: Name - erscheint auf monatl. Rechnung
+        manual_cpc_bidding: Manuelle CPC Bidding Strategie
+        max_keywords: Maximale Keywords je Anzeigengruppe in AdWords
+        page_count: Maximale Seiten der Extraktionen
+        page_depth: Tiefe der extrahierten Seiten
+      afterbuy:
+        account_name: Ihr Afterbuy Account Name
+        shop_id: Ihre Afterbuy Shop ID
+      algo_addition:
+        exact: Text matching
+        total: Keyword matching
+      analysis_log:
+        called: Kontaktiert
+        comment: Kommentar
+        trashed: Gelöscht
+      billing:
+        account_holder: Kontoinhaber
+        bic: BIC
+        bill_marge_only: Nur die Marge abrechnen
+        iban: IBAN
+      campaign_setup_campaign_setup_page:
+        crawled_title: Titel
+      comment:
+        commentor: User Kürzel
+        content: Kommentar
+      company:
+        adscale_id: adscale ID
+        api_setup_test_single_product_id: Produkt ID zum Testen
+        best_products_api_endpoint: Beste Produkte API Endpunkt
+        categories_api_endpoint: Kategorien API Endpunkt
+        google_merchant_id: Google Merchant ID
+        google_shopping_budget: Google Shopping Tagesbudget in €
+        google_shopping_enabled: Google Shopping account aktiv
+        log_scraping_debug_to_db: Debug Log in DB (Ausnahme!)
+        log_scraping_debug_to_file: Debug Log in Logfile
+        new_products_api_endpoint: Neue Produkte API Endpunkt
+        priority: Priorität
+        product_by_id_api_endpoint: Produkt via ID Endpunkt
+        products_api_endpoint: Produkte API Endpunkt
+        shop_category_root_id: ID der Root Kategorie
+        shop_token: Shop Token
+        use_keyword_rank: Nur Keywords mit Relevanz-Punkten größer gleich diesem Wert
+          verwenden. Bei 0 wird diese Option ignoriert.
+      competitor:
+        top_level_domain: URL des Konkurrenten
+      credit_card:
+        card_number: Kartennummer
+        card_type: Typ
+        cvv: CVV
+        expiry_month: Ablaufmonat
+        expiry_year: Ablaufjahr
+        owner: Name auf Kreditkarte
+      custom_keyword:
+        mod_type: Typ der Beeinflussung
+        name_used_for_creation: Name
+        page_url_used_for_creation: URL für das Keyword
+      defaults:
+        address: Straße
+        city: Stadt
+        company_name: Unternehmensname
+        company_type: Unternehmensform
+        country: Land
+        daily_budget: Tagesbudget
+        description: Beschreibung
+        email: Email
+        expected_conversion_rate: Erwartete Conversion Rate in dezimal
+        first_name: Vorname
+        id: ID
+        last_name: Nachname
+        password: Passwort
+        password_confirmation: Passwort-Bestätigung
+        phone_number: Telefonnummer
+        refund: Storno
+        top_custom_text: Freies Textfeld Ansprechpartner
+        vat_number: USt-Id
+        zipcode: PLZ
+      excluded_keyword_list:
+        keywords: Keywords. 1 Keyword je Zeile.
+        title: Titel
+      excluded_keywords_form:
+        added_keywords_campaign: Keywords Kampagnen Ebene. 1 Keyword je Zeile
+        added_keywords_page: Keywords Anzeigengruppenebene. 1 Keyword je Zeile
+      extraction:
+        path: Scraping-Bereich einschränken (RegExp)
+      google_auth:
+        foreign_adwords_id: Ihre AdWords ID
+      google_budget:
+        label: Tagesbudget
+      google_remarketing_tracker:
+        code: Google Remarketing Code
+      invoice:
+        bill_marge_only: Nur Marge berechnen
+        margin_surcharge: Marge
+        number: Rechnungsnummer
+        title: Titel
+        top_text: Einleitungs Text
+        used_credit: Gutschein Guthaben
+        vat_amount: MwSt. Satz
+        visible: Sichtbar für Kunden
+      keyword_combination_list:
+        combination: Zu kombinierende Wörter. 1 Wort je Zeile.
+        title: Titel
+      news_entry:
+        author: Autor
+        content: Inhalt
+        title: Titel
+      page_form:
+        added_keywords: Keywords. 1 Keyword je Zeile
+        description: Meta Description
+        title: Titel der Anzeigengruppe
+      page_uploader:
+        page_url_text: Seiten URLs
+      partner:
+        affiliate_link_name: Name des Affiliate Links
+        homepage: Logo link
+        indirect_margin: Gleiches Shopsystem Marge
+        is_shopsystem: Ist ein Shopsystem
+        logo: Logo
+        margin: Direkt geworben Marge
+        module_link: Link zum Modul
+        name: Name
+        readme_link: Link zur Readme
+        support_email: Email für Supportanfragen
+        visible_on_partner_page: Sichtbar auf Partnerseite
+      pdf_export:
+        email: Email an die alle Rechnungen geschickt werden.
+      product:
+        custom_description: Selbst definierte Beschreibung
+        custom_google_category: Selbst definierte Google Kategorie
+        custom_name: Selbst definierter Name
+      retargeting_setup:
+        adscale_conversion_id: adscale Conversion ID
+        adscale_password: adscale Passwort
+        adscale_username: adscale Username
+        min_shopping_budget: Minimales Shopping Budget
+      shopping_setup:
+        shopping_campaign_id: Shopping Kampagnen ID
+      transaction:
+        bill_marge_only: Nur die Marge abrechnen
+        clicks: Klicks
+        impressions: Impressionen
+        margin_surcharge: Margen-Aufschlag
+        total: Betrag
+        vat_amount: Mehrwert Steuer-Satz
+      transactions:
+        tx_id: Externe Transaktions ID
+        used_credit: Verrechneter Gutschein
+        vat_amount: MwSt. Satz in dezimal
+      user:
+        activation_code: Aktivierungs Code
+        activation_confirmed: Freischaltung bestätigt
+        activation_requested: Freischaltung beantragt
+        active: AdWords Account aktiv
+        added_payment_data: Bezahldaten hinterlegt
+        added_to_adwords: AdW Account erstellt
+        ads_added_to_adwords: Anzeigen hochgeladen
+        adwords_id: Adwords Account ID
+        asked_user_to_confirm: Freigabe durch Kunden erbeten
+        bank_account: Kontonummer
+        bic: BIC
+        campaign_id: AdWords Kampagnen ID
+        conversion_tracker_installed: Conversion Tracker installiert
+        coupon_code_added: Gutschein hinzugefügt
+        crawler_error: Crawler Fehler
+        crawler_started: Crawlen fehler
+        crawling_finished: Crawlen beendet
+        crawling_started: Crawlen gestartet
+        daily_budget: AdWords Tagesbudget in €
+        deleted_at: User gekündigt
+        done_optimizations: Anzahl Optimierungen
+        exact: Match type
+        gender: Anrede
+        iban: IBAN
+        last_optimization: Letzte Optimierung
+        link_confirmed: Email bestätigt
+        margin_surcharge: Marge für Händler in dezimal
+        name_affix: Zusatz
+        not_interested: Nicht interessiert
+        priority: Priorität
+        products_campaign_id: Shopping Kampagnen ID
+        sort_code: Bankleitzahl
+        time_zone: Zeitzone
+        total: Matching
+        unlocked: Live gestellt
+        use_keyword_suffixes: Keyword zusätze verwenden.
+        vat_amount: Umsatzsteuer Satz in dezimal
+        vendor_confirmed: Freischaltung bestätigt
+        webshop_or_other: Unternehmenstyp
+        website_url: URL
+      user_change_password:
+        new_password: Neues Passwort
+        new_password_confirmation: Neues Passwort wiederholen
+        old_password: Altes Passwort
+    'no': 'No'
+    placeholders:
+      adwords_campaign:
+        cpc_fallback: z.B. 0.2
+        cpc_modifier: z.B. 30 oder -30
+      afterbuy:
+        account_name: z.B. mein_afterbuy_shop
+        shop_id: z.B. 99999
+      billing_export:
+        billing_description: z.B. easymarketing Maerz
+        comment: z.B. Export für 1.02.2014-15.02-2014
+      comment:
+        commentor: z.B. rgd
+      company:
+        api_setup_test_single_product_id: z.B. 0
+        best_products_api_endpoint: z.B. http://foo.com/best_products
+        categories_api_endpoint: z.b. http://foo.com/categories
+        margin_surcharge: z.B. 0.15
+        new_products_api_endpoint: z.B. http://foo.com/new_products
+        product_by_id_api_endpoint: z.B. http://foo.com/products/1
+        products_api_endpoint: z.B. http://foo.com/products
+        shop_category_root_id: z.B. 0
+        shop_token: z.B. 1x919s8xkalpq
+        vat_amount: z.B. 0.19
+      custom_keyword:
+        name_used_for_creation: z.B. tennisschläger
+      default:
+        expected_conversion_rate: z.B. 0.03
+      excluded_keyword_list:
+        keywords: z.B. holztisch
+        title: z.B. Sammlung für Möbel
+      google_auth:
+        foreign_adwords_id: z.B. 123-467-789
+      keyword_combination_list:
+        combination: günstig kaufen
+        title: z.B. Kombinationen für Möbel
+      page_form:
+        added_keywords: z.B. Schuhe
+        title: z.B. Die neusten Schuhe
+      partner:
+        affiliate_link_name: z.B. xtcommerce
+        homepage: z.B. http://foo.com
+        indirect_margin: z.B. 0.12
+        margin: z.B. 0.2
+        module_link: z.B. http://foo.com/x.zip
+        name: z.B. xtc:Commerce
+        readme_link: z.B. http://foo.com/readme
+        support_email: z.B. info@foo.com
+      shared_budget:
+        description: z.B. Budget für Schuhauswahl
+      transaction:
+        clicks: z.B. 10
+        description: z.B. Starterpaket
+        impressions: z.B. 1000
+        margin_surcharge: z.B. 0.15
+        total: z.B. 10.20
+        vat_amount: z.B. 0.19
+      user:
+        company_name: Firmenname
+        email: E-Mail-Adresse
+        first_name: Vorname
+        gender: Anrede
+        last_name: Nachname
+        name_affix: Zusatz
+        website_url: Website URL eingeben
+    required:
+      mark: "*"
+      text: required
+    'yes': 'Yes'
+  single_product_response: Resultate Einzelprodukt Endpunkt
+  single_url: Einzelne URL
+  site_ownership_verification_success_html: Eigentum der Website erfolgreich verifiziert.
+    Bitte nehmen Sie jetzt <a href='%{api_path}'>Ihre API Einstellungen vor.</a>
+  sitemap_check: Sitemap Check
+  sitemap_checker: Sitemap Checker
+  sitemap_good_for_user: Having a sitemap is a good idea because it allows Google
+    to index your website better. You will rank higher in search engines.
+  sitemap_needed_to_extract_urls: A sitemap is need to be able to extract URLs from
+    the shop. The sitemap is a collection of links describing the website.
+  so_looks_the_analysis_like_html: So sieht die<br>Analyse aus!
+  soon: bald
+  sorry_your_account_is_still_unconfirmed: Ihr Account muss zuerst bestätigt werden.
+    Bitte klicken Sie dafür den Link in der Email.
+  sort_by: 'nach: '
+  sort_code: Bankleitzahl
+  spendings: Ausgaben
+  start_and_increase_revenue: Jetzt starten und Umsatz steigern
+  start_date: Start Datum
+  start_now_without_risks: Jetzt ohne Risiko starten!
+  started_invoice_job: 'Rechnungen werden generiert. Dauer ca.: %{duration} Sekunden'
+  state: Status
+  state_successfully_changed: Status erfolgreich geändert.
+  status: 'Status:'
+  status_inverted: Status invertiert
+  step_one_install_module: 1) Shopmodul installieren
+  step_two_verify_website_ownership: 2) Eigentum der Website verifizieren
+  strategy_explanation: 'Aggressiv: Wir schalten für alle Keywords Werbung. Ökonomisch:
+    Wir schalten für die effizientesten Keywords Werbung.'
+  submit: Abschicken
+  successfully_added_page_adtext: Neuer Textbaustein wurde erfolgreich für diese Anzeigengruppe
+    hinzugefügt
+  successfully_added_user_adtext: Neuer Textbaustein wurde erfolgreich für alle Anzeigengruppen
+    der Kampagne hinzugefügt
+  successfully_asked_to_confirm: Freigabe erfolgreich erbeten und E-Mail versendet.
+  successfully_changed_ads_to_use: Einstellungen erfolgreich gespeichert.
+  successfully_continued_advertising_custom_keyword: Keyword wird weiterhin beworben
+  successfully_created_custom_keywords: Keywords wurden erfolgreich als gelöscht markiert.
+    Es kann bis zu 40 Sekunden dauern, bis Änderungen in der Liste erscheinen.
+  successfully_created_example_ad_text_blocks: Es wurden erfolgreich Beispiel-Anzeigenbausteine
+    erstellt, die unser Roboter generiert hat. Sie können diese jederzeit aus ihren
+    eigenen Anzeigen entfernen.
+  successfully_created_user_algo_addition: Keywordabhängige Textbausteine erfolgreich
+    angelegt
+  successfully_deleted: Erfolgreich gelöscht.
+  successfully_deleted_adtext: Anzeigenbaustein erfolgreich gelöscht.
+  successfully_deleted_algo_addition: Keywordabhängige Textbausteine erfolgreich entfernt.
+  successfully_deleted_invoice_but_can_be_undone: Rechnung erfolgreich gelöscht. Dies
+    kann zur Not über die Datenbank Rückgängig gemacht werden.
+  successfully_emailed_invoice: Rechnung wurde erfolgreich verschickt.
+  successfully_extracted_results_question: Erfolgreich Daten extrahiert?
+  successfully_locked_company: User erfolgreich gesperrt
+  successfully_scheduled_keyword_updates: Keywords wurden erfolgreich zum Bearbeiten
+    eingereiht. Dies kann bis zu 5 Minuten dauern. Bitte aktualisieren Sie die Seite
+    regelmäßig.
+  successfully_unlocked_company: User erfolgreich freigeschaltet
+  successfully_updated_adsetting: Die Anzeigeneinstellungen wurden erfolgreich gespeichert.
+  successfully_updated_algo_addition: Keywordabhängige Textbausteine gespeichert.
+  successfully_updated_billing_settings: Abrechnungs Einstellungen erfolgreich gespeichert.
+  successfully_updated_page_adsetting: Die Anzeigeneinstellungen für diese Anzeigengruppe
+    wurden erfolgreich gespeichert.
+  successfully_updated_templates_page: Die Auswahl der Anzeigentemplates wurde für
+    diese Anzeigengruppe erfolgreich gespeichert.
+  successfully_updated_templates_user: Die Auswahl der Anzeigentemplates wurde global
+    erfolgreich gespeichert.
+  successfully_updated_user_adsetting: Die globalen Anzeigeneinstellungen wurden erfolgreich
+    gespeichert.
+  successfully_vendor_confirmed_and_unlocked: Ihr Account wurde erfolgreich freigeschaltet
+    und entsperrt. Sie können nun ihre Kampagnen aktiv setzen.
+  sum: Summe
+  sum_advertising_platforms: Summe Werbeplattformen
+  supervisory_board: Aufsichtsratsvorsitzender
+  support:
+    array:
+      last_word_connector: " und "
+      two_words_connector: " und "
+      words_connector: ", "
+  support_hotline_number: "+49 40-73082290"
+  surcharge_easymarketing: Aufschlag easymarketing
+  target_campaigns: Zielgerichtete Werbekampagnen
+  target_campaigns_text: Hochspezialisierte Experten generieren für Sie je nach Zielsetzung
+    Neukunden, Fans oder Likes. Hierfür setzen wir Ihre Kampagnen zielgerichtet auf
+    und optimieren stetig.
+  tax_id: Steuer-Nr
+  technical_support_or_bugs: Technischer Support/Bugs
+  terminate: Kündigen
+  terms:
+    _1:
+      _1:
+        headline: 1.1 Daten
+        text: 'Wir erheben, verarbeiten und nutzen je nach Ihren Aktionen auf unserer
+          Website folgende personenbezogene Daten: Ihren Vor- und Zunamen, Ihre Anschrift/Geschäftsanschrift,
+          Ihre Firma, Ihre E-Mail-Adresse, Ihre Webseite, Telefonnummer, IP-Adresse,
+          Daten über die von Ihnen getätigten Aufträge (etwa das angegebene Werbebudget
+          für die Schaltung von Anzeigen und Ihre Zielseite, die wir zur Generierung
+          der Anzeigen auslesen sollen), das Passwort für ein festes Kundenkonto,
+          ferner Art und Umfang der von Ihnen abgerufenen Elemente sowie Datum und
+          Uhrzeit des Zugriffs.'
+      _2:
+        headline: 1.2 Websitenutzung
+        text: Wenn Sie unsere Website besuchen, werden temporär bestimmte Verbindungsdaten
+          (IP-Adresse, Cookies, zuletzt besuchte URL, Zeit und Datum, abgerufene Dateien,
+          Browsertyp und –version, verwendetes Betriebssystem) aufgezeichnet. Ohne
+          Ihre gesonderte Einwilligung speichern, verarbeiten und nutzen wir diese
+          personenbezogenen Daten nur, soweit dies für Ihren Aufenthalt auf der Website
+          bzw. im Kundenkonto oder für die Durchführung vertraglicher Zwecke (einschließliche
+          der Aufgabe von Anzeigen-Bestellungen) erforderlich ist. Im Übrigen findet
+          nur eine statistische Auswertung in aggregierter/anonymisierter Form statt.
+      _3:
+        headline: 1.3 Kundenkonto und Aufträge
+        text: Die von Ihnen im Rahmen unseres Online-Angebots angegebenen persönlichen
+          Daten dienen der Vertragsdurchführung im Hinblick auf die von Ihnen bei
+          uns beauftragten Dienstleistungen. Hierfür benötigen wir Ihren Namen, Ihre
+          Adresse, Ihre Firma, Ihre Anschrift und Ihre Kontaktdaten einschließlich
+          der E-Mail-Adresse sowie je nach Auftrag ggf. weitere Angaben, damit wir
+          ein Vertragsverhältnis eingehen und Ihre Aufträge bestätigen und ausführen
+          können. Die vorgenannten Daten werden nur insoweit erhoben, verarbeitet
+          und genutzt, als dies zur Begründung, inhaltlichen Ausgestaltung oder Änderung
+          eines Vertragsverhältnisses sowie zur Durchführung und Abrechnung von Aufträgen
+          einschließlich der Zahlungsabwicklung erforderlich ist.
+      _4:
+        headline: 1.4 Nutzung zu Marketing- und Werbezwecken sowie zur Website-Optimierung
+        text: Nur wenn Sie zuvor Ihre schriftliche Einwilligung erteilt haben, darf
+          easymarketing Ihre Bestandsdaten und/oder Nutzungsdaten auch zur Werbung,
+          Beratung und Marktforschung sowie zum bedarfsgerechten Gestalten der Website
+          verwenden. Soweit easymarketing um eine Einwilligung bittet, werden Sie
+          hierauf gesondert durch einen entsprechenden Einwilligungstext und Kästchen
+          zum Anklicken und/oder Sternchenhinweise aufmerksam gemacht. Ihre diesbezügliche
+          Einwilligung können Sie jederzeit gegenüber easymarketing schriftlich oder
+          elektronisch widerrufen. Haben Sie Ihre Einwilligung nicht erklärt oder
+          widerrufen Sie diese, findet eine Datennutzung nach diesem Absatz nicht
+          statt. Die Leistungen von easymarketing werden selbstverständlich unabhängig
+          davon erbracht, ob Sie Ihre Einwilligung erteilen oder widerrufen.
+      _5:
+        headline: 1.5 Hinweis zu Google Analytics
+        text: Diese Website benutzt Google Analytics, einen Webanalysedienst der Google
+          Inc. („Google“). Google Analytics verwendet sog. „Cookies“, Textdateien,
+          die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung
+          der Website durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen
+          über Ihre Benutzung dieser Website werden in der Regel an einen Server von
+          Google in den USA übertragen und dort gespeichert. Im Falle der Aktivierung
+          der IP-Anonymisierung auf dieser Webseite, wird Ihre IP-Adresse von Google
+          jedoch innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen
+          Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum zuvor
+          gekürzt. Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server
+          von Google in den USA übertragen und dort gekürzt. Im Auftrag des Betreibers
+          dieser Website wird Google diese Informationen benutzen, um Ihre Nutzung
+          der Website auszuwerten, um Reports über die Websiteaktivitäten zusammenzustellen
+          und um weitere mit der Websitenutzung und der Internetnutzung verbundene
+          Dienstleistungen gegenüber dem Websitebetreiber zu erbringen. Die im Rahmen
+          von Google Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht
+          mit anderen Daten von Google zusammengeführt. Sie können die Speicherung
+          der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software
+          verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls
+          nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können.
+          Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und
+          auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an
+          Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem
+          sie das unter dem folgenden Link (http://tools.google.com/dlpage/gaoptout?hl=de)
+          verfügbare Browser-Plugin herunterladen und installieren.<br><br>Nähere
+          Informationen zu Nutzungsbedingungen und Datenschutz finden Sie unter http://www.google.com/analytics/terms/de.html
+          bzw. unter http://www.google.com/intl/de/analytics/privacyoverview.html.
+          Wir weisen Sie darauf hin, dass auf dieser Webseite Google Analytics um
+          den Code „gat._anonymizeIp();“ erweitert wurde, um eine anonymisierte Erfassung
+          von IP-Adressen (sog. IP-Masking) zu gewährleisten.
+      _6:
+        headline: 1.6 Cookies
+        text: Auf einigen unserer Seiten verwenden wir sog. "Session-Cookies", um
+          Ihnen die Nutzung unserer Webseiten zu erleichtern. Dabei handelt es sich
+          um kleine Textdateien, die nur für die Dauer Ihres Besuchs unserer Webseite
+          auf Ihrer Festplatte hinterlegt und abhängig von der Einstellung Ihres Browser-Programms
+          beim Beenden des Browsers wieder gelöscht werden. Diese Cookies rufen keine
+          auf Ihrer Festplatte über Sie gespeicherten Informationen ab und beeinträchtigen
+          nicht Ihren PC oder ihre Dateien. Die meisten Browser sind so eingestellt,
+          dass sie Cookies automatisch akzeptieren. Sie können das Speichern von Cookies
+          jedoch deaktivieren oder ihren Browser so einstellen, dass er Sie auf die
+          Sendung von Cookies hinweist.
+      _7:
+        headline: 1.7 Sonstige Datennutzung
+        text: Eine darüber hinausgehende Speicherung, Verarbeitung und Nutzung Ihrer
+          Daten findet nicht statt. Insbesondere werden auch keine personenbezogenen
+          Nutzungsprofile unter Verwendung Ihres Namens und anderer Identifikationsmerkmale
+          oder eines Pseudonyms erstellt. Wir behalten uns allenfalls vor, zu Zwecken
+          der Optimierung der Website anonymisierte Nutzungsprofile ohne Personenbezug
+          zu erstellen.<br><br>Auch erfolgt keine Weitergabe Ihrer Daten an Dritte.
+          Dieses gilt nicht, soweit Daten zu Zwecken der Vertragsabwicklung (dazu
+          unter 1.3) an unsere Dienstleister (etwa den Zahlungsdienstleister) weitergeleitet
+          werden müssen.Das Gleiche gilt, soweit Sie Ihren Widerruf zur Speicherung
+          von Daten erklären oder gem. § 35 BDSG einen Anspruch auf Berichtigung,
+          Sperrung oder Löschung geltend machen wollen
+      headline: 1. Art, Umfang und Zweck der Datenerhebung, -verarbeitung und -nutzung
+    _2:
+      headline: 2. Auskunft- und Widerrufsrecht
+      text: Auf Ihre Anfrage werden wir Sie schriftlich oder elektronisch darüber
+        informieren, welche Daten über Ihre Person gespeichert sind. Wenden Sie sich
+        hierzu über unsere Kontaktseite an uns. Eine entsprechende Mitteilung hierzu
+        erhalten Sie umgehend.<br><br>Das Gleiche gilt, soweit Sie Ihren Widerruf
+        zur Speicherung von Daten erklären wollen. Wir weisen darauf hin, dass Sie
+        insbesondere eine etwaige Einwilligung jederzeit per E-Mail oder Brief mit
+        Wirkung für die Zukunft widerrufen können.<br><br>
+    _3:
+      headline: Sicherheit Ihrer Daten
+      text: Ihre uns zur Verfügung gestellten persönlichen Daten werden durch Ergreifung
+        technischer sowie organisatorischer Sicherheitsmaßnahmen so gesichert, dass
+        sie für den Zugriff unberechtigter Dritter unzugänglich sind. Bei Versendung
+        von sehr sensiblen Daten oder Informationen ist es empfehlenswert, den Postweg
+        zu nutzen, da eine vollständige Datensicherheit per E-Mail nicht gewährleistet
+        werden kann.
+    _4:
+      headline: 4. Änderungen dieser Datenschutzbestimmungen
+      text: Wir werden diese Richtlinien zum Schutz Ihrer persönlichen Daten von Zeit
+        zu Zeit aktualisieren. Sie sollten sich diese Richtlinien gelegentlich ansehen,
+        um auf dem Laufenden darüber zu bleiben, wie wir Ihre Daten schützen und die
+        Inhalte unserer Website stetig verbessern. Sollten wir wesentliche Änderungen
+        bei der Sammlung, der Nutzung und/oder der Weitergabe der uns von Ihnen zur
+        Verfügung gestellten personenbezogenen Daten vornehmen, werden wir Sie durch
+        einen eindeutigen und gut sichtbaren Hinweis auf der Website darauf aufmerksam
+        machen.<br><br>Bei Fragen zu diesen Datenschutzbestimmungen wenden Sie sich
+        bitte über unsere Kontakt-Seite an uns.
+  test_api_setup: API Setup testen
+  test_now_no_obligations: Jetzt unverbindlich testen
+  testimonial:
+    _1:
+      reviewer: Julia T., styleyourcake.de
+      text: Wir sind begeistert über easymarketing-unsere Umsätze haben sich verdoppelt!
+    _2:
+      reviewer: Herr M., Möbelhändler
+      text: Ich habe bei easymarketing 300 € Tagesbudget eingestellt und schon am
+        ersten Tag ein komplettes Kinderzimmer verkauft.
+    _3:
+      reviewer: Felix R., Webshop für Schuhe
+      text: Mit easymarketing können wir unser AdwordsBudget effizienter einsetzen.
+        Durch die automatisierte Anzeigenschaltung sind erhebliche Ressourcen frei
+        geworden. easymarketing funktioniert!
+    _4:
+      reviewer: Sabine R., Webshop für Kleidung
+      text: Gefühlt ersetzt mir der Roboter nicht nur einen Marketing Manager, sondern
+        eine komplette Marketing-Abteilung! Der optimiert ja echt rund um die Uhr
+        - sogar Anzeigentexte!
+  text_blocks_box_title: Ihre Textbausteine, die zu Anzeigen miteinander kombiniert
+    werden
+  text_type: Text-Typ
+  text_type_all_combined: Alle zusammenhängend
+  text_type_headline: Headline
+  text_type_line_one: Zeile 1
+  text_type_line_one_and_two_combined: Zeile 1 und 2 zusammenhängend
+  text_type_line_two: Zeile 2
+  thank_you_confirm_your_email: Danke für die Registrierung. Bitte bestätigen Sie
+    Ihre Email.
+  thank_you_for_sign_up: Vielen Dank für Ihre Anmeldung
+  thank_you_for_signup_email: |
+    Sehr geehrter Kunde,
+
+    vielen Dank für Ihr Interesse an easymarketing!
+
+    Bitte klicken Sie auf folgenden Link, um Ihre E-Mail-Adresse zu bestätigen und die Analyse Ihrer Webseite mit der URL: %{website_url} zu starten.
+
+    %{url}
+
+    Die Konfiguration des Roboters und das Auslesen Ihrer Webseite nimmt in der Regel zwei Werktage in Anspruch. Dies kann in Ausnahmefällen bis zu einer Woche dauern, falls sehr viele Keywords bzw. Keyword-Kombinationen durch das System getestet werden und Ihre Website sehr viele Unterseiten hat.
+
+    Wir werden uns mit Ihnen in Verbindung setzen, sobald unser Roboter die Analyse abgeschlossen hat.
+  thank_you_registration_confirmed: Bitte bestätigen Sie Ihre Email um die Registrierung
+    abzuschliessen.
+  thanks_for_signing_up_flash: Vielen Dank für Ihre Registrierung. Sie werden per
+    E-Mail informiert, sobald Ihre Seite vollständig analysiert wurde.
+  there_is_a_blacklist_keyword_with_the_name: Es gibt bereits ein BlacklistKeyword
+    mit dem gleichen Namen.
+  this_offer_aims_for_business_clients: Dieses Angebot richtet sich ausschliesslich
+    an Gewerbetreibende
+  this_toggles_users_active_status: "Ändert den Status im Roboter und auf AdWords."
+  time:
+    am: vormittags
+    formats:
+      bookkeping: "%Y%m%d"
+      day_only: "%d"
+      default: "%d.%m.%Y - %H:%M"
+      long: "%A, %d. %B %Y, %H:%M Uhr"
+      month_only: "%B"
+      month_only_numerical: "%m"
+      month_year: "%B-%Y"
+      short: "%d.%m.%Y"
+      short_day_time: "%d.%m-%H:%M"
+      short_hour_minute: "%d.%m.%Y - %H:%M"
+      short_month: "%B %d, %Y"
+    pm: nachmittags
+  timeout_occured_question: Timeout aufgetreten?
+  title: Titel
+  to: 'Bis:'
+  to_less_budget: 'Grund: Zu wenig Budget'
+  to_less_budget_long: Verloren aufgrund zu geringen Budgets
+  to_low_rank: 'Grund: Zu geringer Rang bzw. CPC'
+  to_low_rank_long: Verloren aufgrund zu geringen CPC's
+  to_partner_plugin: zum Plug-In
+  toggle_active: Aktiv ändern.
+  toggle_active_currently: User aktiv/inaktiv setzten, derzeit %{status}
+  toggle_box: Ein-/Ausklappen
+  toggle_page_details: Seitendetails
+  toggle_visibility: Sichtbarkeit umstellen
+  toggled: Einstellungen geändert.
+  tools: Werkzeuge
+  top_level_campaigns: Kampagnen auf Top-Level
+  tos: AGB
+  tos_html: |
+    <h1>AGB</h1> <h2>(gültig ab 03.03.2014)</h2>
+
+    <h2>Einleitung</h2>
+    Die auf easymarketing.de angebotenen Dienstleistungen richten sich an gewerbliche Online-Händler oder sonstige Gewerbetreibende, die die Reichweite ihres Webauftritts vergrößern und Neukunden gewinnen möchten. easymarketing.de wird durch die easymarketing AG, Pilatuspool 2, 20355 Hamburg, (nachfolgend „easymarketing“) betrieben. Mit „Kunde“ wird nachfolgend der Gewerbetreibende bezeichnet, der die Dienstleistungen von easymarketing in Anspruch nimmt. easymarketing verwaltet vollautomatisiert eine oder mehrere Anzeigenkampagnen des Kunden. Davon eingeschlossen sind die Formulierung der Anzeigentexte, die Erstellung der Werbebanner, deren Schaltung auf diversen Plattformen sowie die Optimierung und Allokation der einzelnen Anzeigen, um den maximalen Erfolg für das eingesetzte Budget zu erzielen.
+    <h4>§ 1 Geltung der Allgemeinen Geschäftsbedingungen; Registrierung; Voraussetzungen der Beauftragung</h4>
+    <ol> <li>Diese Allgemeinen Geschäftsbedingungen (nachfolgend „AGB“) regeln ausschließlich das Schalten einer oder mehrerer Anzeigenkampagnen im Rahmen der unter Ziffer 2. genannten Werbeplattformen (nachfolgend "Werbeplattformen") durch easymarketing für den Kunden.</li> <li>Die von easymarketing unterstützten Werbeplattformen sind Google AdWords, und GoogleShopping/Product Listing Ads. Google AdWords, und GoogleShopping/Product Listing Ads sind Werbe-Plattformen der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland (nachfolgend: "Google").</li> <li>Soweit easymarketing auch das Schalten von Anzeigen auf weiteren reichweitenstarken Plattformen wie Bing anbietet und der Kunde dies beauftragt, gelten diese AGB entsprechend, soweit keine spezielleren Regelungen dafür getroffen werden.</li> <li>Die Registrierung des Kunden auf easymarketing.de und seine Beauftragung zur Schaltung von Anzeigen im Rahmen von Werbeplattformen erfolgt ausschließlich unter Einbeziehung dieser AGB. AGB des Kunden finden keine Anwendung. Dies gilt auch dann, wenn easymarketing den AGB des Kunden nicht ausdrücklich widerspricht.</li> <li>Die Registrierung des Kunden auf easymarketing.de ist Voraussetzung für die Beauftragung von easymarketing. Bei der Registrierung wird ein Kundenkonto angelegt, in welches sich der Kunde durch Angabe seiner E-Mail-Adresse und eines Passworts einloggen kann. Das Passwort ist Dritten gegenüber geheim zu halten. Die bei der Registrierung angegebene E-Mail-Adresse des Kunden wird im Falle der Beauftragung auch zur Kommunikation im Rahmen der Vertragsdurchführung verwendet. Der Kunde stimmt der elektronischen Rechnungsstellung zum Download über das Kundenkonto zu (siehe § 11 Abs. 2).</li> <li>Der Kunde versichert, die Beauftragung nur als Unternehmer im Sinne des § 14 BGB, also im Rahmen der Ausübung seiner gewerblichen oder selbstständigen beruflichen Tätigkeit vorzunehmen.</li> </ol>
+    <h4>§ 2 Vertragsgegenstand</h4> <ol> <li>easymarketing gestaltet und schaltet im Rahmen der Werbeplattformen oder anderer reichweitenstarker Plattformen Anzeigenwerbung (d.h. grafische Werbung in jeglicher Form, insbesondere online) für den Kunden und verwaltet entsprechende Anzeige- oder Marketing-Kampagnen. Die Platzierung erfolgt technisch i.d.R. über eine Schnittstelle zu den Werbeplattformen (API). Der Kunde beauftragt diese Dienstleistungen von easymarketing.</li> <li>Grundlage der Dienstleistungen von easymarketing sind die Werbeplattformen, deren Funktionsweise in § 4 beschrieben ist. easymarketing wird zur Erbringung seiner Dienstleistungen für den Kunden bei den Werbeplattformen im Namen von easymarketing ein Konto für die Nutzung der Werbeplattformen einrichten, welches mit einem speziellen Konto (nämlich dem sog. MCC-Konto) von easymarketing verknüpft ist und hierüber durch easymarketing verwaltet wird.</li> <li>Ein Vertragsverhältnis kommt ausschließlich zwischen dem Kunden und easymarketing zustande (in Form eines Geschäftsbesorgungsvertrags über Dienstleistungen). Alleiniger Vertragspartner des Betreibers der Werbeplattformen ist easymarketing.</li> <li>easymarketing erbringt seine Marketing-Leistungen (siehe § 4) für den Kunden auf Basis vom Kunden bereitgestellter Informationen. Insbesondere werden automatisch von der Webseite oder aus dem Shopsystem des Kunden ausgelesen (siehe § 5 Abs. 1). easymarketing wird vom Kunden überlassene personenbezogene Daten nur im gesetzlich zulässigen Rahmen verwenden; nähere Informationen enthält die Datenschutzerklärung: <a href="https://easymarketing.de/datenschutz">https://easymarketing.de/datenschutz</a></li> <li>Der Kunde verpflichtet sich gegenüber easymarketing, für die Dauer des zwischen ihm und easymarketing bestehenden Vertrags nicht dieselben Produkte mit derselben Anzeigenwerbung zu bewerben, insbesondere nicht Adwords doppelt auf eine URL zu schalten.</li> <li>Der Kunde ist nicht berechtigt, die vom Auftraggeber kreierte und/oder geschaltete Anzeigenwerbung (einschließlich Werbeslogans, grafischer Werbung und/oder Anzeigen- oder Marketing-Kampagnen) selber zu Werbezwecken zu nutzen.</li> </ol>
+    <h4>§ 3 Leistungen von easymarketing</h4> <ol> <li>easymarketing legt kundenspezifische Anzeigen-Kampagnen für den Kunden an, formuliert die Anzeigentexte, gestaltet ggf. Werbebanner und stellt diese bei den Werbeplattformen über Schnittstellen oder Einbuchungen ein. Bei der Erstellung der entsprechenden Anzeigen orientiert sich easymarketing an den Inhalten auf der vom Kunden angegebenen Zielseite – in der Regel der Webauftritt bzw. Onlineshop des Kunden – oder an den sonst vom Kunden zur Verfügung gestellten Informationen (siehe § 5 Abs. 1). Wenn bei wörtlicher Übernahme der Keywords, die vom Kunden bereitgestellt oder auf der Basis der von ihm bereitgestellten Informationen ermittelt wurden, aufgrund der großer Verbreitung dieser Keywords die Chancen einer Einblendung der Anzeige nach der begründeten Auffassung von easymarketing als gering einzuschätzen sind, ist easymarketing berechtigt, im Interesse des Kunden ggf. auch verwandte oder ähnliche Begriffe zu verwenden.</li> <li>easymarketing wird nach pflichtgemäßem Ermessen und unter Berücksichtigung der eigenen speziellen Kenntnisse die Beträge festsetzen, welche maximal pro Klick auf die für den Kunden erstellte(n) Anzeige(n) geboten werden und nicht überschritten werden dürfen (so genannte „CPC“). easymarketing wird hierbei während der Vertragslaufzeit kontinuierlich überprüfen, welches Produkt der Werbeplattformen (z.B. Google AdWords) den Werbezielen des Kunden mutmaßlich am besten gerecht wird und nach einem internen Algorithmus die maximalen Klickpreise selbst und vollautomatisch festlegen. Es herrscht Einvernehmen, dass auch die Einblendung einer Anzeige (z.B. AdWords-Anzeige) eine Werbeleistung von easymarketing darstellt.</li> <li>Die Häufigkeit der Klicks hängt von der Branchennachfrage und dem eingesetzten Budget ab. Die Anzeigen des Kunden können so lange erscheinen, bis das Tages-Budget aufgrund der von den Werbeplattformen jeweils pro Klick berechneten Kosten verbraucht ist. easymarketing kann keine Garantie übernehmen, dass und wie oft eine bestimmte Anzeige innerhalb eines bestimmten Zeitraums an welcher Anzeigenposition erscheint.</li> <li>easymarketing bemüht sich nach besten Kräften, die Anzeigen-Kampagnen (z.B. AdWords-Kampagnen) derart zu optimieren, dass ein niedriger Klickpreis und eine hohe Anzeigenposition, jeweils abhängig von der für den Kunden relevanten Branche, erreicht werden kann. Im Fall von AdWords- Kampagnen erfolgt dies durch einen hohen Qualitätsfaktor (siehe § 4 Abs. 2) der Anzeige.</li> <li>Der Kunde erhält online regelmäßig eine Statistik, in der die Suchwörter und Gesamt-Impressions und Gesamt-Klicks aufgelistet sind, um so den Erfolg der Anzeigen-Kampagnen (z.B. AdWords-Kampagne) nachvollziehen zu können. Die Statistik ist über das Kundenkonto abrufbar.</li> <li>easymarketing wird alle in diesem § 3 genannten Leistungen regelmäßig in automatisierter Form auf Basis speziell hierfür entwickelter Software erbringen. easymarketing wird sich darum bemühen, dass die eingesetzten Verfahren dem Stand der Technik entsprechen. Es findet jedoch keine Prüfung der von der Webseite des Kunden ausgelesenen oder auf Basis der von ihm bereitgestellten Informationen ermittelten Keywords auf Marken- oder sonstige Schutzrechts- oder Rechtsverletzungen statt. Dies gilt auch für Anzeigentexte und Keywords, die auf Basis von Texten von der Webseite des Kunden generiert werden. Auch eine manuelle Nachprüfung der Ergebnisse der Software – einschließlich der entworfenen Anzeigen und Keywords – auf Stimmigkeit oder Rechtsverletzungen wird durch easymarketing grundsätzlich nicht vorgenommen.</li> </ol>
+    <h4>§ 4 Konzepte der Werbe-Plattformen</h4>
+    <ol> <li>Das Werbekonzept Google AdWords, so wie es von easymarketing genutzt wird, funktioniert dergestalt, dass nach einer Suche mit der Internet-Suchmaschine Google dem betreffenden Internet-Nutzer über bzw. neben den eigentlichen Suchergebnissen zusätzlich Werbeanzeigen ("AdWords-Anzeigen") eingeblendet werden. Kosten werden seitens Google berechnet, sobald Internet-Nutzer auf eine eingeblendete Werbeanzeige klicken (soweit der Kunde die Dienste von easymarketing nutzt, rechnet Google im Verhältnis zu easymarketing ab, nicht gegenüber dem Kunden). Eine Einblendung der AdWords-Anzeigen erfolgt grundsätzlich immer dann, wenn die für den Kunden hinterlegten Schlüsselbegriffe ("Keywords") mit den vom Internet-Nutzer eingegebenen Suchbegriffen identisch sind. Sind für bestimmte Schlüsselbegriffe von einer Vielzahl von Unternehmen AdWords-Anzeigen gebucht, so kann es aus Platzgründen, auf die easymarketing keinen Einfluss hat, vorkommen, dass nicht alle AdWords-Anzeigen angezeigt werden. In diesem Falle wird die Entscheidung, welche AdWords-Anzeige tatsächlich angezeigt werden und in welcher Reihenfolge dies geschieht, für jeden Google-Suchvorgang automatisch im Rahmen einer sog. Auktion seitens Google ermittelt. Dabei hängt die Chance eingeblendet bzw. möglichst weit oben eingeblendet zu werden u.a. von der Höhe des jeweils festgelegten Maximalbetrages pro Klick und der Bewertung der sog. Qualität der Anzeige durch Google (im Folgenden „Qualitätsfaktor“) ab. Aktuelle Informationen zur Funktionsweise von Google AdWords sind unter <a href="http://adwords.google.de">http://adwords.google.de</a> abrufbar.</li> <li>Das Werbekonzept von GoogleShopping, so wie es von easymarketing genutzt wird, funktioniert dergestalt, dass nach einer Suche mit der Internet-Suchmaschine Google (bei Nutzung der Option "Shopping" oder unter der Unterseite <a href="http://www.google.de/shopping">http://www.google.de/shopping</a>) dem betreffenden Internet-Nutzer entsprechende Angebote von Händlern eingeblendet werden. Dazu wird Google Adwords durch GoogleShopping erweitert; die Nutzung des gewählten Tagesbudgets zwischen diesen zwei Werbeplattformen steuert Google selber aus. Mit dem Tagesbudget werden Anzeigen mit Produktinformationen geschaltet und genutzt, wenn Internet-Nutzer in der Google-Suche oder bei GoogleShopping/Product Listing Ads nach Ihren Produkten suchen. Die Anzeige für den Kunden umfasst unter anderem Bilder der Artikel, Preise und den Name des Shops. Internet-Nutzer, die auf die Anzeige des Kunden klicken, werden auf die Website des Kunden weitergeleitet, auf der sie den Artikel direkt kaufen können. Beim Einsatz von Anzeigen mit Produktinformationen entstehen nur Kosten, wenn ein Internet-Nutzer auf die Anzeige des Kunden klickt und auf die Website des Kunden gelangt. Der Kunde zahlt nur dann, wenn der Internet-Nutzer über Google zu deren Geschäft weitergeleitet wird. Eine detaillierte Beschreibung findet sich unter www.google.com/ads/plasetup.</li> </ol>
+    <h4>§ 5 Beistellungs-, Mitwirkungs-, Prüf- und weitere Pflichten des Kunden; Freistellung bei Rechtsverletzungen durch bereitgestellte Inhalte</h4> <ol> <li>Der Kunde stellt die für die Marketing-Leistungen notwendigen Informationen über die vom Kunden angebotenen und durch easymarketing zu bewerbenden Produkte und Leistungen des Kunden zur Verfügung, indem der Kunde entweder
+        <ul>
+    <li>easymarketing gestattet, die Website des Kunden automatisiert auszulesen (per sog. Crawler), und/oder ein von easymarketing angebotenes Plugin verwendet, welches die Datenbank des Webshops des Kunden ausliest und die zur Erbringung der Marketing-Leistungen notwendigen Informationen an easymarketing übermittelt, und/oder</li> <li>selbst die gewünschten Keywords oder Produkte an easymarketing übermittelt.</li>
+        </ul>
+    Gestattet der Kunde das automatisierte Auslesen seiner Websites, so müssen diese den Anforderungen für die Schaltung von Anzeigen-Kampagnen gemäß den dafür geltenden AGB (siehe § 16) entsprechen, ansonsten können die Anzeigen kostenpflichtig gelöscht werden.</li> <li>Die Bewerbung von Substanzen, Dienstleistungen oder sonstigen Leistungen, Produkten und/oder Materialien, deren Bewerbung und/oder Vermarktung rechtswidrig, verboten oder unethisch ist, ist unzulässig und kann kostenpflichtig gelöscht und gegebenenfalls zur Anzei-ge gebracht werden. easymarketing behält sich die Geltendmachung weiterer Schadener-satzansprüche vor. Im Falle der Verwendung von Keywords, die gegen die Werberichtlinien der Werbeplattformen verstoßen (siehe § 16), behält easymarketing die 100 € zzgl. Mwst. als Bearbeitungsgebühr. Der Kunde versichert, zur Nutzung und Weitergabe der von ihm bereit-gestellten Daten einschließlich der angegebenen Keywords berechtigt zu sein und die gel-tenden datenschutzrechtlichen Bestimmungen zu beachten. Der Kunde versichert zudem, dass die von ihm bereitgestellten Daten, insbesondere die angegebenen Keywords, frei von Rechten Dritter und mit geltendem Recht vereinbar sind. Das Gleiche gilt von Begriffen, die auf den vom Kunden zur Auswertung angegebenen Webseiten als Keywords verwendet wer-den (etwa in den sog. Meta-Tags im HTML-Code). Das Gleiche gilt für die Begriffe, die in Texten auf diesen Webseiten enthalten sind. easymarketing übernimmt keine Gewähr für den Inhalt, insbesondere nicht für den Wahrheitsgehalt der in Auftrag gegebenen Anzeigen und sonstigen Leistungen.</li> <li>Der Kunde ist gegenüber easymarketing verpflichtet, Verstöße der in dem vorstehenden § 5 Abs. 2 sowie in § 7 Abs. 1 genannten Art zu vermeiden. Er ist hierzu insbesondere verpflichtet, die im Rahmen dieses Vertrages von ihm für die Erstellung von Anzeigen und Keywords zur Verfügung gestellten Informationen vorab sorgfältig auf die Verletzung von gewerblichen Schutzrechten (z.B. Marken) und sonstigen Rechten Dritter zu prüfen. Auf Verlangen von easymarketing hat der Kunde eine entsprechende Gestattung und/oder Lizenz für die von ihm benutzten Marken und sonstigen Schutzrechte nachzuweisen. Er hat ferner die von easymarketing auf Basis der von ihm bereitgestellten Informationen generierten Anzeigen in eigener Verantwortung auf Rechtsverletzungen zu prüfen. Hierzu kann, soweit für die jeweilige Leistung verfügbar, auch die von easymarketing angebotene Vorschaufunktion herangezogen werden.</li> <li>Im Hinblick auf die vom Kunden zur Verfügung gestellten Daten und Keywords stellt der Kun-de easymarketing von allen Nachteilen frei, die easymarketing durch deren Verwendung im Rahmen des Vertragszwecks entstehen. Der Kunde trägt die volle Verantwortung und Haf-tung für den Inhalt der auf Grundlage seiner Daten im Rahmen des Vertragszwecks für ihn durch easymarketing erstellten Anzeige(n). Er stellt easymarketing von jeglichen wettbewerbs-, urheber-, namens- und/oder markenrechtlichen und/oder sonstigen Ansprüchen Drit-ter frei, die auf einem Verstoß des Kunden gegen § 5 Abs. 2 oder § 5 Abs. 3 beruhen. Das Gleiche gilt im Fall des Verkaufs und/oder der sonstigen Vermarktung rechtswidriger Produkte.</li> <li>Für die inhaltliche Richtigkeit und Aktualität der vom Kunden bereitgestellten Daten ist der Kunde verantwortlich.</li> <li>Der Kunde gewährt easymarketing das Recht, die von ihm bereitgestellten Daten in anonymisierter Form zu statistischen Zwecken zu verwenden. Dies umfasst insbesondere auch das uneingeschränkte Recht, die gelieferten Daten zur Optimierung des Algorithmus zu verwenden oder die Erfolgsschätzungen zu verbessern.</li> <li>In bestimmten – nachstehend beschriebenen – Fällen findet eine Erfolgsmessung der Werbeplattformen auf Basis eines sog. Trackings der Endkunden mittels sog. Tracking-Pixel statt. Auf diese Weise kann – auch unter Nutzung von Cookies, die von den Werbeplattformen auf den Rechnern der Endkunden abgelegt werden – von den Werbeplattformen u.a. gemessen werden, ob die Einblendung einer Werbeanzeige später zu einem Aufruf der entsprechenden Produktseite durch den Endkunden geführt hat. Die so gewonnenen statistischen Informationen nutzt easymarketing, um dem Kunden eine detaillierte Rückmeldung über den Erfolg der Beauftragung zu geben (siehe § 3 Abs. 5). Das Tracking-Verfahren wird insbesondere eingesetzt, wenn der Kunde ein Online-Shopsystem mit einer Schnittstelle zu easymarketing benutzt; in diesem Fall ist grundsätzlich in den Internetseiten des Shops ein von den Werbeplattformen gestellter Tracking-Pixel-Code zum Zweck der vorstehend beschriebenen Erfolgsmessung integriert. Das Tracking-Verfahren findet in gleicher Weise statt, wenn der Kunde auf seinen Seiten den entsprechenden Tracking-Pixel-Code von den Werbeplattformen selbst integriert. Schließlich kann es sein, dass easymarketing besondere Arten von Kampagnen anbietet, deren Nutzung/Erfolgsmessung ebenfalls auf dem dargestellten Tracking-Verfahren basiert – in diesem Fall wird easymarketing den Kunden gesondert darauf hinweisen, dass eine Erfolgsmessung über Tracking-Verfahren auf seinen Webseiten stattfindet. Der Kunde ist in allen Fällen verpflichtet, seinerseits für die Wahrung der gesetzlichen Datenschutzbestimmungen insbesondere des Bundesdatenschutzgesetzes und des Telemediengesetzes zu sorgen. Er verpflichtet sich gegenüber easymarketing, das seinerseits Erforderliche zur Einhaltung dieser Gesetze zu veranlassen. Er wird die Kunden seines Online-Shops und seiner sonstigen beworbenen Internetseiten rechtzeitig und verständlich im vorgeschriebenen Umfang über die mit der Nutzung dieser Seiten verbundene Erhebung und Verwendung personenbezogener Daten – durch sich und auch durch die Werbeplattformen – gemäß § 13 Abs. 1 S. 1 und S. 2 Telemediengesetz hinweisen. Der Kunde wird ferner, soweit nach der jeweils geltenden Rechtslage erforderlich, eine rechtsgültige Einwilligung des Kunden in das Tracking und/oder das Setzen von Cookies zu den in diesem Abschnitt beschriebenen Zwecken einholen. Der Kunde hält easymarketing von allen Ansprüchen der Endkunden und sonstiger Dritter frei, die sich aus einem Verstoß des Kunden gegen diesen § 5 Abs. 7 oder gegen gesetzliche Bestimmungen zum Datenschutz ergeben.</li> </ol>
+    <h4>§ 6 Vertragslaufzeit und Kündigung</h4> <ol> <li>Der Vertrag zwischen easymarketing und dem Kunden kommt mit Auftragserteilung durch den Kunden unter easymarketing.de zustande und wird für unbestimmte Zeit geschlossen.</li> <li>Jeder Vertragsteil kann den Vertrag jederzeit ohne Angaben von Gründen schriftlich (auch per E-Mail) gegenüber dem anderen Vertragsteil ohne Einhaltung eine Kündigungsfrist kündigen.</li> <li>easymarketing behält sich eine solche Kündigung insbesondere vor, wenn die Website des Kunden so gestaltet ist, dass er sich für die Dienstleistungen von easymarketing nicht eignet. Das gilt insbesondere, wenn die Conversion-Rate, also das Verhältnis von Käufern zu Besuchern eines Shops niedrig ist.</li> <li>Als Kündigung ist es auch zu verstehen, wenn der Kunde online auf der Website von easymarketing entweder die Anzeigen-Kampagne stoppt oder per Mausklick die Kampagnen aussetzt. Mit dem Heraufsetzen des Werbebudgets oder der Beauftragung einer Kampagne kommt ein neuer Vertrag nach diesen Vertragsbedingungen zustande.</li> <li>Mit dem Ende der Vertragslaufzeit endet auch das Recht des Kunden, vom Auftraggeber kreierte und/oder geschaltete Anzeigenwerbung jeglicher Art (einschließlich Werbeslogans, grafischer Werbung und/oder Anzeigen- oder Marketing-Kampagnen) zu nutzen.</li> </ol>
+    <h4>§ 7 Rechtsverletzende, gefährliche oder sittenwidrige Werbung oder sonstiger Missbrauch; Ablehnungs- und Kündigungsrecht; Vertragsstrafe</h4> <ol> <li>Die auftragsgemäß für den Kunden zu bewerbenden Produkte oder Dienstleistungen – oder die Werbung dafür – dürfen nicht gegen Rechtsvorschriften (z.B. Jugendschutz- oder Strafgesetze) oder Rechte Dritter verstoßen, sittenwidrig sein, die Gesundheit von Mensch und Tier gefährden oder rassistisch oder volksverhetzend sein. Sie (oder die Werbung dafür) dürfen ferner keine Minderheiten beleidigen oder in sonst irgendeiner Weise gegen den guten Geschmack verstoßen. Ferner darf die Werbung für die Produkte oder Dienstleistungen keinen Verstoß gegen die AGB der Werbeplattformen (z.B. Google AdWords) (siehe § 16) darstellen.</li> <li>easymarketing behält sich vor, vom Kunden bereitgestellte Daten nicht zu verwenden bzw. zu entfernen, soweit ein Verstoß gegen § 7 Abs. 1 vorliegt. Das Gleiche gilt, soweit der Inhalt der Daten nach Einschätzung von easymarketing möglicherweise Gegenstand von rechtswidrigen, herabsetzenden, ehrverletzenden, unsittlichen Äußerungen oder ebensolchen bildlichen Darstellungen sein könnte.</li> <li>easymarketing kann die Erbringung seiner vertraglichen Leistungen für den Kunden jederzeit ablehnen und laufende Verträge fristlos kündigen, wenn ein Verstoß gegen § 7 Abs. 1 vorliegt oder bei Schaltung der Werbung vorliegen würde. Das Gleiche gilt, soweit ein Fall des § 7 Abs. 2 S. 2 vorliegt oder vorliegen würde. Ferner gilt das Gleiche, soweit die Leistungen aus technischen Gründen nicht durchführbar sind.</li> <li>Betreffen Verstöße der in § 7 Abs. 1 und § 7 Abs. 2 S. 2 genannten Art laufende Kampagnen, so können diese von easymarketing kostenpflichtig gelöscht werden. Rechtswidrige Handlungen können gegebenenfalls zur Anzeige gebracht werden. Für jeden Fall der Zuwiderhandlung gegen § 7 Abs. 1 verpflichtet sich der Kunde zur Zahlung einer Vertragsstrafe, deren Höhe nach billigem Ermessen von easymarketing festzusetzen ist und auf Antrag des Kunden vom zuständigen Gericht überprüft wird.</li> </ol> <h4>§ 8 Leistungsänderungen</h4> <ol> <li>Ändern sich die technischen, rechtlichen oder kommerziellen Rahmenbedingungen und wird easymarketing dadurch die vertragsgemäße Leistung hinsichtlich der Werbeplattformen (z.B. Google AdWords) erschwert, kann sie die angebotenen Dienste den Veränderungen entsprechend angemessen anpassen.</li> <li>Im Falle einer Änderung, durch welche easymarketing ihre Leistung wesentlich erschwert wird, ist easymarketing berechtigt, die angebotenen Dienste einzustellen oder nur gegen eine erhöhte Vergütung weiter anzubieten. In einem solchen Fall wird sie den Kunden rechtzeitig schriftlich (E-Mail genügt) über die wesentliche Erschwerung informieren und entweder eine angemessene Erhöhung der Vergütung verlangen oder nach Ablauf einer angemessenen Ankündigungsfrist die Leistungen einstellen.</li> <li>Änderungen an den Diensten der Werbeplattformen (z.B. von der Google AdWords) (siehe § 4) können sich unmittelbar auf die Leistungserbringung auswirken. easymarketing hat hierauf keinen Einfluss. Es obliegt insofern dem Kunden, sich regelmäßig über die aktuelle Funktionsweise der Werbeplattformen (z.B. Google AdWords) zu informieren (siehe auch § 4).</li> <li>Die Regelungen zur Kündigung in § 7 bleiben von diesem § 8 unberührt.</li> </ol>
+    <h4>§ 9 Vergütung</h4> <ol> <li>Der Kunde bestimmt ein Tages-Budget, welches er für die Werbung durch easymarketing zur Verfügung stellt und höchstens aufwenden will („Tages-Budget“). Dieses Tages-Budget muss mindestens 5 EUR betragen und umfasst sämtliche von easymarketing zur Ausführung des Vertrages getätigten Aufwendungen (z.B. die Kosten, die die Werbeplattform beim Anklicken einer durch easymarketing für den Kunden geschalteten AdWord-Anzeige in Rechnung stellt). Das Tages-Budget versteht sich zzgl. einer Provision von easymarketing (siehe § 9 Abs. 3) und zzgl. Umsatzsteuer. Das Tages-Budget samt Provision und Umsatzsteuer wird an dem Tag, auf den es sich bezieht, fällig.</li> <li>Zu dem vom Kunden bestimmten Tages-Budget wird zunächst ein ggf. nicht aufgebrauchter Restbetrag des Tages-Budgets vom Vortag hinzugerechnet („Budget-Übertrag“). Der sich so ergebende Betrag ist das für den laufenden Tag zur Ausführung des Vertrags effektiv zur Verfügung stehende Budget („Netto-Budget“). easymarketing bemüht sich, das Netto-Budget, soweit möglich und zweckmäßig, zur Ausführung des Vertrages – also insbesondere zur Verwaltung und Schaltung von AdWord-Anzeigen für die Produkte und Dienstleistungen des Kunden – aufzuwenden. Aus werbefachlichen Erwägungen und aufgrund statistischer Erfahrungswerte kann es allerdings in bestimmten Fällen erfolgversprechender und zweckmäßiger sein, das Budget ganz oder teilweise an einem der Folgetage aufzuwenden. Da zudem die tatsächlichen Aufwendungen von dem Erfolg der Anzeigen und deren Schaltung von den Werbeplattformen abhängen, kann es vorkommen, dass das Netto-Budget an einem Tag nicht vollständig aufgewendet wird. Der ggf. bei Tagesablauf verbleibende Rest erhöht als Budget-Übertrag das Tages-Budget des Folgetags (siehe § 9 Abs. 2 Satz 1). Andersherum liegt es im Ermessen von easymarketing, das Tagesbudget um mehr als 20% zu überschreiten. easymarketing wird dieses dadurch ausgleichen, dass easymarketing in diesem Fall in den Folgetagen das Budget für die geschalteten Anzeigen entsprechend reduzieren. easymarketing stellt sicher, dass im Mittel nur das Tages-Budget aufgebraucht wird. easymarketing stellt sicher, dass – auch im Fall wiederholter Überträge – der Budget-Übertrag die Höhe eines vom Kunden festgelegten Tages-Budgets (vorbehaltlich einer zwischenzeitlichen Herabsetzung des Tages-Budgets durch den Kunden) nicht übersteigt.</li> <li>easymarketing erhält für seine Leistungen vom Kunden eine Provision in Höhe von 15% des vom Kunden bestimmten Tagesbudgets. Budget-Überträge (§ 9 Abs. 2 Satz 1) bleiben bei der Provisionsberechnung unberücksichtigt. Die Provision versteht sich zzgl. Umsatzsteuer. Der Provisionsanspruch entsteht für jeden Tag, an dem easymarketing im Auftrag des Kunden tätig wird, neu. easymarketing behält sich vor, eine geringere Provision festzulegen.</li> <li>Der Kunde erhält die Provision für die ersten 2 Monate ab Liveschaltung zurückerstattet, wenn dieser per E-Mail an info@easymarketing.de erklärt, mit den Leistungen von easymarketing nicht restlos zufrieden gewesen zu sein.</li> </ol>
+    <h4>§ 10 Startpaket (100 EUR Werbung)</h4> <h5 style="color: red;">Entfällt ab dem 8.7.2014</h5> <ol>
+      <li>Mit der allerersten Beauftragung erwirbt der Kunde ein Startpaket von Werbung im Wert von 100 EUR. Die 100 EUR zzgl. Umsatzsteuer sind mit der ersten Beauftragung fällig und werden durch easymarketing gemäß § 11 Abs. 3 eingezogen bzw. der Kreditkarte des Kunden belastet und entsprechend § 11 Abs. 1 und Abs. 2 in Rechnung gestellt. Für eine spätere erneute Anmeldung des Kunden nach einer zwischenzeitlichen Kündigung und/oder Inaktivität des Kunden gilt dieser § 10 nicht.</li>
+      <li>Bei der Schaltung der Startpaket-Werbung im Wert von 100 EUR wird keine Provision von easymarketing berechnet. Der Kunde erhält also einen effektiven Gegenwert von 100 EUR in Form von Werbung. Ein Anspruch auf vollständige oder teilweise Auszahlung der 100 EUR besteht nicht.</li>
+      <li>Die Startpaket-Werbung wird in den ersten Tagen nach der ersten Beauftragung geschaltet. Unabhängig davon wird die Werbung gemäß dem vom Kunden jeweils festgelegten Tages-Budget geschaltet und gemäß § 9 und § 11 berechnet.</li>
+      <li>Der Kunde erhält die Provision für die ersten 2 Monate ab Liveschaltung zurückerstattet, wenn dieser per E-Mail an info@easymarketing.de erklärt, mit den Leistungen von easymarketing nicht restlos zufrieden gewesen zu sein. Zusätzlich erhält der Kunde € 100,- pauschal per Bank-Überweisung zurückerstattet, sofern er ein Tages-Budget von mindestens 10 € über eine Laufzeit von mindestens 7 Wochen ausgegeben hat und gegenüber easymarketing per E-Mail erklärt hat, nicht restlos zufrieden gewesen zu sein.</li>
+      <li>Kündigt easymarketing den Vertrag aus wichtigem Grund kündigt, so verfällt der Anspruch auf die vom Startpaket umfasste und noch nicht geschaltete Werbung.</li>
+    </ol>
+    <h4>§ 11 Rechnung, Zahlungsbedingungen und Einzugsermächtigung</h4> <ol>
+      <li>easymarketing wird dem Kunden monatlich zwei Rechnungen stellen, eine für den Zeitraum zwischen dem 1. und dem 15. Tag des jeweiligen Monats sowie eine für den weiteren Zeitraum zwischen dem 16. und dem letzten Tag des jeweiligen Monats. Darin werden die Summen der auf den abgerechneten Zeitraum entfallenden, vom Kunden bestimmten Tages-Budgets zzgl. der Provision von easymarketing (siehe § 9 Abs. 3) und zzgl. 19% MwSt. in Rechnung gestellt und die einzelnen Abbuchungen gemäß § 11 Abs. 3 bzw. der Erstbetrag von EUR 100 gemäß § 10 Abs. 1 ausgewiesen. Budget-Überträge bleiben unberücksichtigt.</li>
+
+      <li>Die Rechnung wird jeweils elektronisch im PDF-Format gestellt und zum Download über das Kundenkonto bereitgestellt. Der Kunde stimmt dieser Art der Rechnungsstellung gem. § 14 Umsatzsteuergesetz zu. Die Bereitstellung der elektronischen Rechnung zum Download über das Kundenkonto begründet – über die damit bewirkte Übermittlung der Rechnung im Sinne des § 14 Umsatzsteuergesetz hinaus – keine nachteiligen Rechtsfolgen für den Kunden. Insbesondere führt die Bereitstellung der Rechnung zum Download als solche nicht zum Verzug. Der vorstehende Satz gilt nicht für den Fall, dass easymarketing die elektronische Rechnung im eigenen Ermessen zusätzlich per E-Mail an die im Kundenkonto angegebene E-Mail-Adresse des Kunden versendet. Für diesen Fall (d.h. die Zusendung der Rechnung per E-Mail) gilt die Regelung des § 286 BGB über den Verzug.</li>
+
+      <li>Der Kunde hat die Wahl zwischen dem Lastschriftverfahren (Girokonto) oder der Einziehung über Kreditkarte. Bei Wahl des Lastschriftverfahrens ermächtigt der Kunde easymarketing, fällige Beträge per Lastschrift von dem vom Kunden angegebenen Girokonto einzuziehen (im Ermächtigungsverfahren). Bei Wahl der Kreditkartenzahlung ermächtigt der Kunde easymarketing, die vom Kunden zur Zahlung bestimmte Kreditkarte mit den in Rechnung gestellten Beträgen zu belasten.</li>
+
+      <li>Die Einziehung bzw. Belastung gemäß § 11 Abs. 3 der 100 EUR für das Startpaket gemäß § 10 Abs. 1 erfolgt mit Vertragsbeginn. Im Übrigen erfolgt die Einziehung bzw. Belastung fälliger Beträge grundsätzlich frühestens am 16. Tag eines Monats hinsichtlich der für die erste Hälfte dieses Monats gem. § 11 Abs. 1 ausgewiesenen Beträge und frühestens am 4. Tag des Folgemonats hinsichtlich der für die zweite Hälfte des jeweiligen Vormonats ausgewiesenen Beträge gem. § 11 Abs. 1. Allerdings kann easymarketing während des laufenden Monats Teilbeträge von 50 EUR zzgl. Umsatzsteuer einziehen, sobald jeweils ein entsprechendes Budget verbraucht worden ist (für genutztes Tagesbudget und Provision). Die Höhe der Teilbeträge kann nach individueller Absprache durch easymarketing auf 100 EUR, 200 EUR, 500 EUR oder 1.000 EUR angehoben werden. Am Ende des Monats wird das restliche verbrauchte Budget gem. § 11 Abs. 3 eingezogen bzw. belastet. Sämtliche eingezogenen bzw. belasteten Beträge werden in den Rechnungen gem. § 11 Abs. 1 ausgewiesen. Der Kunde wird darauf hingewiesen, dass die Einziehung bzw. Belastung von (Teil-)Beträgen damit schon vor der Rechnungsstellung gem. § 11 Abs. 1 erfolgen kann. Der Kunde wird sicherstellen, dass das Bankkonto bzw. die Kreditkarte ausreichend gedeckt sind.</li>
+
+      <li>Im Falle von Rücklastschriften mangels Kontodeckung oder wegen unberechtigten Widerspruchs wird der Kunde den entstandenen Schaden ersetzen. Der Schaden wird pauschal mit € 25,00 je Rücklastschrift angesetzt. Satz 1 und Satz 2 dieses § 11 Abs. 6 gelten auch, wenn der Kunde trotz fälliger Rechnungen die Einzugsermächtigung widerruft und daraus ohne Verschulden der easymarketing Rücklastschriften entstehen. Der Kunde wird auch den entstandenen Schaden im Falle eines Chargebacks (Rückbelastung) ersetzen. In Fällen des vorstehenden Satzes wird der Schaden pauschal mit € 50,00 je Chargeback angesetzt. In allen Fällen dieses § 11 Abs. 6 ist dem Kunden der Nachweis gestattet, ein Schaden sei überhaupt nicht entstanden oder wesentlich niedriger als die Pauschale.</li>
+
+      <li>Im Falle der Kündigung oder sonstigen Vertragsbeendigung werden die Tagesprovision für den laufenden Tag sowie die bereits getätigten Aufwendungen in voller Höhe in Rechnung gestellt. Ein verbleibender Rest des Tages-Budgets (einschließlich eines etwaigen Budget-Übertrags) wird ebenfalls in Rechnung gestellt, es sei denn, easymarketing erhält diesen Rest seinerseits von der Werbeplattformen erstattet.</li>
+
+      <li>Eine Aufrechnung durch den Kunden mit Forderungen, die bestritten und nicht rechtskräftig festgestellt sind, ist ausgeschlossen. Ausgeschlossen ist ferner die Ausübung von Zurückbehaltungsrechten durch den Kunden, wenn diese auf anderen Vertragsverhältnissen beruhen</li>
+      </ol>
+
+
+    <h4>§ 12 Keine Gewährleistung</h4> <ol> <li>Die Erreichbarkeit und Abrufbarkeit einzelner Anzeigen kann nicht zugesichert werden. Insbesondere sind vorübergehende Beeinträchtigungen bei der Nutzung der Werbeplattformen (zvon nicht unüblich. easymarketing übernimmt darüber hinaus für Zugangseinschränkungen, die auf höherer Gewalt oder sonstigen von easymarketing nicht zu vertretenden und außerhalb ihres Einflussbereiches liegenden Umständen beruhen, keine vertragliche Gewähr.</li> <li>easymarketing ist zur Durchführung von Wartungsarbeiten an Servern und Datenbanken berechtigt, die kurzfristige Unterbrechungen des Angebots der Werbeplattformen und deren Produkte zur Folge haben können. Störungen des Betriebsablaufs, insbesondere des Datenabrufs wird easymarketing dabei so gering wie möglich halten.</li> <li>Hinweise auf offenkundige Unrichtigkeiten bei den für den Kunden geschalteten AdWord-Anzeigen müssen jeweils spätestens 4 Werktage nach Erscheinen der AdWords-Anzeige geltend gemacht werden. Anderenfalls erlöschen sich daraus eventuell ergebende Ansprüche.</li> <li>easymarketing übernimmt keine Gewähr oder Garantie für die effektiven Resultate aus den verwalteten Werbekampagnen. Die auf easymarketing.de angezeigten Schätzungen in Bezug auf den erwarteten Neukunden-Anstieg oder Traffic-Zunahme stellen lediglich eine statistische Schätzung dar.</li> </ol>
+    <h4>§ 13 Haftung</h4> <ol> <li>easymarketing haftet im Falle von Vorsatz und grober Fahrlässigkeit, im Rahmen der Produkthaftung, bei Abgabe von Garantien sowie für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit nach den gesetzlichen Vorschriften.</li> <li>Unbeschadet des § 13 Abs. 1 besteht eine Haftung für leichte Fahrlässigkeit nur für durch die Verletzung von sog. Kardinalpflichten verursachte Schäden und ist in der Höhe auf die vertragstypischen, im Zeitpunkt des Vertragsschlusses vorhersehbaren Schäden begrenzt. Die Ersatzpflicht umfasst nicht den Aufwand für die Wiederbeschaffung verlorener Daten. Kardinalpflichten sind solche Pflichten, deren Verletzung den Vertragszweck gefährdet und/oder deren Erfüllung die ordnungsgemäße Durchführung des Vertrags überhaupt erst ermöglicht und auf deren Einhaltung die andere Partei regelmäßig vertrauen darf.</li> <li>Im Übrigen ist eine Haftung von easymarketing ausgeschlossen. Dies gilt auch für Schäden, die durch einen gesetzlichen Vertreter oder einen Erfüllungsgehilfen von easymarketing verursacht werden. Es wird klargestellt, dass § 13 Abs. 1 und Abs. 2 von diesem Absatz unberührt bleiben.</li> </ol>
+    <h4>§ 14 Änderung der AGB</h4> <ol> <li>Widerspricht der Kunde einer ihm elektronisch oder schriftlich drei Wochen im Voraus angekündigten Änderung oder Ergänzung nicht innerhalb von zwei Wochen ab Zugang der Ankündigung, so werden die Änderungen und Ergänzungen auch für laufende Vertragsverhältnisse entsprechend der Ankündigung wirksam. Widerspricht der Kunde fristgemäß, so wird der Vertrag zu den bisher geltenden Bedingungen fortgesetzt; easymarketing behält sich für diesen Fall das Recht vor, den Vertrag zum nächstmöglichen Zeitpunkt ordentlich zu kündigen.</li> <li>Bei Änderungen und Ergänzungen, die aus zwingenden rechtlichen Gründen unerlässlich sind, entfällt das Widerspruchsrecht des Kunden gemäß § 14 Abs. 2. Das Gleiche gilt bei Änderungen und Ergänzungen, die easymarketing vornimmt, weil die AGB aufgrund nachträglich geänderter Umstände nicht mehr passen oder lückenhaft geworden sind. Das Gleiche gilt ferner für Änderungen und Ergänzungen, die easymarketing vornimmt, weil das Verhältnis der von easymarketing erbrachten Leistung und des dafür zu leistenden Entgelts sich nachträglich so verändert hat, dass eine Anpassung der AGB geboten ist. Änderungen und Ergänzungen, die unter die vorstehenden beiden Sätze fallen, wird easymarketing den bestehenden Kunden gleichwohl drei Wochen im Voraus schriftlich oder elektronisch ankündigen.</li> </ol>
+    <h4>§ 15 Schlussbestimmungen</h4> <ol> <li>Auf den Vertrag findet deutsches Recht unter Ausschluss des UN-Kaufrechts Anwendung. Gerichtsstand ist Hamburg.</li> <li>Sollte eine Bestimmung oder ein Teil einer Bestimmung dieses Vertrags unwirksam sein oder werden, so wird die Gültigkeit des Vertrags im Übrigen nicht berührt. Die Vertragschließenden verpflichten sich, die unwirksame Regelung durch eine solche zu ersetzen, die dem Vertragszweck wirtschaftlich entspricht.</li> <li>easymarketing ist zur Übertragung des mit dem Kunden bestehenden Vertragsverhältnisses auf ein mit ihr im Sinne der §§ 15ff. Aktiengesetz verbundenes Unternehmen berechtigt; die Möglichkeit zur Kündigung nach § 6 dieser AGB bleibt unberührt.</li> </ol>
+    <h4>§ 16 Ergänzungen</h4>
+    <p>Ergänzend gelten, soweit anwendbar, die jeweils aktuellen AGB, Werberichtlinien und sonstigen Richtlinien der Werbeplattformen mit der Maßgabe, dass die darin beschriebenen Pflichten des Nutzers gegenüber den Werbeplattformen die Pflichten des Kunden gegenüber easymarketing beschreiben. Bei Widersprüchen oder Unklarheiten gehen diese AGB von easymarketing den AGB für die Werbeplattformen vor.</p>
+    <p>Namentlich sind dieses bei Google für die Nutzung die AGB des Dienstes Google AdWords und Google Shopping/Product listing Ads (abrufbar unter: <a href="https://adwords.google.de/select/tsandcsfinder?country=DE">https://adwords.google.de/select/tsandcsfinder?country=DE</a>, <a href="https://support.google.com/adwordspolicy/topic/1626336?hl=de&amp;ref_topic=2996750">https://support.google.com/adwordspolicy/topic/1626336?hl=de&amp;ref_topic=2996750</a>, <a href="https://support.google.com/adwordspolicy/answer/176095?hl=de">https://support.google.com/adwordspolicy/answer/176095?hl=de</a></p>
+    <p>Wir speichern den Vertragstext und senden Ihnen die Bestelldaten per E-Mail zu. Die AGB können Sie jederzeit <a href="https://easymarketing.de/agb">hier</a> einsehen. Vergangene Bestellungen können Sie in Ihrem Kundenkonto einsehen.</p>
+  total: Betrag
+  total_ad_impressions: 'So oft wurden Ihre Anzeigen eingeblendet:'
+  total_conversions: 'So viele Käufe haben wir gebracht:'
+  total_costs_paid: 'So viel € wurden ausgegeben:'
+  total_daily_budget: Summierte Tagesbudgets
+  total_daily_budget_shopping: Summierte Tagesbudgets Shopping
+  total_gross: Gesamt brutto
+  total_keywords_ads_shown: 'Für so viele Suchbegriffe wurden Anzeigen geschaltet:'
+  total_match: Keyword matching
+  total_net: Gesamt netto
+  total_orders: Bestellungen
+  total_spent_budget_adwords: Allzeit Budget (AdW)
+  total_time_saved: 'So viele Stunden haben wir Ihnen erspart:'
+  total_view_through_conversions: 'So viele indirekte Käufe haben wir gebracht:'
+  tracking: 'Tracking:'
+  transaction_id: Transaktions ID
+  transaction_was_successfully_created: Transaktion wurde erfoglreich erstellt.
+  transactions: Transaktionen
+  transparent_performance_measurement: Transparente Performance-Messung
+  transparent_performance_measurement_teaser: easymarketing zeigt Ihnen genau und
+    dabei leicht verständlich, wie viele Neukunden wir Ihnen gebracht haben, wie teuer
+    ein Neukunde war und wie sich die Neukundenakquise im Zeitablauf entwickelt!
+  trashed_user: User wurde erfolgreich gelöscht.
+  trusted_shops_explanation: Als zusätzlichen Service bieten wir Ihnen den Trusted
+    Shops Käuferschutz an. Wir übernehmen alle Kosten dieser Garantie, Sie müssen
+    sich lediglich anmelden.
+  unauthorized: Nicht autorisiert
+  uncontacted: Nicht kontaktiert
+  undo_terminate: Kündigung zurücknehmen
+  unlock_company_warning: Dies erstellt eine Starterpaket Rechnung. Zusätzlich wird
+    der User per informiert, dass er freigeschalten wurde.
+  unlock_user: User entsperren
+  update_password: Passwort speichern
+  update_status: Status speichern
+  updated_at: Updatedatum
+  upload_pages: Seiten hochladen
+  upload_production_data_feed: Live Datenfeed hochladen
+  upload_test_data_feed: Test Datenfeed hochladen
+  url: URL
+  url_of_competitor: URL des Konkurrenten
+  use_ad_always_break: Trennzeichen ignorieren und Umbruch sobald 35 Zeichen erreicht
+  use_ad_always_length: Anzeigentext trotzdem erstellen auch wenn > 35 / 70 Zeichen
+  use_ad_description: Meta-Description
+  use_ad_excl_comma: bei erstem Trennzeichen ; ! . | / EXKLUSIVE KOMMA bevor 35 Zeichen
+    erreicht
+  use_ad_ignore_chars: ignorieren
+  use_ad_incl_comma: bei erstem Trennzeichen ; ! . | / INKLUSIVE KOMMA bevor 35 Zeichen
+    erreicht
+  use_ad_keywords: Meta-Keywords
+  use_ad_not_always_length: Anzeigentext NICHT erstellen, wenn > 35 / 70 Zeichen
+  use_ad_one_line: Nur erste Zeile einer Werbeanzeige generieren
+  use_ad_take_chars: im Anzeigentext übernehmen
+  use_ad_three_line: Drei Zeilen inkl. Headline generieren
+  use_ad_title: Title
+  use_ad_two_line: Beide Zeilen einer Werbeanzeige generieren
+  use_credit_card: Google belastet Kreditkarte
+  use_elv: Geld über Lastschrift einziehen
+  use_google_elv: Google zieht Geld über Lastschrift ein
+  use_new_algo_html: Neu<br>Algo
+  use_triple_kws_html: Trip<br>KWs
+  use_wire: Kunde bezahlt per Rechnung
+  used_coupon: Gutschein
+  useful_ad_texts_tip_one: Sie können hier die Anzeigentexte für die Anzeigengruppe
+    bzw. Ziel-URL selbst erstellen. Der Roboter kombiniert die Bausteine miteinander,
+    um einen Anzeigentext zu generieren.
+  useful_ad_texts_tip_one_headline: Anzeigentexte selbst erstellen
+  useful_ad_texts_tip_three: Wir laden je Anzeigengruppe maximal 10 Anzeigentexte
+    hoch. Dafür wählen wir die Besten automatisch aus, die übrigen werden ausgegraut
+    dargestellt.
+  useful_ad_texts_tip_three_headline: Maximale Anzahl von Anzeigentexten
+  useful_ad_texts_tip_two: Sie können die vom Roboter vorgeschlagenen Bausteine nutzen
+    oder löschen und beliebig eigene Textbausteine hinzufügen. Wenn Sie eine Anzeige
+    vollständig vorgeben wollen und nicht kombinieren, arbeiten Sie mit Bausteinen,
+    die "zusammenhängend" (Kasten-Überschrift) sind.
+  useful_ad_texts_tip_two_headline: Text-Bausteine
+  useful_tip_five: Der durchschnittliche Betrag, den Sie pro Klick auf Ihre Anzeige,
+    die durch das betreffende Keyword generiert wird, zahlen müssen.
+  useful_tip_five_headline: CPC
+  useful_tip_four: Die Relevanz eines Keywords gibt an, welche Bedeutung das betreffende
+    Keyword auf der (Unter-)Seite bei Ihnen hat.
+  useful_tip_four_headline: Relevanz
+  useful_tip_one: Hier können Sie Keywords löschen, die Sie nicht verwenden möchten,
+    oder manuell Keywords hinzufügen. Möchten Sie mehrere Keywords auf einmal löschen,
+    setzen Sie links neben den zu löschenden Keywords den Haken - es erscheint dann
+    oben rechts ein Button zum Löschen der ausgewählten Keywords.
+  useful_tip_one_headline: Keywords löschen und hinzufügen
+  useful_tip_three: Wenn Sie die gewählten Einstellungen für den Echtbetrieb übernehmen
+    möchten, klicken Sie bitte "EINSTELLUNGEN SPEICHERN".
+  useful_tip_three_headline: Einstellungen anwenden
+  useful_tip_two: Bei den Einstellungen können Sie bequem die zu verwendenden Keywords
+    durch Setzen der Haken bestimmen.
+  useful_tip_two_headline: Keyword-Einstellungen
+  useful_tips: Nützliche Tipps
+  user: Nutzer
+  user_account_changed: 'User Account geändert: %{user}'
+  user_account_unlocked: easymarketing Account freigeschaltet
+  user_algo_additions: Anzeigenerweiterungen des Users
+  user_ask_to_confirm_email: "Sehr geehrter Kunde,\n\nwir möchten Ihnen mitteilen,
+    dass Ihre Website erfolgreich analysiert werden konnte.\nBitte klicken Sie auf
+    den folgenden Link, um die vollständige Analyse und Ergebnisse einzusehen.\n\n%{enable_account_url}
+    \n\nFür Rückfragen steht Ihnen unser Support jederzeit gerne zur Verfügung.\n"
+  user_brand_fail_begin: |
+    Lieber Kunde,
+
+    im Folgenden finden Sie Keywords, die gegen die Werberichtlinien von Google verstoßen.
+    https://support.google.com/adwordspolicy/topic/1626336?hl=de&ref_topic=2996750
+    Auf Antrag können diese möglicherweise akzeptiert werden.
+
+    Finden Sie darunter z.B. Marken, die Sie rechtmäßig bewerben dürfen, benachrichtigen Sie uns bitte (info@easymarketing.de).
+    Wir schicken Ihnen dann Ihre Account-Nummer und einen Link, der von dem Markeninhaber ausgefüllt werden muss. Im Anschluss bitten wir um erneute Kontaktaufnahme mit uns, dann schalten wir auch die Kampagnen mit den jeweiligen Marken.
+    Finden Sie andere zu korrigierende Ablehnungen, dann bitten wir Sie diese auf Ihrer Internetseite zu korrigieren und uns zu kontaktieren (info@easymarketing.de), dann werden die Anzeigen erneut zu Google geschickt.
+  user_brands_subject: Ihre Registrierung bei easymarketing.de
+  user_changed_account: 'Nutzer hat Account geändert: %{user}'
+  user_confirmed_account: User hat Account aktiviert
+  user_confirmed_account_email: |
+    Hi Admin,
+
+    der user %{user} mit der ID %{id} hat so eben seinen Account aktiviert.
+  user_deletion_question: Wirklich sicher? Das Löschen löscht den User nicht in AdWords.
+    Das muss manuell zusätzlich in Adwords passieren. Der User muss auch manuell pausiert
+    werden.
+  user_domains_begin: |
+    Sehr geehrter Kunde,
+
+    leider können wir so mit Ihrer Sitemap nicht arbeiten. Die Sitemap enthält URLs von einer anderen Domain.
+
+    Ein Beispiel:
+    - Ihre Domain bei Registrierung ist
+  user_domains_end: |2
+
+    Dies führt dazu, dass wir keine Anzeigen zu unseren Werbepartnern hochladen können.
+
+    Dies müssen Sie in dem Sitemap-Generator des Shopsystems eventuell einstellen.
+    Der Generator darf nur URLs benutzen, die zu Ihrer Hauptdomain gehören.
+
+    Bitte beheben Sie das Problem und geben Sie uns dann kurz Bescheid.
+  user_domains_mid: |
+    - Die Sitemap enthält URLs von
+  user_domains_subject: Ihre Registrierung bei easymarketing.de
+  user_fail_begin: |
+    Alle folgenden Keywords können von Google in keinem Fall beworben werden:
+  user_fail_end: |
+    Wenn wir NUR diese Keywords finden, die gegen die Google-Werberichtlinien verstoßen und gar nicht geschaltet werden dürfen, können wir Ihre Anzeigen NICHT schalten und müssen Ihren Account deaktivieren.
+    Gemäß unserer AGB’s stellen wir Ihnen die 100€ zzgl. Mwst. als Bearbeitungsgebühr in Rechnung.
+  user_no_bank_data_but_elv: Kunde hat keine Bankdaten hinterlegt, aber ELV als Zahlung
+    gewählt.
+  user_overview: Händler Übersicht
+  user_state: UsrState
+  user_status: User Status
+  user_status_active_admin: Aktiv
+  user_status_active_public: Aktiv
+  user_status_churned_admin: Gekündigt
+  user_status_churned_public: Gekündigt
+  user_status_crawler_error_admin: C.-Fehler
+  user_status_crawler_error_public: Crawler Fehler
+  user_status_crawling_admin: Crawling
+  user_status_crawling_public: Am Crawlen
+  user_status_error_public: Fehler
+  user_status_locked_admin: Gesperrt
+  user_status_locked_public: Gesperrt
+  user_status_new: Neu
+  user_status_new_admin: Email best.
+  user_status_new_public: Email Bestätigung
+  user_status_paused_admin: Pausiert
+  user_status_paused_public: Kampagnen pausiert
+  user_status_setup_admin: Konto aufsetzen
+  user_status_setup_public: Konto aufsetzen
+  user_status_short: Status
+  user_toggled_campaign: 'AdWords Kampagne wurde bearbeitet: %{user}'
+  user_was_successfully_activated: User wurde erfolgreich aktiviert.
+  user_was_successfully_created_in_adwords: User wurde erfolgreich in AdWords erstellt
+  users: User
+  users_by_shopsystem: User je Shopsystem
+  users_count: Anzahl User
+  uvp: UVP
+  value_added_text: Mehrwertsteuer
+  value_was_is_now: |
+    %{value}:
+    * alter Wert: %{old_val}
+    * neuer Wert: %{new_val}
+  value_was_is_now_single_line: "%{value}: '%{old_val}' => '%{new_val}'"
+  variants: Varianten
+  vat: MwSt.
+  vat_excempt_phrase: Steuerschuldnerschaft des Leistungsempfängers.
+  vat_number: Ust-Nr.
+  vat_number_phrase: 'USt-Id des Leistungsempfängers: %{vat_number}'
+  vendor_not_confirm: Ihr Account konnte nicht freigeschaltet werden!
+  verify: Prüfen
+  verify_api: API einrichten
+  verify_api_now: Jetzt die API einrichten »
+  verify_now: Jetzt verifizieren
+  verify_website_ownership: Eigentum der Seite verifizieren
+  verify_website_ownership_now: Jetzt Eigentum der Seite verifizieren »
+  view: Anzeige
+  view_conversions_chart: Indirekte Käufe
+  view_conversions_help: Erläuterung zu "Indirekte Käufe"
+  view_conversions_help_text_html: <p>Mit "indirekten Käufen" werden Käufe bezeichnet,
+    die durch Kunden erfolgt sind, die Ihre Werbebanner (Display-Anzeigen) der Remarketing-Kampagne
+    gesehen, aber<br>erst später (z.B. auf Amazon oder in Ihrem Webshop) eingekauft
+    haben.</p><p>Auch wenn der Kunde ggf. "sowieso" eingekauft hätte, so stellt man
+    fest, dass die Conversions signifikant zurückgehen, wenn man die Remarketing-Kampagne
+    abschaltet.</p>
+  view_conversions_trend_chart: Verlauf indirekter Käufe
+  view_through_conversions: Indirekte Käufe
+  visa: VISA
+  visitor_count: Anzahl Besucher
+  visitors: Besucher
+  was_successfully_analyzed: erfolgreich analysiert.
+  watch_video: Video ansehen
+  we_also_check_robots_txt_for_sitemap: 'We also checked the robots.txt file, the
+    link is the following:'
+  we_check_default_locations_and_robots: We check default locations and a custom location
+    that can be defined using a robots.txt file by the user.
+  we_could_not_register_you_in_webmaster_tools: Die Aktivierung Ihres Accounts für
+    Google Shopping konnte nicht gestartet werden. Bitte kontaktieren Sie unser Support
+    Team.
+  we_support_you: Wir beraten Sie gerne!
+  webshop_analyse:
+    efforts:
+      complete_analysis: Vollständige Webshop-Analyse
+      estimate_new_customers: Schätzung Ihrer Neukunden
+      individual_budget_suggestion: Individuelle Budgetempfehlung
+      time_saved: 'Ihre Zeitersparnis: über&nbsp;<span>50 Std.</span>'
+    headline: Webshop Analyse
+    teaser: Unser System analysiert Ihren Webshop und ermittelt die relevanten Keywords.
+  webshop_type: Webshop
+  website_successfully_analyzed: Website erfolgreich analysiert
+  website_url: Website URL
+  week_day_0: Sonntag
+  week_day_1: Montag
+  week_day_2: Dienstag
+  week_day_3: Mittwoch
+  week_day_4: Donnerstag
+  week_day_5: Freitag
+  week_day_6: Samstag
+  weekday_data_chart: Wochentag-Performance
+  while_promotion_unable_to_change_budget: Während einer besonderen easymarketing
+    Aktion kann das Budget nicht geändert werden.
+  will_paginate:
+    next_label: Nächste &#8594;
+    page_gap: "&hellip;"
+    previous_label: "&#8592; Vorige"
+  with_a_daily_budget_of: Mit einem Tagesbudget von
+  without_charge: kostenlos
+  without_costs: Ohne Kosten
+  without_risk: Ohne Risiko
+  workflow: Workflow
+  working_on_keywords_message: Der Roboter optimiert derzeit Ihre Keywords weiter
+    und sortiert aus, was ggf. zu generisch ist. Dies wird voraussichtlich bis zu
+    5 Tage dauern.
+  'yes': Ja
+  yesterday_budget_adwords: Budget gestern (AdW)
+  you_can_expect: können Sie mit
+  you_dont_have_custom_keywords: Sie haben noch keine benutzerdefinierten Keywords
+  you_easymarketing_benefits: Ihre easymarketing-Vorteile
+  you_got_a_question: Sie haben eine Frage?
+  you_use_old_ad_generator_version: Ihr Account ist noch nicht für den neuesten Anzeigen-Roboter
+    konfiguriert. Bitte kontaktieren Sie den Support.
+  you_will_only_be_billed_margin: "* Ihnen wird nur die Provision zzgl. MwSt. in Rechnung
+    gestellt."
+  your_account: Ihr Account
+  your_account_cant_use_custom_keywords_html: 'Ihr Account kann derzeit noch keine
+    benutzerdefinierten Keywords verwenden. Um das Feature zu aktivieren, <a href=''mailto:%{contact_mail}?subject=Custom
+    Keyword Feature aktivieren. User-ID: %{user_id}&body= Hallo, bitte aktivieren
+    Sie die benutzerdefinierten Keywords für mich.''>schicken Sie uns bitte eine Email.</a>'
+  your_ad_texts_page: Ihre Anzeigentexte - Anzeigengruppe "%{title}"
+  your_ad_texts_user: Ihre Anzeigentexte - global
+  your_api_key: 'Ihr API Token: %{key}'
+  your_conversion_id: Ihre persönliche Conversion ID
+  your_conversion_rate: Ihre Erfolgsquote
+  your_keywords: Ihre Keywords
+  your_performance: Ihre Performance
+  your_shopsystem: Ihr Shopsystem
+  your_value: Ihr Wert

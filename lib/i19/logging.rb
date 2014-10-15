@@ -6,9 +6,12 @@ module I19::Logging
     log_stderr Term::ANSIColor.yellow Term::ANSIColor.bold "i19: [DEPRECATED] #{message}"
   end
 
+  def log_success(message)
+    log_stderr Term::ANSIColor.green "i19: #{message}"
+  end
   def log_verbose(message)
     if ENV['VERBOSE']
-      log_stderr Term::ANSIColor.green "i19: #{message}"
+      log_success(message)
     end
   end
 

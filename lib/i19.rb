@@ -26,12 +26,15 @@ end
 
 require 'fileutils'
 require 'yaml'
+# require 'yaml/encoding'
+require 'terminal-table'
+require 'term/ansicolor'
 
+require 'active_model'
 require 'active_support/core_ext/hash'
 require 'active_support/core_ext/string'
 require 'active_support/core_ext/object/try'
 require 'active_support/core_ext/object/blank'
-require 'term/ansicolor'
 
 require "i19/version"
 require "i19/logging"

@@ -5,16 +5,25 @@ require "i19"
 module I19
   class CLI < Thor
     desc "update", "Scans your app folder for I18n.t calls and updates your yaml file accordingly"
-    method_option :path, :aliases => "-p", :desc => "Specify the path to scan for I18n.t calls"
-    method_option :default_locale, :aliases => "-dl", :desc => "Specify the default locale in which language the defaults are written"
+    method_option :search_path   , :aliases => "-sp" , :type => :string , :desc => "Specify the path to scan for I18n.t calls"
+    method_option :default_locale, :aliases => "-dl" , :type => :string , :desc => "Specify the language in which the defaults are written, ie: en"
+    method_option :save          , :aliases => "-s"  , :type => :boolean, :default => false, :desc => "if true updates the yml files"
     def update
-      I19::Commands.update(path: options[:path], default_locale: options[:default_locale])
+      I19::Commands.update(search_path: options[:search_path], default_locale_code: options[:default_locale], save: options[:save])
     end
 
     desc "merge", "Scans your locales folder and merges every yml file into one single fat file alfabetically ordered :)"
-    method_option :locales_path, :aliases => "-lp", :desc => "Specify the path to scan for I18n.t calls"
+    method_option :locales_path, :aliases => "-lp", :type => :string, :desc => "Specify the path to scan for I18n.t calls"
     def merge
       I19::Commands.merge(locales_path: options[:locales_path])
+    end
+
+
+    desc "find_key", "Find out if a string has already been translated"
+    method_option :locales_path  , :aliases => "-lp" , :type => :string, :desc => "Specify the path to scan for I18n.t calls"
+    method_option :default_locale, :aliases => "-dl" , :type => :string, :desc => "Specify the language in which the defaults are written, ie: en"
+    def find_key(*query)
+      I19::Commands.find_key(query: query.join(" "), locales_path: options[:locales_path], default_locale_code: options[:default_locale])
     end
   end
 end
