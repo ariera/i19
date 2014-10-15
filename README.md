@@ -19,7 +19,7 @@ This is a massive pain as a programmer. It completely breaks your workflow, your
 
 I used to go with option 2. And that is even worse. Translation work tends to accumulate, you miss some strings, and it feels like incredibly dull and boring task to do.
 
-*Trivia: To facilitate finding of untranslated strings in the code (@fsainz)[https://github.com/fsainz] and I started writting __I19__ at the beggining of every string that should get translated, so we could then later easily grep them. Hence the name of this gem :)*
+*Trivia: To facilitate finding of untranslated strings in the code [@fsainz](http://fsainz.com) and I started writting __I19__ at the beggining of every string that should get translated, so we could then later easily grep them. Hence the name of this gem :)*
 
 ## The dream:
 What if you could just code, and whenever you need to write a _internationalizable_ piece of text you just write it and you let some software take care of all the rest?
@@ -35,6 +35,7 @@ Well I don't know if all of that is possible, but I think the situation could im
 So how exactly is I19 gonna help you ask? The idea is to support the following workflow:
 
 1. Whenever you have to write some text you do it this way: `t('my_key', default:'my text')`
+  1. Notice that there is no magic here. `default` is a parameter [that the I18n ruby gem accepts](https://github.com/svenfuchs/i18n/wiki/Fallbacks#providing-a-default). But `I19` will make some clever use of it.
 2. You keep coding
 3. When you are done coding you go to the console and run: `i19 update_translations`
   1. the program will scan you `app` folder in search for calls to translations
@@ -59,4 +60,4 @@ However if you like the idea, wanna contribute, simply know more or get notified
 ## Thanks
 I think this is all for the moment.
 
-I just couldn't leave without thanking the (i18n-tasks)[https://github.com/glebm/i18n-tasks] project and their people. It has been a constant soure of inspirantion and motivation for this project. If you like what you read here you definetely wanna check their project too :)
+I just couldn't leave without thanking the [i18n-tasks](https://github.com/glebm/i18n-tasks) project and their people. It has been a constant soure of inspirantion and motivation for this project. If you like what you read here you definetely wanna check their project too :)
