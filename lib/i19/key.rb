@@ -55,6 +55,11 @@ module I19
       [key, default, source_occurrences.map(&:short_path)]
     end
 
+    def to_log
+      {"#{key}" => default, "source_occurrences" => source_occurrences.map(&:short_path)}.to_s
+      %{#{key} => #{default}\n\t#{source_occurrences.map(&:long_path).join("\n\t")}}
+    end
+
     private
     def key_can_not_be_interpolated
       if key.match(%r[#\{.*?\}])

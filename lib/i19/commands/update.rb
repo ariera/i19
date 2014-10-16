@@ -27,21 +27,23 @@ module I19::Commands
 
     def call
       keys = scanner.keys
-      puts ::Terminal::Table.new(rows: keys.map(&:to_row))
+      puts ::Terminal::Table.new(title:"All the keys found", rows: keys.map(&:to_row))
       keys.each do |key|
         if key.valid?
-          locales.update(key)
+          event_log << locales.update(key)
         else
-          log_error(key.errors.full_messages)
+          event_log << Event.new(level: Event::LEVEL[:error], type: :invalid_key, data: key, message: key.errors.full_messages)
         end
       end
 
       if config[:save]
         locales.save!
       end
+      print_event_log
     end
 
     private
+
     def merger
       @merger  ||= I19::Merger.new(locales)
     end

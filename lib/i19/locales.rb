@@ -10,27 +10,33 @@ module I19
     end
 
     def update(key)
+      # create_new, update, missing_translation_for_new_key, nothing_changed
       if key.value.present?
         if default_locale.has_key?(key)
           if default_locale.key_changes?(key)
-            log_warn "Default Locale changed: '#{key.key}' => '#{key.value}'"
+            # log_warn "Default Locale changed: '#{key.key}' => '#{key.value}'"
             default_locale.update_key(key)
             # locales_without_default.each{|locale| locale.mark_as_pending(key)}
+            Event.new(level: Event::LEVEL[:success], type: :update, data: key, message: 'Default Locale changed')
           else
-            log_warn "Default Locale didnt changed: '#{key.key}'"
+            # log_warn "Default Locale didnt changed: '#{key.key}'"
             # mark_other_locales_as_peding_if_not_translated(key)
+            Event.new(level: Event::LEVEL[:info], type: :nothing_changed, data: key, message: 'Default Locale didnt changed')
           end
         else
-          log_warn "Creating Locale: '#{key.key}' => '#{key.value}'"
+          # log_warn "Creating Locale: '#{key.key}' => '#{key.value}'"
           default_locale.add_key(key)
+          Event.new(level: Event::LEVEL[:success], type: :create, data: key, message: 'Creating new locale')
           # locales_without_default.each{ |locale| locale.mark_as_pending(key) }
         end
       else #there is no default value for key
         if default_locale.has_key?(key)
-          log_warn "No default specified and default_locale has already a translation: '#{key.key}'"
+          # log_warn "No default specified and default_locale has already a translation: '#{key.key}'"
           mark_other_locales_as_peding_if_not_translated(key)
+          Event.new(level: Event::LEVEL[:info], type: :nothing_changed, data: key, message: 'No default specified but default_locale has already a translation')
         else
-          log_warn "No default specified for new key: '#{key.key}'"
+          # log_warn "No default specified for new key: '#{key.key}'"
+          Event.new(level: Event::LEVEL[:error], type: :missing_translation, data: key, message: 'No default specified for new key')
           # locales.each{ |locale| locale.mark_as_pending(key) }
         end
       end
