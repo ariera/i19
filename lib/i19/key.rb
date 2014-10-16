@@ -13,20 +13,26 @@ module I19
       def short_path
         src_path.split("/").last + ":#{line_num}"
       end
+
+      def long_path
+        "#{src_path}:#{line_num}"
+      end
     end
 
     class InconsistentDefaults < StandardError
-      def initialize(defaults, source_occurrences)
-        @defaults, @source_occurrences = defaults, source_occurrences
+      def initialize(key, defaults, source_occurrences)
+        @key, @defaults, @source_occurrences = key, defaults, source_occurrences
       end
 
       def to_str
-        %{
-          Inconsistent Defaults:
+        "\n
+        Inconsistent Defaults for:
+          '#{@key}'
+        Defaults:
           [#{@defaults.join(",")}]
-          Source Files:
-          #{@source_occurrences.join("\n\t")}
-        }
+        Source Files:
+          #{@source_occurrences.map(&:long_path).join("\n\t  ")}
+        "
       end
     end
     extend ActiveModel::Naming
@@ -40,7 +46,7 @@ module I19
       @key = args[:key]
       @source_occurrences = Array(args[:source_occurrences]).map{|sc| SourceOcurrence.new(sc)}
       @defaults = Array(args[:defaults]).compact.uniq
-      raise InconsistentDefaults.new(@defaults, @source_occurrences) if @defaults.length > 1
+      raise InconsistentDefaults.new(@key, @defaults, @source_occurrences) if @defaults.length > 1
 
       @default  = clean_default(@defaults.first)
     end
