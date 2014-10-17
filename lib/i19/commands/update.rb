@@ -11,18 +11,10 @@ module I19::Commands
     def initialize(options)
       @config = options.reverse_merge(I19.config)
 
-      unless merger.merged?
-        raise StandardError.new("There are unmerged locale files. Please merge them before (run: `i19 help merge`)")
-      end
-      unless config.has_key?(:default_locale_code)
-        raise ArgumentError.new("Please specify the default locale")
-      end
-      unless locales.default_locale.present?
-        raise StandardError.new("default locale not found")
-      end
-      unless locales.locales.present?
-        raise StandardError.new("locales not found")
-      end
+      raise UnmergedLocalesError.new          unless merger.merged?
+      raise UnspecifiedDefaultLocaleError.new unless config.has_key?(:default_locale_code)
+      raise DefaultLocaleNotFoundError.new    unless locales.default_locale.present?
+      raise LocalesNotFoundError.new          unless locales.locales.present?
     end
 
     def call

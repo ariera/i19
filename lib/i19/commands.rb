@@ -1,3 +1,4 @@
+require "i19/commands/errors"
 require "i19/commands/update"
 require "i19/commands/merge"
 require "i19/commands/find_key"

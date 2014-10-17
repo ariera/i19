@@ -1,0 +1,17 @@
+---
+es:
+  symbols_work: y lo hace
+  this:
+    doesnt_exist_in_default_locale:
+      and_doesnt_specifies_a_default_value:
+        and_exist_in_other_locale: por_defecto_9 - should be marked as pending but wont be removed from here
+      and_specifies_a_default_value:
+        and_exist_in_other_locale: por_defecto_5 - should be marked as pending but wont be removed from here
+    exists_in_default_locale:
+      and_doesnt_specifies_a_default_value:
+        and_exist_in_other_locale: por_defecto_7 - shouldnt change
+      and_specifies_a_default_value:
+        and_has_changed:
+          and_exist_in_other_locale: stale_value - should be marked as pending but wont be removed from here
+        and_hasnt_changed:
+          and_exist_in_other_locale: por_defecto_1 - shouldnt change

@@ -1,0 +1,7 @@
+---
+en:
+  this:
+    doesnt_exist_in_default_locale:
+      and_doesnt_specifies_a_default_value:
+        and_deosnt_exist_in_other_locale: I19 TRANSLATION PENDING
+        and_exist_in_other_locale: I19 TRANSLATION PENDING

@@ -1,0 +1,23 @@
+en:
+  symbols_work: it does
+
+  this:
+    exists_in_default_locale:
+      and_specifies_a_default_value:
+        and_hasnt_changed:
+          and_exist_in_other_locale: 'default_1'
+          and_deosnt_exist_in_other_locale: 'default_2'
+        and_has_changed:
+          and_exist_in_other_locale: 'stale_value'
+          and_deosnt_exist_in_other_locale: 'stale_value'
+      and_doesnt_specifies_a_default_value:
+        and_exist_in_other_locale: 'default_7'
+        and_deosnt_exist_in_other_locale: 'default_8'
+
+    # doesnt_exist_in_default_locale:
+    #   and_specifies_a_default_value:
+    #     and_exist_in_other_locale: 'default_5'
+    #     and_deosnt_exist_in_other_locale: 'default_6'
+    #   and_doesnt_specifies_a_default_value:
+    #     and_exist_in_other_locale:
+    #     and_deosnt_exist_in_other_locale:

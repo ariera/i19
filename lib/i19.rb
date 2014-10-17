@@ -16,6 +16,7 @@ module I19
       path: './app',
       locales_path: 'config/locales',
       i19_yaml_file_name: 'i19',
+      i19_missing_yaml_file_name: 'i19.missing',
     })
   end
 

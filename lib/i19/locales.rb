@@ -10,34 +10,28 @@ module I19
     end
 
     def update(key)
-      # create_new, update, missing_translation_for_new_key, nothing_changed
       if key.value.present?
         if default_locale.has_key?(key)
           if default_locale.key_changes?(key)
-            # log_warn "Default Locale changed: '#{key.key}' => '#{key.value}'"
             default_locale.update_key(key)
-            # locales_without_default.each{|locale| locale.mark_as_pending(key)}
-            Event.new(level: Event::LEVEL[:success], type: :update, data: key, message: 'Default Locale changed')
+            locales_without_default.each{|locale| locale.mark_as_pending(key)}
+            Event.new(level: Event::LEVEL[:warn], type: :update, data: key, message: 'Default Locale changed and it will get updated. All the other locales marked as pending')
           else
-            # log_warn "Default Locale didnt changed: '#{key.key}'"
-            # mark_other_locales_as_peding_if_not_translated(key)
-            Event.new(level: Event::LEVEL[:info], type: :nothing_changed, data: key, message: 'Default Locale didnt changed')
+            mark_other_locales_as_peding_if_not_translated(key)
+            Event.new(level: Event::LEVEL[:info], type: :nothing_changed, data: key, message: 'Default Locale didnt changed. All the other locales will be marked as pending if they dont already have a translation')
           end
         else
-          # log_warn "Creating Locale: '#{key.key}' => '#{key.value}'"
           default_locale.add_key(key)
-          Event.new(level: Event::LEVEL[:success], type: :create, data: key, message: 'Creating new locale')
-          # locales_without_default.each{ |locale| locale.mark_as_pending(key) }
+          locales_without_default.each{ |locale| locale.mark_as_pending(key) }
+          Event.new(level: Event::LEVEL[:success], type: :create, data: key, message: 'Creating new translatoin for the default locale. All the other locales marked as pending')
         end
       else #there is no default value for key
         if default_locale.has_key?(key)
-          # log_warn "No default specified and default_locale has already a translation: '#{key.key}'"
-          mark_other_locales_as_peding_if_not_translated(key)
-          Event.new(level: Event::LEVEL[:info], type: :nothing_changed, data: key, message: 'No default specified but default_locale has already a translation')
+          mark_other_locales_as_peding_if_not_translated(key, default_locale_translation: default_locale[key])
+          Event.new(level: Event::LEVEL[:info], type: :nothing_changed, data: key, message: 'No default specified but default_locale has already a translation. All the other locales will be marked as pending if they dont already have a translation')
         else
-          # log_warn "No default specified for new key: '#{key.key}'"
-          Event.new(level: Event::LEVEL[:error], type: :missing_translation, data: key, message: 'No default specified for new key')
-          # locales.each{ |locale| locale.mark_as_pending(key) }
+          locales.each{ |locale| locale.mark_as_pending(key) }
+          Event.new(level: Event::LEVEL[:error], type: :missing_translation, data: key, message: 'No default specified for new key, it will be marked as pending. All the other locales marked as pending')
         end
       end
     end
@@ -47,10 +41,10 @@ module I19
     end
 
     private
-    def mark_other_locales_as_peding_if_not_translated(key)
+    def mark_other_locales_as_peding_if_not_translated(key, *extra)
       locales_without_default.each do |locale|
         unless locale.has_key?(key) && !locale.pending?(key)
-          locale.mark_as_pending(key)
+          locale.mark_as_pending(key, *extra)
         end
       end
     end
@@ -63,7 +57,7 @@ module I19
       Dir.glob(File.join(config[:locales_path], "*.yml")).map do |file_path|
         data = ::YAML.load(File.open(file_path)).with_indifferent_access
         language = data.keys.first
-        Locale.new(language, data, file_path)
+        Locale.new(language, data, file_path, config)
       end
     end
 
@@ -75,17 +69,18 @@ module I19
 
   class Locale
     PENDING_MESSAGE = "I19 TRANSLATION PENDING"
-    attr_accessor :language, :data, :source_path
+    attr_accessor :language, :data, :source_path, :pending_data, :config
     def self.from_file(file_path)
       data = ::YAML.load(File.open(file_path)).with_indifferent_access
       language = data.keys.first
       Locale.new(language, data, file_path)
     end
 
-    def initialize(language, data, source_path)
+    def initialize(language, data, source_path, options = {})
+      @config = options.reverse_merge(I19.config)
       @language, @data, @source_path = language, data.with_indifferent_access, source_path
       @data[@language] ||= {} #edge case where data could be empty like this: {en: nil}
-      @new_data = {}
+      @pending_data = {@language => {}}.with_indifferent_access
     end
 
     def add_key(key)
@@ -100,12 +95,19 @@ module I19
       self[key] != key.value
     end
 
-    def mark_as_pending(key)
-      # self[key] = "#{PENDING_MESSAGE} - #{key.value}"
+    def mark_as_pending(key, extra = {})
+      _key   = key.key.to_s
+      _value = key.value || extra.fetch(:default_locale_translation, nil) ||PENDING_MESSAGE
+      deeply_store_hash(pending_data[language], _key, _value)
+    end
+
+    def pending_data?
+      pending_data[language].present?
     end
 
     def pending?(key)
-      self[key].match(PENDING_MESSAGE)
+      key = key.respond_to?(:key) ? key.key.to_s : key.to_s
+      deeply_find_hash(pending_data[language], key).present?
     end
 
     def find_key_for_translation(str)
@@ -118,24 +120,12 @@ module I19
 
     def [](key)
       key = key.respond_to?(:key) ? key.key.to_s : key.to_s
-      subtree = data[language]
-      key.split(".").each do |subkey|
-        subtree = subtree.fetch(subkey, {})
-      end
-      subtree
+      deeply_find_hash(data[language], key)
     end
 
     def []=(key, value)
       key = key.respond_to?(:key) ? key.key.to_s : key.to_s
-      keys = key.split(".")
-      last_key = keys.pop
-      result = keys.inject(data[language]) do |subtree, k|
-        unless subtree.has_key?(k)
-          subtree[k] = {}
-        end
-        subtree[k]
-      end
-      result[last_key] = value
+      deeply_store_hash(data[language], key, value)
     end
 
     def has_key?(key)
@@ -145,6 +135,11 @@ module I19
     def save!(destination_path = source_path)
       # puts "saving #{source_path}"
       File.open(destination_path, 'w') {|f| f.write(dump( deeply_sort_hash(data) )) }
+      if pending_data?
+        pending_data_file_name = "#{config[:i19_missing_yaml_file_name]}.#{language}.yml"
+        pending_data_file_path = File.join(config[:locales_path], pending_data_file_name)
+        File.open(pending_data_file_path, 'w') {|f| f.write(dump( deeply_sort_hash(pending_data) )) }
+      end
     end
 
     def destroy!
@@ -153,6 +148,26 @@ module I19
     end
 
     private
+    def deeply_store_hash(hash, key, value)
+      keys = key.split(".")
+      last_key = keys.pop
+      result = keys.inject(hash) do |subtree, k|
+        unless subtree.has_key?(k)
+          subtree[k] = {}
+        end
+        subtree[k]
+      end
+      result[last_key] = value
+    end
+
+    def deeply_find_hash(hash, key)
+      subtree = hash
+      key.split(".").each do |subkey|
+        subtree = subtree.fetch(subkey, {})
+      end
+      subtree
+    end
+
     def deeply_sort_hash(object)
       return object unless object.is_a?(Hash)
       hash = Hash.new
@@ -221,6 +236,7 @@ module I19
     # @return [String]
     def dump(tree, options = {})
       # YAML.unescape(YAML.dump(tree))
+      options.reverse_merge!({line_width: -1}) # avoids line wrapping
       tree.to_yaml(options)
     end
   end

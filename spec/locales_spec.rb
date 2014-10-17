@@ -32,8 +32,8 @@ describe I19::Locales do
         it "then marks all locales as translation pending" do
           key = Key.new(key: 'luke', defaults: nil, source_ocurrences: [])
           locales.update(key)
-          expect(default_locale[:luke]).to match(Locale::PENDING_MESSAGE)
-          expect(other_locale[:luke]).to   match(Locale::PENDING_MESSAGE)
+          expect(default_locale.pending?(:luke)).to be_truthy
+          expect(other_locale.pending?(:luke)).to   be_truthy
         end
       end
     end
@@ -45,9 +45,7 @@ describe I19::Locales do
             key = Key.new(key: 'darth', defaults: 'leatherpants vader', source_ocurrences: [])
             locales.update(key)
             expect(default_locale[:darth]).to eq('leatherpants vader')
-            expect(other_locale[:darth]).to   match(Locale::PENDING_MESSAGE)
-            expect(other_locale[:darth]).to   match('leatherpants vader')
-            expect(other_locale[:darth]).to   match('leatherpants vader')
+            expect(other_locale.pending?(:darth)).to be_truthy
           end
         end
         context "and the key HASN'T changed" do
@@ -64,8 +62,7 @@ describe I19::Locales do
           key = Key.new(key: 'luke', defaults: 'skywalker', source_ocurrences: [])
           locales.update(key)
           expect(default_locale[:luke]).to eq('skywalker')
-          expect(other_locale[:luke]).to   match(Locale::PENDING_MESSAGE)
-          expect(other_locale[:luke]).to   match('skywalker')
+          expect(other_locale.pending?(:luke)).to be_truthy
         end
       end
     end
@@ -92,6 +89,44 @@ describe I19::Locale do
       expect(locale.find_key_for_translation("This doesnt yet exist")).to eq(false)
     end
   end
+
+
+
+  describe "#mark_as_pending" do
+    it "stores pending data separately" do
+      locale = Locale.new(:en, {}, anything)
+      expect(locale.pending_data[:en]).to be_blank
+      key = Key.new(key: 'rebellion.luke', defaults: "Luke Skywalker", source_ocurrences: [])
+      locale.mark_as_pending(key)
+      expect(locale.pending_data[:en][:rebellion][:luke]).to match(key.value)
+      expect(locale.pending?('rebellion.luke')).to be_truthy
+    end
+  end
+
+  describe "#pending?" do
+    it "plays nicely when the keys are symbols" do
+      locale = Locale.new(:en, {}, anything)
+      key = Key.new(key: 'luke', defaults: "Luke Skywalker", source_ocurrences: [])
+      locale.mark_as_pending(key)
+      expect(locale.pending?(:luke)).to   be_truthy
+      expect(locale.pending?('luke')).to  be_truthy
+      expect(locale.pending?(:vader)).to  be_falsey
+      expect(locale.pending?('vader')).to be_falsey
+    end
+
+    it "returns TRUE  if the key has been marked as pending before" do
+      locale = Locale.new(:en, {}, anything)
+      key = Key.new(key: 'rebellion.luke', defaults: "Luke Skywalker", source_ocurrences: [])
+      locale.mark_as_pending(key)
+      expect(locale.pending?('rebellion.luke')).to be_truthy
+    end
+
+    it "returns FALSE if the key has NOT been marked as pending before" do
+      locale = Locale.new(:en, {}, anything)
+      expect(locale.pending?('non.existant.key')).to be_falsey
+    end
+  end
+
 
   describe "#has_key?" do
     let(:data) do
@@ -132,7 +167,7 @@ describe I19::Locale do
         }
       }
     end
-    subject { I19::Locale.new(data.keys.first, data, anything) }
+    subject { Locale.new(data.keys.first, data, anything) }
 
     it "is able to update first level keys" do
       subject["this"]= "is not nested"
